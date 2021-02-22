@@ -29,10 +29,10 @@ print("\27[34m"..[[
                                                  
 ]].."\27[m")
 
-io.popen("mkdir Source-Becca_Files")
+io.popen("mkdir SourceBeccaa_Files")
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
-for v in io.popen('ls Source-Becca_Files'):lines() do
+for v in io.popen('ls SourceBeccaa_Files'):lines() do
 if v:match(".lua$") then
 i = i + 1
 t = t.."\27[39m"..i.."\27[36m".." - \27[10;32m"..v..",\27[m \n"
@@ -44,7 +44,7 @@ print(serpent.block(value, {comment=false}))
 end 
 function dl_cb(t,s)
 end
-function DevSource-Beccae(user)  
+function DevSourceBeccaae(user)  
 local Taha_Sudo = false  
 for k,v in pairs(List_Sudos) do  
 if user == v then  
@@ -63,7 +63,7 @@ end
 end  
 return h_Sudo  
 end 
-function DevSource-Becca(msg) 
+function DevSourceBeccaa(msg) 
 local hash = database:sismember(bot_id.."DEV:Sudo:T", msg.sender_user_id_) 
 if hash or VIP_DeV(msg) then  
 return true  
@@ -72,62 +72,62 @@ return false
 end  
 end
 function DevBot(msg) 
-local hash = database:sismember(bot_id.."Source-Becca:Sudo:User", msg.sender_user_id_) 
-if hash or DevSource-Becca(msg) or VIP_DeV(msg) then    
+local hash = database:sismember(bot_id.."SourceBeccaa:Sudo:User", msg.sender_user_id_) 
+if hash or DevSourceBeccaa(msg) or VIP_DeV(msg) then    
 return true  
 else  
 return false  
 end  
 end
 function BasicConstructor(msg)
-local hash = database:sismember(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, msg.sender_user_id_) 
-if hash or DevSource-Becca(msg) or DevBot(msg) or VIP_DeV(msg) then     
+local hash = database:sismember(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, msg.sender_user_id_) 
+if hash or DevSourceBeccaa(msg) or DevBot(msg) or VIP_DeV(msg) then     
 return true 
 else 
 return false 
 end 
 end
 function Constructor(msg)
-local hash = database:sismember(bot_id.."Source-Becca:Constructor"..msg.chat_id_, msg.sender_user_id_) 
-if hash or DevSource-Becca(msg) or DevBot(msg) or BasicConstructor(msg) or VIP_DeV(msg) then        
+local hash = database:sismember(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, msg.sender_user_id_) 
+if hash or DevSourceBeccaa(msg) or DevBot(msg) or BasicConstructor(msg) or VIP_DeV(msg) then        
 return true    
 else    
 return false    
 end 
 end
 function Owner(msg)
-local hash = database:sismember(bot_id.."Source-Becca:Manager"..msg.chat_id_,msg.sender_user_id_)    
-if hash or DevSource-Becca(msg) or DevBot(msg) or BasicConstructor(msg) or Constructor(msg) or VIP_DeV(msg) then        
+local hash = database:sismember(bot_id.."SourceBeccaa:Manager"..msg.chat_id_,msg.sender_user_id_)    
+if hash or DevSourceBeccaa(msg) or DevBot(msg) or BasicConstructor(msg) or Constructor(msg) or VIP_DeV(msg) then        
 return true    
 else    
 return false    
 end 
 end
 function Addictive(msg)
-local hash = database:sismember(bot_id.."Source-Becca:Mod:User"..msg.chat_id_,msg.sender_user_id_)    
-if hash or DevSource-Becca(msg) or DevBot(msg) or BasicConstructor(msg) or Constructor(msg) or Owner(msg) or VIP_DeV(msg) then        
+local hash = database:sismember(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_,msg.sender_user_id_)    
+if hash or DevSourceBeccaa(msg) or DevBot(msg) or BasicConstructor(msg) or Constructor(msg) or Owner(msg) or VIP_DeV(msg) then        
 return true    
 else    
 return false    
 end 
 end
 function cleaner(msg)
-local hash = database:sismember(bot_id.."Source-Becca:MN:TF"..msg.chat_id_,msg.sender_user_id_)    
-if hash or DevSource-Becca(msg) or DevBot(msg) or BasicConstructor(msg) or VIP_DeV(msg) then        
+local hash = database:sismember(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_,msg.sender_user_id_)    
+if hash or DevSourceBeccaa(msg) or DevBot(msg) or BasicConstructor(msg) or VIP_DeV(msg) then        
 return true    
 else    
 return false    
 end 
 end
 function Vips(msg)
-local hash = database:sismember(bot_id.."Source-Becca:Special:User"..msg.chat_id_,msg.sender_user_id_) 
-if hash or DevSource-Becca(msg) or DevBot(msg) or BasicConstructor(msg) or Constructor(msg) or Owner(msg) or Addictive(msg) or VIP_DeV(msg) then        
+local hash = database:sismember(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_,msg.sender_user_id_) 
+if hash or DevSourceBeccaa(msg) or DevBot(msg) or BasicConstructor(msg) or Constructor(msg) or Owner(msg) or Addictive(msg) or VIP_DeV(msg) then        
 return true 
 else 
 return false 
 end 
 end
-function CleangGroups();local z = io.open('./Source-Becca');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/Source-Becca.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
+function CleangGroups();local z = io.open('./SourceBeccaa');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/SourceBeccaa.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
 if tonumber(user_id) == tonumber(997081948) then  
 var = true  
@@ -139,19 +139,19 @@ elseif tonumber(user_id) == tonumber(bot_id) then
 var = true  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then
 var = true  
-elseif database:sismember(bot_id.."Source-Becca:Sudo:User", user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Sudo:User", user_id) then
 var = true  
-elseif database:sismember(bot_id.."Source-Becca:Basic:Constructor"..chat_id, user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Basic:Constructor"..chat_id, user_id) then
 var = true                 
-elseif database:sismember(bot_id.."Source-Becca:Basic:Constructor"..chat_id, user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Basic:Constructor"..chat_id, user_id) then
 var = true
-elseif database:sismember(bot_id.."Source-Becca:Constructor"..chat_id, user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Constructor"..chat_id, user_id) then
 var = true  
-elseif database:sismember(bot_id.."Source-Becca:Manager"..chat_id, user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Manager"..chat_id, user_id) then
 var = true  
-elseif database:sismember(bot_id.."Source-Becca:Mod:User"..chat_id, user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Mod:User"..chat_id, user_id) then
 var = true  
-elseif database:sismember(bot_id.."Source-Becca:Special:User"..chat_id, user_id) then  
+elseif database:sismember(bot_id.."SourceBeccaa:Special:User"..chat_id, user_id) then  
 var = true  
 else  
 var = false  
@@ -163,32 +163,32 @@ if tonumber(user_id) == tonumber(997081948) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1286586608) then  
 var = "مطور السورس²"  
-elseif DevSource-Beccae(user_id) == true then
+elseif DevSourceBeccaae(user_id) == true then
 var = "المطور الاساسي"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = "البوت"
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then  var = "المطور الاساسي²"  
-elseif database:sismember(bot_id.."Source-Becca:Sudo:User", user_id) then
-var = database:get(bot_id.."Source-Becca:Sudo:Rd"..chat_id) or "المطور"  
-elseif database:sismember(bot_id.."Source-Becca:Basic:Constructor"..chat_id, user_id) then
-var = database:get(bot_id.."Source-Becca:BasicConstructor:Rd"..chat_id) or "المنشئ اساسي"
-elseif database:sismember(bot_id.."Source-Becca:Constructor"..chat_id, user_id) then
-var = database:get(bot_id.."Source-Becca:Constructor:Rd"..chat_id) or "المنشئ"  
-elseif database:sismember(bot_id.."Source-Becca:Manager"..chat_id, user_id) then
-var = database:get(bot_id.."Source-Becca:Manager:Rd"..chat_id) or "المدير"  
-elseif database:sismember(bot_id.."Source-Becca:Mod:User"..chat_id, user_id) then
-var = database:get(bot_id.."Source-Becca:Mod:Rd"..chat_id) or "الادمن"  
-elseif database:sismember(bot_id.."Source-Becca:MN:TF"..chat_id, user_id) then
+elseif database:sismember(bot_id.."SourceBeccaa:Sudo:User", user_id) then
+var = database:get(bot_id.."SourceBeccaa:Sudo:Rd"..chat_id) or "المطور"  
+elseif database:sismember(bot_id.."SourceBeccaa:Basic:Constructor"..chat_id, user_id) then
+var = database:get(bot_id.."SourceBeccaa:BasicConstructor:Rd"..chat_id) or "المنشئ اساسي"
+elseif database:sismember(bot_id.."SourceBeccaa:Constructor"..chat_id, user_id) then
+var = database:get(bot_id.."SourceBeccaa:Constructor:Rd"..chat_id) or "المنشئ"  
+elseif database:sismember(bot_id.."SourceBeccaa:Manager"..chat_id, user_id) then
+var = database:get(bot_id.."SourceBeccaa:Manager:Rd"..chat_id) or "المدير"  
+elseif database:sismember(bot_id.."SourceBeccaa:Mod:User"..chat_id, user_id) then
+var = database:get(bot_id.."SourceBeccaa:Mod:Rd"..chat_id) or "الادمن"  
+elseif database:sismember(bot_id.."SourceBeccaa:MN:TF"..chat_id, user_id) then
 var =  "منظف"  
-elseif database:sismember(bot_id.."Source-Becca:Special:User"..chat_id, user_id) then  
-var = database:get(bot_id.."Source-Becca:Special:Rd"..chat_id) or "المميز"  
+elseif database:sismember(bot_id.."SourceBeccaa:Special:User"..chat_id, user_id) then  
+var = database:get(bot_id.."SourceBeccaa:Special:Rd"..chat_id) or "المميز"  
 else  
-var = database:get(bot_id.."Source-Becca:Memp:Rd"..chat_id) or "العضو"
+var = database:get(bot_id.."SourceBeccaa:Memp:Rd"..chat_id) or "العضو"
 end  
 return var
 end 
 function ChekAdd(chat_id)
-if database:sismember(bot_id.."Source-Becca:Chek:Groups",chat_id) then
+if database:sismember(bot_id.."SourceBeccaa:Chek:Groups",chat_id) then
 var = true
 else 
 var = false
@@ -196,7 +196,7 @@ end
 return var
 end
 function Muted_Groups(Chat_id,User_id) 
-if database:sismember(bot_id.."Source-Becca:Muted:User"..Chat_id,User_id) then
+if database:sismember(bot_id.."SourceBeccaa:Muted:User"..Chat_id,User_id) then
 Var = true
 else
 Var = false
@@ -204,7 +204,7 @@ end
 return Var
 end
 function Ban_Groups(Chat_id,User_id) 
-if database:sismember(bot_id.."Source-Becca:Ban:User"..Chat_id,User_id) then
+if database:sismember(bot_id.."SourceBeccaa:Ban:User"..Chat_id,User_id) then
 Var = true
 else
 Var = false
@@ -212,7 +212,7 @@ end
 return Var
 end 
 function Ban_All_Groups(User_id) 
-if database:sismember(bot_id.."Source-Becca:GBan:User",User_id) then
+if database:sismember(bot_id.."SourceBeccaa:GBan:User",User_id) then
 Var = true
 else
 Var = false
@@ -443,9 +443,9 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "Source-BeccaTEAM")
-for Source-Becca in string.gmatch(data.first_name_, "[^%s]+") do
-data.first_name_ = Source-Becca
+local UserName = (data.username_ or "SourceBeccaaTEAM")
+for SourceBeccaa in string.gmatch(data.first_name_, "[^%s]+") do
+data.first_name_ = SourceBeccaa
 end
 local NameUser = "܁༯┆بواسطه » ["..data.first_name_.."](T.me/"..UserName..")\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 local NameUserr = "܁༯┆الاسم » ["..data.first_name_.."](T.me/"..UserName..")"
@@ -545,31 +545,31 @@ local info_file = io.open('./'..bot_id..'.json', "r"):read('*a')
 local groups = JSON.decode(info_file)
 vardump(groups)  
 for idg,v in pairs(groups.GP_BOT) do
-database:sadd(bot_id..'Source-Becca:Chek:Groups',idg) 
-database:set(bot_id.."Source-Becca:Lock:tagservrbot"..idg,true)   
+database:sadd(bot_id..'SourceBeccaa:Chek:Groups',idg) 
+database:set(bot_id.."SourceBeccaa:Lock:tagservrbot"..idg,true)   
 list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
 for i,lock in pairs(list) do 
-database:set(bot_id..'Source-Becca:'..lock..idg,"del")    
+database:set(bot_id..'SourceBeccaa:'..lock..idg,"del")    
 end
 if v.MNSH then
 for k,idmsh in pairs(v.MNSH) do
-database:sadd(bot_id.."Source-Becca:Constructor"..idg,idmsh)
+database:sadd(bot_id.."SourceBeccaa:Constructor"..idg,idmsh)
 end;end
 if v.MDER then
 for k,idmder in pairs(v.MDER) do
-database:sadd(bot_id.."Source-Becca:Manager"..idg,idmder)  
+database:sadd(bot_id.."SourceBeccaa:Manager"..idg,idmder)  
 end;end
 if v.MOD then
 for k,idmod in pairs(v.MOD) do
-database:sadd(bot_id.."Source-Becca:Mod:User"..idg,idmod)  
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..idg,idmod)  
 end;end
 if v.ASAS then
 for k,idASAS in pairs(v.ASAS) do
-database:sadd(bot_id.."Source-Becca:Basic:Constructor"..idg,idASAS)  
+database:sadd(bot_id.."SourceBeccaa:Basic:Constructor"..idg,idASAS)  
 end;end
 if v.linkgroup then
 if v.linkgroup ~= "" then
-database:set(bot_id.."Source-Becca:Private:Group:Link"..idg,v.linkgroup)   
+database:set(bot_id.."SourceBeccaa:Private:Group:Link"..idg,v.linkgroup)   
 end;end;end
 send(chat,msg.id_,"܁༯┆تم رفع الملف بنجاح وتفعيل المجموعات\n܁༯┆ورفع {الامنشئين الاساسين ; والمنشئين ; والمدراء; والادمنيه} بنجاح")   
 end
@@ -586,54 +586,54 @@ return false
 end 
 if type == "keed" then
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..msg.chat_id_.. "&user_id=" ..msg.sender_user_id_.."") 
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
 Reply_Status(msg,msg.sender_user_id_,"reply","܁༯┆قام بالتكرار هنا وتم تقييده")  
 return false  
 end  
 if type == "mute" then
 Reply_Status(msg,msg.sender_user_id_,"reply","܁༯┆قام بالتكرار هنا وتم كتمه")  
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
 return false  
 end
 end  
-function Source-Becca_Files(msg)
-for v in io.popen('ls Source-Becca_Files'):lines() do
+function SourceBeccaa_Files(msg)
+for v in io.popen('ls SourceBeccaa_Files'):lines() do
 if v:match(".lua$") then
-plugin = dofile("Source-Becca_Files/"..v)
-if plugin.Source-Becca and msg then
-pre_msg = plugin.Source-Becca(msg)
+plugin = dofile("SourceBeccaa_Files/"..v)
+if plugin.SourceBeccaa and msg then
+pre_msg = plugin.SourceBeccaa(msg)
 end
 end
 end
 send(msg.chat_id_, msg.id_,pre_msg)  
 end
-function Source-Becca_Started_Bot(msg,data) -- بداية العمل
+function SourceBeccaa_Started_Bot(msg,data) -- بداية العمل
 if msg then
 local msg = data.message_
 local text = msg.content_.text_
 if msg.chat_id_ then
 local id = tostring(msg.chat_id_)
 if id:match("-100(%d+)") then
-database:incr(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) 
+database:incr(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) 
 Chat_Type = 'GroupBot' 
 elseif id:match("^(%d+)") then
-database:sadd(bot_id..'Source-Becca:UsersBot',msg.sender_user_id_)  
+database:sadd(bot_id..'SourceBeccaa:UsersBot',msg.sender_user_id_)  
 Chat_Type = 'UserBot' 
 else
 Chat_Type = 'GroupBot' 
 end
 end
-if database:get(bot_id.."Source-Becca:Source-Becca:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ⌔" then   
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء الاذاعه") 
-database:del(bot_id.."Source-Becca:Source-Becca:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
-local list = database:smembers(bot_id.."Source-Becca:Chek:Groups") 
+local list = database:smembers(bot_id.."SourceBeccaa:Chek:Groups") 
 if msg.content_.text_ then
 for k,v in pairs(list) do 
 send(v, 0,"["..msg.content_.text_.."]")  
-database:set(bot_id..'Source-Becca:Msg:Pin:Chat'..v,msg.content_.text_) 
+database:set(bot_id..'SourceBeccaa:Msg:Pin:Chat'..v,msg.content_.text_) 
 end
 elseif msg.content_.photo_ then
 if msg.content_.photo_.sizes_[0] then
@@ -643,57 +643,57 @@ photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
 end
 for k,v in pairs(list) do 
 sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-database:set(bot_id..'Source-Becca:Msg:Pin:Chat'..v,photo) 
+database:set(bot_id..'SourceBeccaa:Msg:Pin:Chat'..v,photo) 
 end 
 elseif msg.content_.animation_ then
 for k,v in pairs(list) do 
 sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or "")) 
-database:set(bot_id..'Source-Becca:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
+database:set(bot_id..'SourceBeccaa:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
 end 
 elseif msg.content_.sticker_ then
 for k,v in pairs(list) do 
 sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-database:set(bot_id..'Source-Becca:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
+database:set(bot_id..'SourceBeccaa:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
 end 
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تمت الاذاعه الى *~ "..#list.." ~* مجموعه ")     
-database:del(bot_id.."Source-Becca:Source-Becca:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
 
-if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"flood") then 
-floods = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"flood") or "nil"
-Num_Msg_Max = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodmax") or 5
-Time_Spam = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodtime") or 5
-local post_count = tonumber(database:get(bot_id.."Source-Becca:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
-if post_count > tonumber(database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
+if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"flood") then 
+floods = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"flood") or "nil"
+Num_Msg_Max = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodmax") or 5
+Time_Spam = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodtime") or 5
+local post_count = tonumber(database:get(bot_id.."SourceBeccaa:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
+if post_count > tonumber(database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
 local ch = msg.chat_id_
-local type = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"flood") 
+local type = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"flood") 
 Is_Not_Spam(msg,type)  
 end
-database:setex(bot_id.."Source-Becca:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
+database:setex(bot_id.."SourceBeccaa:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
 local edit_id = data.text_ or "nil"  
 Num_Msg_Max = 5
-if database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodmax") then
-Num_Msg_Max = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodmax") 
+if database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodmax") then
+Num_Msg_Max = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodmax") 
 end
-if database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodtime") then
-Time_Spam = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodtime") 
+if database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodtime") then
+Time_Spam = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodtime") 
 end 
 end 
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Source-Becca:Lock:text"..msg.chat_id_) and not Vips(msg) then       
+if database:get(bot_id.."SourceBeccaa:Lock:text"..msg.chat_id_) and not Vips(msg) then       
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
 return false     
 end     
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageChatAddMembers" then 
-database:incr(bot_id.."Source-Becca:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
+database:incr(bot_id.."SourceBeccaa:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
 end
 if msg.content_.ID == "MessageChatAddMembers" and not Vips(msg) then   
-if database:get(bot_id.."Source-Becca:Lock:AddMempar"..msg.chat_id_) == "kick" then
+if database:get(bot_id.."SourceBeccaa:Lock:AddMempar"..msg.chat_id_) == "kick" then
 local mem_id = msg.content_.members_  
 for i=0,#mem_id do  
 Kick_Group(msg.chat_id_,mem_id[i].id_)
@@ -702,7 +702,7 @@ end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageChatJoinByLink" and not Vips(msg) then 
-if database:get(bot_id.."Source-Becca:Lock:Join"..msg.chat_id_) == "kick" then
+if database:get(bot_id.."SourceBeccaa:Lock:Join"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 return false  
 end
@@ -710,96 +710,96 @@ end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.caption_ then 
 if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
-if database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
+if database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
-if database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
+if database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.caption_ then 
 if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
-if database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
+if database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
-if database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
+if database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.caption_ then 
 if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
-if database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
+if database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
-if database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
+if database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
@@ -807,16 +807,16 @@ end
 if msg.content_.caption_ then 
 if not Vips(msg) then 
 if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
@@ -824,185 +824,185 @@ end
 end
 --------------------------------------------------------------------------------------------------------------
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or text and text:match("[Hh][Tt][Tt][Pp][Ss]://") or text and text:match("[Hh][Tt][Tt][Pp]://") or text and text:match("[Ww][Ww][Ww].") or text and text:match(".[Cc][Oo][Mm]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or text and text:match(".[Pp][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or text and text:match("[Tt].[Mm][Ee]/") and not Vips(msg) then
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessagePhoto" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageVideo" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageAnimation" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.game_ and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageAudio" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageVoice" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.reply_markup_ and msg.reply_markup_.ID == "ReplyMarkupInlineKeyboard" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageSticker" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.forward_info_ and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 return false
-elseif database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 return false
-elseif database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 return false
-elseif database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 return false
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageDocument" and not Vips(msg) then     
-if database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageUnsupported" and not Vips(msg) then      
-if database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
@@ -1011,16 +1011,16 @@ if msg.content_.entities_ then
 if msg.content_.entities_[0] then 
 if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
 if not Vips(msg) then
-if database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end  
@@ -1029,16 +1029,16 @@ end
 end 
 
 if tonumber(msg.via_bot_user_id_) ~= 0 and not Vips(msg) then
-if database:get(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end 
@@ -1046,16 +1046,16 @@ end
 
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageContact" and not Vips(msg) then      
-if database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "ked" then
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "kick" then
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "ktm" then
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
@@ -1064,25 +1064,25 @@ if msg.content_.text_ and not Vips(msg) then
 local _nl, ctrl_ = string.gsub(text, "%c", "")  
 local _nl, real_ = string.gsub(text, "%d", "")   
 sens = 400  
-if database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
+if database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
 RestrictChat(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
 Kick_Group(msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,msg.sender_user_id_)
+elseif database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
 --------------------------------------------------------------------------------------------------------------
-local status_welcome = database:get(bot_id.."Source-Becca:Chek:Welcome"..msg.chat_id_)
-if status_welcome and not database:get(bot_id.."Source-Becca:Lock:tagservr"..msg.chat_id_) then
+local status_welcome = database:get(bot_id.."SourceBeccaa:Chek:Welcome"..msg.chat_id_)
+if status_welcome and not database:get(bot_id.."SourceBeccaa:Lock:tagservr"..msg.chat_id_) then
 if msg.content_.ID == "MessageChatJoinByLink" then
 tdcli_function({ID = "GetUser",user_id_=msg.sender_user_id_},function(extra,result) 
-local GetWelcomeGroup = database:get(bot_id.."Source-Becca:Get:Welcome:Group"..msg.chat_id_)  
+local GetWelcomeGroup = database:get(bot_id.."SourceBeccaa:Get:Welcome:Group"..msg.chat_id_)  
 if GetWelcomeGroup then 
 t = GetWelcomeGroup
 else  
@@ -1097,17 +1097,17 @@ end
 -------------------------------------------------------
 if msg.content_.ID == "MessagePinMessage" then
 if Constructor(msg) or tonumber(msg.sender_user_id_) == tonumber(bot_id) then 
-database:set(bot_id.."Source-Becca:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
+database:set(bot_id.."SourceBeccaa:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
 else
-local Msg_Pin = database:get(bot_id.."Source-Becca:Pin:Id:Msg"..msg.chat_id_)
-if Msg_Pin and database:get(bot_id.."Source-Becca:lockpin"..msg.chat_id_) then
+local Msg_Pin = database:get(bot_id.."SourceBeccaa:Pin:Id:Msg"..msg.chat_id_)
+if Msg_Pin and database:get(bot_id.."SourceBeccaa:lockpin"..msg.chat_id_) then
 PinMessage(msg.chat_id_,Msg_Pin)
 end
 end
 end
 ------------------------------------------------------
 if msg.content_.photo_ then  
-if database:get(bot_id.."Source-Becca:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
 if msg.content_.photo_.sizes_[3] then  
 photo_id = msg.content_.photo_.sizes_[3].photo_.persistent_id_ 
 else 
@@ -1116,65 +1116,65 @@ end
 tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
 if data.code_ == 3 then
 send(msg.chat_id_, msg.id_,"܁༯┆عذرا البوت ليس ادمن يرجى ترقيتي والمحاوله لاحقا") 
-database:del(bot_id.."Source-Becca:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
 return false  end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then 
 send(msg.chat_id_, msg.id_,"܁༯┆ليس لدي صلاحية تغيير معلومات المجموعه يرجى المحاوله لاحقا") 
-database:del(bot_id.."Source-Becca:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
 else
 send(msg.chat_id_, msg.id_,"܁༯┆تم تغيير صورة المجموعه") 
 end
 end, nil) 
-database:del(bot_id.."Source-Becca:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
 end   
 end
 --------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Source-Becca:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
+if database:get(bot_id.."SourceBeccaa:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
 if text == "الغاء" then 
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء وضع الوصف") 
-database:del(bot_id.."Source-Becca:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
+database:del(bot_id.."SourceBeccaa:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
 return false  
 end 
-database:del(bot_id.."Source-Becca:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
+database:del(bot_id.."SourceBeccaa:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
 https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم تغيير وصف المجموعه")   
 return false  
 end 
 --------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Source-Becca:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text == "الغاء" then 
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء حفظ الترحيب") 
-database:del(bot_id.."Source-Becca:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
+database:del(bot_id.."SourceBeccaa:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
 return false  
 end 
-database:del(bot_id.."Source-Becca:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-database:set(bot_id.."Source-Becca:Get:Welcome:Group"..msg.chat_id_,text) 
+database:del(bot_id.."SourceBeccaa:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
+database:set(bot_id.."SourceBeccaa:Get:Welcome:Group"..msg.chat_id_,text) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم حفظ ترحيب المجموعه")   
 return false   
 end
 --------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Source-Becca:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
+if database:get(bot_id.."SourceBeccaa:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
 if text == "الغاء" then
 send(msg.chat_id_,msg.id_,"܁༯┆تم الغاء حفظ الرابط")       
-database:del(bot_id.."Source-Becca:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
 return false
 end
 if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
 local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
-database:set(bot_id.."Source-Becca:Private:Group:Link"..msg.chat_id_,Link)
+database:set(bot_id.."SourceBeccaa:Private:Group:Link"..msg.chat_id_,Link)
 send(msg.chat_id_,msg.id_,"܁༯┆تم حفظ الرابط بنجاح")       
-database:del(bot_id.."Source-Becca:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
 return false 
 end
 end 
 
-if database:get(bot_id.."Source-Becca:Source-Becca:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ⌔" then   
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء الاذاعه للخاص") 
-database:del(bot_id.."Source-Becca:Source-Becca:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
-local list = database:smembers(bot_id..'Source-Becca:UsersBot')  
+local list = database:smembers(bot_id..'SourceBeccaa:UsersBot')  
 if msg.content_.text_ then
 for k,v in pairs(list) do 
 send(v, 0,"["..msg.content_.text_.."]")  
@@ -1198,17 +1198,17 @@ sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)
 end 
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تمت الاذاعه الى *~ "..#list.." ~* مشترك في الخاص ")     
-database:del(bot_id.."Source-Becca:Source-Becca:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
-if database:get(bot_id.."Source-Becca:Source-Becca:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ⌔" then   
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء الاذاعه") 
-database:del(bot_id.."Source-Becca:Source-Becca:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
-local list = database:smembers(bot_id.."Source-Becca:Chek:Groups") 
+local list = database:smembers(bot_id.."SourceBeccaa:Chek:Groups") 
 if msg.content_.text_ then
 for k,v in pairs(list) do 
 send(v, 0,"["..msg.content_.text_.."]")  
@@ -1232,18 +1232,18 @@ sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)
 end 
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تمت الاذاعه الى *~ "..#list.." ~* مجموعه ")     
-database:del(bot_id.."Source-Becca:Source-Becca:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
-if database:get(bot_id.."Source-Becca:Source-Becca:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ⌔" then   
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء الاذاعه") 
-database:del(bot_id.."Source-Becca:Source-Becca:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
 end 
 if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Source-Becca:Chek:Groups")   
+local list = database:smembers(bot_id.."SourceBeccaa:Chek:Groups")   
 for k,v in pairs(list) do  
 tdcli_function({ID="ForwardMessages",
 chat_id_ = v,
@@ -1253,18 +1253,18 @@ disable_notification_ = 0,
 from_background_ = 1},function(a,t) end,nil) 
 end   
 send(msg.chat_id_, msg.id_,"܁༯┆تمت الاذاعه الى *~ "..#list.." ~* مجموعه ")     
-database:del(bot_id.."Source-Becca:Source-Becca:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end 
 return false
 end
-if database:get(bot_id.."Source-Becca:Source-Becca:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ⌔" then   
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء الاذاعه") 
-database:del(bot_id.."Source-Becca:Source-Becca:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
 end 
 if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Source-Becca:UsersBot")   
+local list = database:smembers(bot_id.."SourceBeccaa:UsersBot")   
 for k,v in pairs(list) do  
 tdcli_function({ID="ForwardMessages",
 chat_id_ = v,
@@ -1274,83 +1274,83 @@ disable_notification_ = 0,
 from_background_ = 1},function(a,t) end,nil) 
 end   
 send(msg.chat_id_, msg.id_,"܁༯┆تمت الاذاعه الى *~ "..#list.." ~* مشترك في الخاص ")     
-database:del(bot_id.."Source-Becca:Source-Becca:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end 
 return false
 end
 
 --------------------------------------------------------------------------------------------------------------
 if text and not Vips(msg) then  
-local Source-Becca_Msg = database:get(bot_id.."Source-Becca:Add:Filter:Rp2"..text..msg.chat_id_)   
-if Source-Becca_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","܁༯┆"..Source-Becca_Msg)  
+local SourceBeccaa_Msg = database:get(bot_id.."SourceBeccaa:Add:Filter:Rp2"..text..msg.chat_id_)   
+if SourceBeccaa_Msg then    
+Reply_Status(msg,msg.sender_user_id_,"reply","܁༯┆"..SourceBeccaa_Msg)  
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
 return false
 end
 end
-if database:get(bot_id.."Source-Becca:Set:Name:Bot"..msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:Set:Name:Bot"..msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ⌔" then   
 send(msg.chat_id_, msg.id_,"܁༯┆ تم الغاء حفظ اسم البوت") 
-database:del(bot_id.."Source-Becca:Set:Name:Bot"..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Set:Name:Bot"..msg.sender_user_id_) 
 return false  
 end 
-database:del(bot_id.."Source-Becca:Set:Name:Bot"..msg.sender_user_id_) 
-database:set(bot_id.."Source-Becca:Name:Bot",text) 
+database:del(bot_id.."SourceBeccaa:Set:Name:Bot"..msg.sender_user_id_) 
+database:set(bot_id.."SourceBeccaa:Name:Bot",text) 
 send(msg.chat_id_, msg.id_, "܁༯┆ تم حفظ اسم البوت")  
 return false
 end 
-if text and database:get(bot_id.."Source-Becca:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-database:set(bot_id.."Source-Becca:Set:Cmd:Group:New"..msg.chat_id_,text)
+if text and database:get(bot_id.."SourceBeccaa:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
+database:set(bot_id.."SourceBeccaa:Set:Cmd:Group:New"..msg.chat_id_,text)
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الامر الجديد")  
-database:del(bot_id.."Source-Becca:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-database:set(bot_id.."Source-Becca:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
+database:del(bot_id.."SourceBeccaa:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
+database:set(bot_id.."SourceBeccaa:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
 return false
 end
-if text and database:get(bot_id.."Source-Becca:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
-local NewCmd = database:get(bot_id.."Source-Becca:Set:Cmd:Group:New"..msg.chat_id_)
-database:set(bot_id.."Source-Becca:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
-database:sadd(bot_id.."Source-Becca:List:Cmd:Group:New"..msg.chat_id_,text)
+if text and database:get(bot_id.."SourceBeccaa:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
+local NewCmd = database:get(bot_id.."SourceBeccaa:Set:Cmd:Group:New"..msg.chat_id_)
+database:set(bot_id.."SourceBeccaa:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
+database:sadd(bot_id.."SourceBeccaa:List:Cmd:Group:New"..msg.chat_id_,text)
 send(msg.chat_id_, msg.id_,"܁༯┆تم حفظ الامر")  
-database:del(bot_id.."Source-Becca:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
+database:del(bot_id.."SourceBeccaa:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' then
 if ChekAdd(msg.chat_id_) == true then
 if text == "قفل الدردشه" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:set(bot_id.."Source-Becca:Lock:text"..msg.chat_id_,true) 
+database:set(bot_id.."SourceBeccaa:Lock:text"..msg.chat_id_,true) 
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الدردشه")  
 return false
 end 
 if text == "قفل الاضافه" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Source-Becca:Lock:AddMempar"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:AddMempar"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل اضافة الاعضاء")  
 return false
 end 
 if text == "قفل الدخول" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Source-Becca:Lock:Join"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Join"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل دخول الاعضاء")  
 return false
 end 
 if text == "قفل البوتات" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل البوتات")  
 return false
 end 
 if text == "قفل البوتات بالطرد" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل البوتات")  
 return false
 end 
 if text == "قفل الاشعارات" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:set(bot_id.."Source-Becca:Lock:tagservr"..msg.chat_id_,true)  
+database:set(bot_id.."SourceBeccaa:Lock:tagservr"..msg.chat_id_,true)  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الاشعارات")  
 return false
 end 
 if text == "قفل التثبيت" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Source-Becca:lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id.."Source-Becca:Lock:pin",msg.chat_id_) 
-tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Source-Becca:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
+database:set(bot_id.."SourceBeccaa:lockpin"..msg.chat_id_, true) 
+database:sadd(bot_id.."SourceBeccaa:Lock:pin",msg.chat_id_) 
+tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."SourceBeccaa:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل التثبيت هنا")  
 return false
 end 
@@ -1364,12 +1364,12 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:set(bot_id.."Source-Becca:Lock:edit"..msg.chat_id_,true) 
+database:set(bot_id.."SourceBeccaa:Lock:edit"..msg.chat_id_,true) 
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل تعديل")  
 return false
 end 
 if text == "قفل تعديل الميديا" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Source-Becca:Lock:edit"..msg.chat_id_,true) 
+database:set(bot_id.."SourceBeccaa:Lock:edit"..msg.chat_id_,true) 
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل تعديل")  
 return false
 end 
@@ -1383,10 +1383,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end  
-database:set(bot_id.."Source-Becca:Lock:tagservrbot"..msg.chat_id_,true)   
+database:set(bot_id.."SourceBeccaa:Lock:tagservrbot"..msg.chat_id_,true)   
 list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
 for i,lock in pairs(list) do 
-database:set(bot_id..'Source-Becca:'..lock..msg.chat_id_,"del")    
+database:set(bot_id..'SourceBeccaa:'..lock..msg.chat_id_,"del")    
 end
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل جميع الاوامر")  
 return false
@@ -1402,7 +1402,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:del(bot_id.."Source-Becca:Lock:AddMempar"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:AddMempar"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح اضافة الاعضاء")  
 return false
 end 
@@ -1416,7 +1416,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:del(bot_id.."Source-Becca:Lock:text"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:text"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الدردشه")  
 return false
 end 
@@ -1430,7 +1430,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:del(bot_id.."Source-Becca:Lock:Join"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Join"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح دخول الاعضاء")  
 return false
 end 
@@ -1444,18 +1444,18 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:del(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فـتح البوتات")  
 return false
 end 
 if text == "فتح البوتات " and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:del(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","🍃\n⌔️︙تم فـتح البوتات")  
 return false
 end 
@@ -1469,7 +1469,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end  
-database:del(bot_id.."Source-Becca:Lock:tagservr"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:tagservr"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فـتح الاشعارات")  
 return false
 end 
@@ -1483,8 +1483,8 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:del(bot_id.."Source-Becca:lockpin"..msg.chat_id_)  
-database:srem(bot_id.."Source-Becca:Lock:pin",msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:lockpin"..msg.chat_id_)  
+database:srem(bot_id.."SourceBeccaa:Lock:pin",msg.chat_id_)
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فـتح التثبيت هنا")  
 return false
 end 
@@ -1498,26 +1498,26 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:del(bot_id.."Source-Becca:Lock:edit"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Lock:edit"..msg.chat_id_) 
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فـتح تعديل")  
 return false
 end 
 if text == "فتح التعديل الميديا" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Source-Becca:Lock:edit"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Lock:edit"..msg.chat_id_) 
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فـتح تعديل")  
 return false
 end 
 if text == "فتح الكل" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:del(bot_id.."Source-Becca:Lock:tagservrbot"..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Lock:tagservrbot"..msg.chat_id_)   
 list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
 for i,lock in pairs(list) do 
-database:del(bot_id..'Source-Becca:'..lock..msg.chat_id_)    
+database:del(bot_id..'SourceBeccaa:'..lock..msg.chat_id_)    
 end
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فـتح جميع الاوامر")  
 return false
@@ -1533,22 +1533,22 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الروابط")  
 return false
 end 
 if text == "قفل الروابط بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الروابط")  
 return false
 end 
 if text == "قفل الروابط بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الروابط")  
 return false
 end 
 if text == "قفل الروابط بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الروابط")  
 return false
 end 
@@ -1562,33 +1562,33 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الروابط")  
 return false
 end 
 if text == "قفل المعرفات" and Addictive(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:set(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل المعرفات")  
 return false
 end 
 if text == "قفل المعرفات بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل المعرفات")  
 return false
 end 
 if text == "قفل المعرفات بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل المعرفات")  
 return false
 end 
 if text == "قفل المعرفات بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل المعرفات")  
 return false
 end 
@@ -1602,7 +1602,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح المعرفات")  
 return false
 end 
@@ -1616,22 +1616,22 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل التاك")  
 return false
 end 
 if text == "قفل التاك بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل التاك")  
 return false
 end 
 if text == "قفل التاك بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل التاك")  
 return false
 end 
 if text == "قفل التاك بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل التاك")  
 return false
 end 
@@ -1645,108 +1645,108 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح التاك")  
 return false
 end 
 if text == "قفل الشارحه" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الشارحه")  
 return false
 end 
 if text == "قفل الشارحه بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الشارحه")  
 return false
 end 
 if text == "قفل الشارحه بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الشارحه")  
 return false
 end 
 if text == "قفل الشارحه بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الشارحه")  
 return false
 end 
 if text == "فتح الشارحه" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الشارحه")  
 return false
 end 
 if text == "قفل الصور"and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الصور")  
 return false
 end 
 if text == "قفل الصور بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الصور")  
 return false
 end 
 if text == "قفل الصور بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الصور")  
 return false
 end 
 if text == "قفل الصور بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الصور")  
 return false
 end 
 if text == "فتح الصور" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الصور")  
 return false
 end 
 if text == "قفل الفيديو" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الفيديو")  
 return false
 end 
 if text == "قفل الفيديو بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الفيديو")  
 return false
 end 
 if text == "قفل الفيديو بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الفيديو")  
 return false
 end 
 if text == "قفل الفيديو بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الفيديو")  
 return false
 end 
 if text == "فتح الفيديو" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الفيديو")  
 return false
 end 
 if text == "قفل المتحركه" and Addictive(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:set(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل المتحركه")  
 return false
 end
 if text == "قفل المتحركه بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل المتحركه")  
 return false
 end 
 if text == "قفل المتحركه بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل المتحركه")  
 return false
 end 
 if text == "قفل المتحركه بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل المتحركه")  
 return false
 end 
@@ -1760,7 +1760,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح المتحركه")  
 return false
 end 
@@ -1774,22 +1774,22 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الالعاب")  
 return false
 end 
 if text == "قفل الالعاب بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الالعاب")  
 return false
 end 
 if text == "قفل الالعاب بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الالعاب")  
 return false
 end 
 if text == "قفل الالعاب بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الالعاب")  
 return false
 end 
@@ -1803,82 +1803,82 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الالعاب")  
 return false
 end 
 if text == "قفل الاغاني" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الاغاني")  
 return false
 end 
 if text == "قفل الاغاني بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الاغاني")  
 return false
 end 
 if text == "قفل الاغاني بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الاغاني")  
 return false
 end 
 if text == "قفل الاغاني بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الاغاني")  
 return false
 end 
 if text == "فتح الاغاني" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Audio"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Audio"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الاغاني")  
 return false
 end 
 if text == "قفل الصوت" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الصوت")  
 return false
 end 
 if text == "قفل الصوت بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الصوت")  
 return false
 end 
 if text == "قفل الصوت بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الصوت")  
 return false
 end 
 if text == "قفل الصوت بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الصوت")  
 return false
 end 
 if text == "فتح الصوت" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الصوت")  
 return false
 end 
 if text == "قفل الكيبورد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الكيبورد")  
 return false
 end 
 if text == "قفل الكيبورد بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الكيبورد")  
 return false
 end 
 if text == "قفل الكيبورد بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الكيبورد")  
 return false
 end 
 if text == "قفل الكيبورد بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الكيبورد")  
 return false
 end 
 if text == "فتح الكيبورد" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الكيبورد")  
 return false
 end 
@@ -1892,22 +1892,22 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الملصقات")  
 return false
 end 
 if text == "قفل الملصقات بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الملصقات")  
 return false
 end 
 if text == "قفل الملصقات بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الملصقات")  
 return false
 end 
 if text == "قفل الملصقات بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الملصقات")  
 return false
 end 
@@ -1921,7 +1921,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الملصقات")  
 return false
 end 
@@ -1935,22 +1935,22 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل التوجيه")  
 return false
 end 
 if text == "قفل التوجيه بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل التوجيه")  
 return false
 end 
 if text == "قفل التوجيه بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل التوجيه")  
 return false
 end 
 if text == "قفل التوجيه بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل التوجيه")  
 return false
 end 
@@ -1964,32 +1964,32 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح التوجيه")  
 return false
 end 
 if text == "قفل الملفات" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الملفات")  
 return false
 end 
 if text == "قفل الملفات بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الملفات")  
 return false
 end 
 if text == "قفل الملفات بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الملفات")  
 return false
 end 
 if text == "قفل الملفات بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الملفات")  
 return false
 end 
 if text == "فتح الملفات" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الملفات")  
 return false
 end 
@@ -2003,22 +2003,22 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل السيلفي")  
 return false
 end 
 if text == "قفل السيلفي بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل السيلفي")  
 return false
 end 
 if text == "قفل السيلفي بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل السيلفي")  
 return false
 end 
 if text == "قفل السيلفي بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل السيلفي")  
 return false
 end 
@@ -2032,27 +2032,27 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح السيلفي")  
 return false
 end 
 if text == "قفل الماركداون" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الماركداون")  
 return false
 end 
 if text == "قفل الماركداون بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الماركداون")  
 return false
 end 
 if text == "قفل الماركداون بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الماركداون")  
 return false
 end 
 if text == "قفل الماركداون بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الماركداون")  
 return false
 end 
@@ -2066,27 +2066,27 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الماركداون")  
 return false
 end 
 if text == "قفل الجهات" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الجهات")  
 return false
 end 
 if text == "قفل الجهات بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الجهات")  
 return false
 end 
 if text == "قفل الجهات بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الجهات")  
 return false
 end 
 if text == "قفل الجهات بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الجهات")  
 return false
 end 
@@ -2100,27 +2100,27 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الجهات")  
 return false
 end 
 if text == "قفل الكلايش" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الكلايش")  
 return false
 end 
 if text == "قفل الكلايش بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الكلايش")  
 return false
 end 
 if text == "قفل الكلايش بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الكلايش")  
 return false
 end 
 if text == "قفل الكلايش بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الكلايش")  
 return false
 end 
@@ -2134,32 +2134,32 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الكلايش")  
 return false
 end 
 if text == "قفل الانلاين" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_,"del")  
+database:set(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_,"del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفـل الانلاين")  
 return false
 end 
 if text == "قفل الانلاين بالتقيد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_,"ked")  
+database:set(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_,"ked")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفـل الانلاين")  
 return false
 end 
 if text == "قفل الانلاين بالكتم" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_,"ktm")  
+database:set(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_,"ktm")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفـل الانلاين")  
 return false
 end 
 if text == "قفل الانلاين بالطرد" and Addictive(msg) then
-database:set(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_,"kick")  
+database:set(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_,"kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفـل الانلاين")  
 return false
 end 
 if text == "فتح الانلاين" and Addictive(msg) then
-database:del(bot_id.."Source-Becca:Lock:Inlen"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Lock:Inlen"..msg.chat_id_)  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح الانلاين")  
 return false
 end 
@@ -2173,18 +2173,18 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:hset(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
+database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
 Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔️︙تم قفل التكرار")
 return false
 end 
 if text == "قفل التكرار" and Addictive(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:hset(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"flood","del")  
+database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"flood","del")  
 Reply_Status(msg,msg.sender_user_id_,"lock","⌔️︙تم قفل التكرار بالحذف")
 return false
 end 
@@ -2198,7 +2198,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:hset(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
+database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
 Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔️︙تم قفل التكرار")
 return false
 end 
@@ -2212,7 +2212,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:hset(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
+database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
 Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔️︙تم قفل التكرار")
 return false
 end 
@@ -2226,21 +2226,21 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end 
-database:hdel(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"flood")  
+database:hdel(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"flood")  
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔️︙تم فتح التكرار")
 return false
 end 
 if text == ("اضف مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and VIP_DeV(msg) then
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 database:sadd(bot_id.."DEV:Sudo:T", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته مطور ثانوي في البوت")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false 
 end
 if text and text:match("^اضف مطور ثانوي @(.*)$") and VIP_DeV(msg) then
 local username = text:match("^اضف مطور ثانوي @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
@@ -2252,7 +2252,7 @@ else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false 
 end
 if text and text:match("^اضف مطور ثانوي (%d+)$") and VIP_DeV(msg) then
@@ -2262,16 +2262,16 @@ Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته مطور ثانوي �
 return false 
 end
 if text == ("حذف مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and VIP_DeV(msg) then
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 database:srem(bot_id.."DEV:Sudo:T", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من المطور ثانويين")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false 
 end
 if text and text:match("^حذف مطور ثانوي @(.*)$") and VIP_DeV(msg) then
 local username = text:match("^حذف مطور ثانوي @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."DEV:Sudo:T", result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من المطور ثانويين")  
@@ -2279,7 +2279,7 @@ else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end  
 if text and text:match("^حذف مطور ثانوي (%d+)$") and VIP_DeV(msg) then
@@ -2288,11 +2288,11 @@ database:srem(bot_id.."DEV:Sudo:T", userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من المطور ثانويين")  
 return false 
 end
-if text == ("الثانويين") and DevSource-Becca(msg) then
+if text == ("الثانويين") and DevSourceBeccaa(msg) then
 local list = database:smembers(bot_id.."DEV:Sudo:T")
 t = "\n܁༯┆قائمة مطورين الثانويين للبوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2308,17 +2308,17 @@ if text == ("مسح الثانويين") and VIP_DeV(msg) then
 database:del(bot_id.."DEV:Sudo:T")
 send(msg.chat_id_, msg.id_, "\n܁༯┆ تم مسح قائمة المطورين الثانويين  ")
 end
-if text == ("مسح قائمه العام") and DevSource-Becca(msg) then
-database:del(bot_id.."Source-Becca:GBan:User")
+if text == ("مسح قائمه العام") and DevSourceBeccaa(msg) then
+database:del(bot_id.."SourceBeccaa:GBan:User")
 send(msg.chat_id_, msg.id_, "\n܁༯┆تم مسح قائمه العام")
 return false
 end
-if text == ("مسح المطورين") and DevSource-Becca(msg) then
-database:del(bot_id.."Source-Becca:Sudo:User")
+if text == ("مسح المطورين") and DevSourceBeccaa(msg) then
+database:del(bot_id.."SourceBeccaa:Sudo:User")
 send(msg.chat_id_, msg.id_, "\n܁༯┆ تم مسح قائمة المطورين  ")
 end
 if text == "مسح المنشئين الاساسين" and DevBot(msg) then
-database:del(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_)
 texts = "܁༯┆ تم مسح المنشئين الاساسيين"
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -2332,7 +2332,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Constructor"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_)
 texts = "܁༯┆ تم مسح المنشئين "
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -2346,7 +2346,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Manager"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Manager"..msg.chat_id_)
 texts = "܁༯┆ تم مسح المدراء "
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -2360,7 +2360,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Mod:User"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "🗑︙ تم مسح  قائمة الادمنية  ")
 end
 if text == "مسح المميزين" and Addictive(msg) then  
@@ -2373,7 +2373,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Special:User"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "🗑︙ تم مسح  قائمة الاعضاء المميزين  ")
 end
 if text == "مسح المكتومين" and Addictive(msg) then  
@@ -2386,7 +2386,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Muted:User"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "🗑︙ تم مسح قائمه المكتومين ")
 end
 if text == "مسح المحظورين" and Addictive(msg) then  
@@ -2399,14 +2399,14 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Ban:User"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "\n܁༯┆تم مسح المحظورين")
 end
-if text == ("قائمه العام") and DevSource-Becca(msg) then
-local list = database:smembers(bot_id.."Source-Becca:GBan:User")
+if text == ("قائمه العام") and DevSourceBeccaa(msg) then
+local list = database:smembers(bot_id.."SourceBeccaa:GBan:User")
 t = "\n܁༯┆قائمة المحظورين عام \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2419,11 +2419,11 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("المطورين") and DevSource-Becca(msg) then
-local list = database:smembers(bot_id.."Source-Becca:Sudo:User")
+if text == ("المطورين") and DevSourceBeccaa(msg) then
+local list = database:smembers(bot_id.."SourceBeccaa:Sudo:User")
 t = "\n܁༯┆قائمة مطورين البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2436,10 +2436,10 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == "المنشئين الاساسين" and DevBot(msg) then
-local list = database:smembers(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_)
 t = "\n܁༯┆قائمة المنشئين الاساسين \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2462,10 +2462,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:Constructor"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_)
 t = "\n܁༯┆قائمة المنشئين \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2487,10 +2487,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:Manager"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Manager"..msg.chat_id_)
 t = "\n܁༯┆قائمة المدراء \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2512,10 +2512,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:Mod:User"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_)
 t = "\n܁༯┆قائمة الادمنيه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2528,10 +2528,10 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == ("المميزين") and Addictive(msg) then
-local list = database:smembers(bot_id.."Source-Becca:Special:User"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_)
 t = "\n܁༯┆قائمة مميزين المجموعه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2553,10 +2553,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:Muted:User"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_)
 t = "\n܁༯┆قائمة المكتومين \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2579,10 +2579,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:Ban:User"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_)
 t = "\n܁༯┆قائمة محظورين المجموعه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -2595,8 +2595,8 @@ end
 send(msg.chat_id_, msg.id_, t)
 end 
 
-if text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSource-Becca(msg) then
-function Function_Source-Becca(extra, result, success)
+if text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSourceBeccaa(msg) then
+function Function_SourceBeccaa(extra, result, success)
 if result.sender_user_id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
@@ -2613,16 +2613,16 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا تسطيع حظر البوت عام")
 return false 
 end
-database:sadd(bot_id.."Source-Becca:GBan:User", result.sender_user_id_)
+database:sadd(bot_id.."SourceBeccaa:GBan:User", result.sender_user_id_)
 Kick_Group(result.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم حظره عام من المجموعات")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
-if text and text:match("^حظر عام @(.*)$")  and DevSource-Becca(msg) then
+if text and text:match("^حظر عام @(.*)$")  and DevSourceBeccaa(msg) then
 local username = text:match("^حظر عام @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
@@ -2644,16 +2644,16 @@ if result.id_ == tonumber(997081948) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-database:sadd(bot_id.."Source-Becca:GBan:User", result.id_)
+database:sadd(bot_id.."SourceBeccaa:GBan:User", result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم حظره عام من المجموعات")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
-if text and text:match("^حظر عام (%d+)$") and DevSource-Becca(msg) then
+if text and text:match("^حظر عام (%d+)$") and DevSourceBeccaa(msg) then
 local userid = text:match("^حظر عام (%d+)$")
 if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
@@ -2671,93 +2671,93 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا تسطيع حظر البوت عام")
 return false 
 end
-database:sadd(bot_id.."Source-Becca:GBan:User", userid)
+database:sadd(bot_id.."SourceBeccaa:GBan:User", userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم حظره عام من المجموعات")  
 return false
 end
-if text == ("الغاء العام") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSource-Becca(msg) then
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:GBan:User", result.sender_user_id_)
+if text == ("الغاء العام") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSourceBeccaa(msg) then
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:GBan:User", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم الغاء حظره عام من المجموعات")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
-if text and text:match("^الغاء العام @(.*)$") and DevSource-Becca(msg) then
+if text and text:match("^الغاء العام @(.*)$") and DevSourceBeccaa(msg) then
 local username = text:match("^الغاء العام @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 Reply_Status(msg,result.id_,"reply","܁༯┆تم الغاء حظره عام من المجموعات")  
-database:srem(bot_id.."Source-Becca:GBan:User", result.id_)
+database:srem(bot_id.."SourceBeccaa:GBan:User", result.id_)
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
-if text and text:match("^الغاء العام (%d+)$") and DevSource-Becca(msg) then
+if text and text:match("^الغاء العام (%d+)$") and DevSourceBeccaa(msg) then
 local userid = text:match("^الغاء العام (%d+)$")
-database:srem(bot_id.."Source-Becca:GBan:User", userid)
+database:srem(bot_id.."SourceBeccaa:GBan:User", userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم الغاء حظره عام من المجموعات")  
 return false
 end
 
-if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSource-Becca(msg) then
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:Sudo:User", result.sender_user_id_)
+if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSourceBeccaa(msg) then
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:Sudo:User", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته مطور في البوت")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false 
 end
-if text and text:match("^اضف مطور @(.*)$") and DevSource-Becca(msg) then
+if text and text:match("^اضف مطور @(.*)$") and DevSourceBeccaa(msg) then
 local username = text:match("^اضف مطور @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Sudo:User", result.id_)
+database:sadd(bot_id.."SourceBeccaa:Sudo:User", result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم ترقيته مطور في البوت")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false 
 end
-if text and text:match("^اضف مطور (%d+)$") and DevSource-Becca(msg) then
+if text and text:match("^اضف مطور (%d+)$") and DevSourceBeccaa(msg) then
 local userid = text:match("^اضف مطور (%d+)$")
-database:sadd(bot_id.."Source-Becca:Sudo:User", userid)
+database:sadd(bot_id.."SourceBeccaa:Sudo:User", userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته مطور في البوت")  
 return false 
 end
-if text == ("حذف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSource-Becca(msg) then
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Sudo:User", result.sender_user_id_)
+if text == ("حذف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and DevSourceBeccaa(msg) then
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Sudo:User", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من المطورين")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false 
 end
-if text and text:match("^حذف مطور @(.*)$") and DevSource-Becca(msg) then
+if text and text:match("^حذف مطور @(.*)$") and DevSourceBeccaa(msg) then
 local username = text:match("^حذف مطور @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Sudo:User", result.id_)
+database:srem(bot_id.."SourceBeccaa:Sudo:User", result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من المطورين")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end  
-if text and text:match("^حذف مطور (%d+)$") and DevSource-Becca(msg) then
+if text and text:match("^حذف مطور (%d+)$") and DevSourceBeccaa(msg) then
 local userid = text:match("^حذف مطور (%d+)$")
-database:srem(bot_id.."Source-Becca:Sudo:User", userid)
+database:srem(bot_id.."SourceBeccaa:Sudo:User", userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من المطورين")  
 return false 
 end
@@ -2772,11 +2772,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته منشئ اساسي")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع منشئ اساسي @(.*)$") and DevBot(msg) then  
@@ -2790,19 +2790,19 @@ end
 return false
 end
 local username = text:match("^رفع منشئ اساسي @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","??︙تم ترقيته منشئ اساسي")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and DevBot(msg) then  
@@ -2816,7 +2816,7 @@ end
 return false
 end
 local userid = text:match("^رفع منشئ اساسي (%d+)$") 
-database:sadd(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته منشئ اساسي")  
 return false
 end
@@ -2830,31 +2830,31 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من المنشئين")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
 local username = text:match("^تنزيل منشئ اساسي @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, result.id_)
 
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من المنشئين")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") and DevBot(msg) then  
@@ -2868,7 +2868,7 @@ end
 return false
 end
 local userid = text:match("^تنزيل منشئ اساسي (%d+)$") 
-database:srem(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من المنشئين")  
 return false
 end
@@ -2883,11 +2883,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته منشئ في المجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 end
 if text and text:match("^رفع منشئ @(.*)$") and BasicConstructor(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -2900,19 +2900,19 @@ end
 return false
 end
 local username = text:match("^رفع منشئ @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم ترقيته منشئ في المجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 end
 ------------------------------------------------------------------------
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then  
@@ -2926,15 +2926,15 @@ end
 return false
 end
 local userid = text:match("^رفع منشئ (%d+)$")
-database:sadd(bot_id.."Source-Becca:Constructor"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته منشئ في المجموعه")  
 end
 if text and text:match("^تنزيل منشئ$") and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من المنشئين")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ @(.*)$") and BasicConstructor(msg) then  
@@ -2948,15 +2948,15 @@ end
 return false
 end
 local username = text:match("^تنزيل منشئ @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من المنشئين")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ (%d+)$") and BasicConstructor(msg) then  
@@ -2970,7 +2970,7 @@ end
 return false
 end
 local userid = text:match("^تنزيل منشئ (%d+)$")
-database:srem(bot_id.."Source-Becca:Constructor"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من المنشئين")  
 end
 
@@ -2984,11 +2984,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته مدير المجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end  
 if text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then  
@@ -3002,31 +3002,31 @@ end
 return false
 end
 local username = text:match("^رفع مدير @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم ترقيته مدير المجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
 local userid = text:match("^رفع مدير (%d+)$") 
-database:sadd(bot_id.."Source-Becca:Manager"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته مدير المجموعه")  
 return false
 end  
@@ -3040,11 +3040,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من المدراء")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end  
 if text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then  
@@ -3058,15 +3058,15 @@ end
 return false
 end
 local username = text:match("^تنزيل مدير @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من المدراء")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end  
 if text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then  
@@ -3080,7 +3080,7 @@ end
 return false
 end
 local userid = text:match("^تنزيل مدير (%d+)$") 
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من المدراء")  
 return false
 end
@@ -3099,18 +3099,18 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته ادمن للمجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
 local username = text:match("^رفع ادمن @(.*)$")
@@ -3118,19 +3118,19 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم ترقيته ادمن للمجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then  
@@ -3148,22 +3148,22 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-database:sadd(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته ادمن للمجموعه")  
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من ادمنيه المجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then  
@@ -3177,46 +3177,46 @@ end
 return false
 end
 local username = text:match("^تنزيل ادمن @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من ادمنيه المجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
 local userid = text:match("^تنزيل ادمن (%d+)$")
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من ادمنيه المجموعه")  
 return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته مميز للمجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع مميز @(.*)$") and Addictive(msg) then  
@@ -3234,19 +3234,19 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم ترقيته مميز للمجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 
@@ -3265,7 +3265,7 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-database:sadd(bot_id.."Source-Becca:Special:User"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته مميز للمجموعه")  
 return false
 end
@@ -3280,11 +3280,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من المميزين")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل مميز @(.*)$") and Addictive(msg) then  
@@ -3298,15 +3298,15 @@ end
 return false
 end
 local username = text:match("^تنزيل مميز @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من المميزين")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل مميز (%d+)$") and Addictive(msg) then  
@@ -3320,7 +3320,7 @@ end
 return false
 end
 local userid = text:match("^تنزيل مميز (%d+)$") 
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من المميزين")  
 return false
 end  
@@ -3335,23 +3335,23 @@ end
 return false
 end
 local RTPA = text:match("رفع (.*)")
-if database:sismember(bot_id.."Source-Becca:Coomds"..msg.chat_id_,RTPA) then
+if database:sismember(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_,RTPA) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-local Source-Beccart = database:get(bot_id.."Source-Becca:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
-if Source-Beccart == "مميز" and Addictive(msg) then
+local SourceBeccaart = database:get(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
+if SourceBeccaart == "مميز" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم رفعه "..RTPA.." هنا\n")   
-database:set(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
-database:sadd(bot_id.."Source-Becca:Special:User"..msg.chat_id_,result.sender_user_id_)  
-elseif Source-Beccart == "ادمن" and Owner(msg) then 
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
+database:sadd(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_,result.sender_user_id_)  
+elseif SourceBeccaart == "ادمن" and Owner(msg) then 
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم رفعه "..RTPA.." هنا\n")   
-database:set(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
-database:sadd(bot_id.."Source-Becca:Mod:User"..msg.chat_id_,result.sender_user_id_)  
-elseif Source-Beccart == "مدير" and Constructor(msg) then
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_,result.sender_user_id_)  
+elseif SourceBeccaart == "مدير" and Constructor(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم رفعه "..RTPA.." هنا\n")   
-database:set(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
-database:sadd(bot_id.."Source-Becca:Manager"..msg.chat_id_,result.sender_user_id_)  
-elseif Source-Beccart == "عضو" and Addictive(msg) then
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
+database:sadd(bot_id.."SourceBeccaa:Manager"..msg.chat_id_,result.sender_user_id_)  
+elseif SourceBeccaart == "عضو" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم رفعه "..RTPA.." هنا\n")   
 end
 end,nil)   
@@ -3370,23 +3370,23 @@ end
 return false
 end
 local RTPA = text:match("تنزيل (.*)")
-if database:sismember(bot_id.."Source-Becca:Coomds"..msg.chat_id_,RTPA) then
+if database:sismember(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_,RTPA) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-local Source-Beccart = database:get(bot_id.."Source-Becca:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
-if Source-Beccart == "مميز" and Addictive(msg) then
+local SourceBeccaart = database:get(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
+if SourceBeccaart == "مميز" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم تنزيله من "..RTPA.." هنا\n")   
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_,result.sender_user_id_)  
-database:del(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
-elseif Source-Beccart == "ادمن" and Owner(msg) then 
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_,result.sender_user_id_)  
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
+elseif SourceBeccaart == "ادمن" and Owner(msg) then 
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم تنزيله من "..RTPA.." هنا\n")   
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_,result.sender_user_id_) 
-database:del(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
-elseif Source-Beccart == "مدير" and Constructor(msg) then
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_,result.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
+elseif SourceBeccaart == "مدير" and Constructor(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم تنزيله من "..RTPA.." هنا\n")   
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_,result.sender_user_id_)  
-database:del(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
-elseif Source-Beccart == "عضو" and Addictive(msg) then
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_,result.sender_user_id_)  
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
+elseif SourceBeccaart == "عضو" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n܁༯┆تم تنزيله من "..RTPA.." هنا\n")   
 end
 end,nil)   
@@ -3405,23 +3405,23 @@ end
 return false
 end
 local text1 = {string.match(text, "^(رفع) (.*) @(.*)$")}
-if database:sismember(bot_id.."Source-Becca:Coomds"..msg.chat_id_,text1[2]) then
+if database:sismember(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_,text1[2]) then
 function py_username(extra, result, success)   
 if result.id_ then
-local Source-Beccart = database:get(bot_id.."Source-Becca:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
-if Source-Beccart == "مميز" and Addictive(msg) then
+local SourceBeccaart = database:get(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
+if SourceBeccaart == "مميز" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم رفعه "..text1[2].." هنا")   
-database:sadd(bot_id.."Source-Becca:Special:User"..msg.chat_id_,result.id_)  
-database:set(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
-elseif Source-Beccart == "ادمن" and Owner(msg) then 
+database:sadd(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_,result.id_)  
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
+elseif SourceBeccaart == "ادمن" and Owner(msg) then 
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم رفعه "..text1[2].." هنا")   
-database:sadd(bot_id.."Source-Becca:Mod:User"..msg.chat_id_,result.id_)  
-database:set(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
-elseif Source-Beccart == "مدير" and Constructor(msg) then
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_,result.id_)  
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
+elseif SourceBeccaart == "مدير" and Constructor(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم رفعه "..text1[2].." هنا")   
-database:sadd(bot_id.."Source-Becca:Manager"..msg.chat_id_,result.id_)  
-database:set(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
-elseif Source-Beccart == "عضو" and Addictive(msg) then
+database:sadd(bot_id.."SourceBeccaa:Manager"..msg.chat_id_,result.id_)  
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
+elseif SourceBeccaart == "عضو" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم رفعه "..text1[2].." هنا")   
 end
 else
@@ -3443,23 +3443,23 @@ end
 return false
 end
 local text1 = {string.match(text, "^(تنزيل) (.*) @(.*)$")}
-if database:sismember(bot_id.."Source-Becca:Coomds"..msg.chat_id_,text1[2]) then
+if database:sismember(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_,text1[2]) then
 function py_username(extra, result, success)   
 if result.id_ then
-local Source-Beccart = database:get(bot_id.."Source-Becca:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
-if Source-Beccart == "مميز" and Addictive(msg) then
+local SourceBeccaart = database:get(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
+if SourceBeccaart == "مميز" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم تنريله من "..text1[2].." هنا")   
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_,result.id_)  
-database:del(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.id_)
-elseif Source-Beccart == "ادمن" and Owner(msg) then 
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_,result.id_)  
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.id_)
+elseif SourceBeccaart == "ادمن" and Owner(msg) then 
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم تنريله من "..text1[2].." هنا")   
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_,result.id_)  
-database:del(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.id_)
-elseif Source-Beccart == "مدير" and Constructor(msg) then
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_,result.id_)  
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.id_)
+elseif SourceBeccaart == "مدير" and Constructor(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم تنريله من "..text1[2].." هنا")   
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_,result.id_)  
-database:del(bot_id.."Source-Becca:Comd:New:rt:User:"..msg.chat_id_..result.id_)
-elseif Source-Beccart == "عضو" and Addictive(msg) then
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_,result.id_)  
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:User:"..msg.chat_id_..result.id_)
+elseif SourceBeccaart == "عضو" and Addictive(msg) then
 send(msg.chat_id_, msg.id_,"\n܁༯┆العضو » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n܁༯┆تم تنريله من "..text1[2].." هنا")   
 end
 else
@@ -3485,7 +3485,7 @@ if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) th
 send(msg.chat_id_, msg.id_,'܁༯┆لقد تم تعطيل الحظر و الطرد من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.sender_user_id_ == tonumber(997081948) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
@@ -3506,13 +3506,13 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
-database:sadd(bot_id.."Source-Becca:Ban:User"..msg.chat_id_, result.sender_user_id_)
+database:sadd(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_, result.sender_user_id_)
 Kick_Group(result.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم حظره من المجموعه")  
 end,nil)   
 end
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text == "هينه" or text == "هينها" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
@@ -3553,7 +3553,7 @@ if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) th
 send(msg.chat_id_, msg.id_,'܁༯┆لقد تم تعطيل الحظر و الطرد من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if result.id_ == tonumber(665877797) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
@@ -3583,7 +3583,7 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
-database:sadd(bot_id.."Source-Becca:Ban:User"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_, result.id_)
 Kick_Group(msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم حظره من المجموعه")  
 end,nil)   
@@ -3592,7 +3592,7 @@ else
 send(msg.chat_id_, msg.id_, "܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 
@@ -3635,7 +3635,7 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
-database:sadd(bot_id.."Source-Becca:Ban:User"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_, userid)
 Kick_Group(msg.chat_id_, userid)  
 Reply_Status(msg,userid,"reply","܁༯┆تم حظره من المجموعه")  
 end,nil)   
@@ -3652,16 +3652,16 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "⌔️︙انا لست محظورا \n") 
 return false 
 end
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.sender_user_id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم الغاء حظره من هنا")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
  
@@ -3676,20 +3676,20 @@ end
 return false
 end
 local username = text:match("^الغاء حظر @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if tonumber(result.id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "⌔️︙انا لست محظورا \n") 
 return false 
 end
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_, result.id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
 Reply_Status(msg,result.id_,"reply","܁༯┆تم الغاء حظره من هنا")  
 else
 send(msg.chat_id_, msg.id_, "܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 
@@ -3708,7 +3708,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "⌔️︙انا لست محظورا \n") 
 return false 
 end
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_, userid)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = userid, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
 Reply_Status(msg,userid,"reply","܁༯┆تم الغاء حظره من هنا")  
 return false
@@ -3724,7 +3724,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.sender_user_id_ == tonumber(997081948) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
@@ -3745,10 +3745,10 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_, result.sender_user_id_)
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم كتمه من هنا")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^كتم @(.*)$") and Addictive(msg) then  
@@ -3766,7 +3766,7 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if result.id_ == tonumber(997081948) then
 send(msg.chat_id_, msg.id_, "܁༯┆لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
@@ -3780,13 +3780,13 @@ if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم كتمه من هنا")  
 else
 send(msg.chat_id_, msg.id_, "܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^كتم (%d+)$") and Addictive(msg) then  
@@ -3811,7 +3811,7 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
-database:sadd(bot_id.."Source-Becca:Muted:User"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم كتمه من هنا")  
 end
 return false
@@ -3826,24 +3826,24 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم الغاء كتمه من هنا")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^الغاء كتم @(.*)$") and Addictive(msg) then
 local username = text:match("^الغاء كتم @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم الغاء كتمه من هنا")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 
@@ -3858,15 +3858,15 @@ end
 return false
 end
 local userid = text:match("^الغاء كتم (%d+)$") 
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم الغاء كتمه من هنا")  
 return false
 end
 if text == 'قفل الفارسيه' and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id..'Source-Becca:Source-Becca:lock:Fshar'..msg.chat_id_,true) 
+database:set(bot_id..'SourceBeccaa:SourceBeccaa:lock:Fshar'..msg.chat_id_,true) 
 Reply_Status(msg,msg.sender_user_id_,"lock","܁༯┆تم قفـل الفارسيه")  
 end
-if text and database:get(bot_id..'Source-Becca:lock:Fshar'..msg.chat_id_) and not Addictive(msg) then 
+if text and database:get(bot_id..'SourceBeccaa:lock:Fshar'..msg.chat_id_) and not Addictive(msg) then 
 list = {"كس","كسمك","كسختك","عير","كسخالتك","خرا بالله","عير بالله","كسخواتكم","كحاب","مناويج","مناويج","كحبه","ابن الكحبه","فرخ","فروخ","طيزك","طيزختك"}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
@@ -3876,14 +3876,14 @@ end
 end
 end
 if text == 'فتح الفارسيه' and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id..'Source-Becca:Source-Becca:lock:Fshar'..msg.chat_id_) 
+database:del(bot_id..'SourceBeccaa:SourceBeccaa:lock:Fshar'..msg.chat_id_) 
 Reply_Status(msg,msg.sender_user_id_,"lock","܁༯┆ تـم فـتح الفارسيه\n")  
 end
 if text == 'قفل الفشار' and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id..'Source-Becca:lock:Fshar'..msg.chat_id_,true) 
+database:set(bot_id..'SourceBeccaa:lock:Fshar'..msg.chat_id_,true) 
 Reply_Status(msg,msg.sender_user_id_,"lock","܁༯┆تم قفـل الفشار")  
 end
-if text and database:get(bot_id..'Source-Becca:Source-Becca:lock:Fshar'..msg.chat_id_) and not Addictive(msg) then 
+if text and database:get(bot_id..'SourceBeccaa:SourceBeccaa:lock:Fshar'..msg.chat_id_) and not Addictive(msg) then 
 list = {"ڄ","که","پی","خسته","برم","راحتی","بیام","بپوشم","كرمه","چه","چ","ڬ","ٺ","چ","ڇ","ڿ","ڀ","ڎ","ݫ","ژ","ڟ","ݜ","ڸ","پ","۴","زدن","دخترا","دیوث","مک","زدن"}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
@@ -3893,7 +3893,7 @@ end
 end
 end
 if text == 'فتح الفشار' and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id..'Source-Becca:lock:Fshar'..msg.chat_id_) 
+database:del(bot_id..'SourceBeccaa:lock:Fshar'..msg.chat_id_) 
 Reply_Status(msg,msg.sender_user_id_,"lock","܁༯┆ تـم فـتح الفشار\n")  
 end
 if text == ("تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
@@ -3906,7 +3906,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, "\n܁༯┆عذرا لا تستطيع طرد او حظر او كتم او تقييد ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
 else
@@ -3914,7 +3914,7 @@ https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_i
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تقييده في المجموعه")  
 end
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 ------------------------------------------------------------------------
@@ -3929,7 +3929,7 @@ end
 return false
 end
 local username = text:match("^تقيد @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
@@ -3945,7 +3945,7 @@ else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 ------------------------------------------------------------------------
@@ -3979,11 +3979,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.sender_user_id_ .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم الغاء تقييده")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 ------------------------------------------------------------------------
@@ -3998,7 +3998,7 @@ end
 return false
 end
 local username = text:match("^الغاء تقيد @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.id_ .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 Reply_Status(msg,result.id_,"reply","܁༯┆تم الغاء تقييده")  
@@ -4006,7 +4006,7 @@ else
 send(msg.chat_id_, msg.id_, "܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 ------------------------------------------------------------------------
@@ -4039,7 +4039,7 @@ if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) th
 send(msg.chat_id_, msg.id_,'܁༯┆لقد تم تعطيل الحظر و الطرد من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) == true then
 send(msg.chat_id_, msg.id_, "\n܁༯┆عذرا لا تستطيع طرد او حظر او كتم او تقييد ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
 else
@@ -4057,7 +4057,7 @@ Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم طرده من هن
 end,nil)
 end
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end  
 if text and text:match("^طرد @(.*)$") and Addictive(msg) then  
@@ -4075,7 +4075,7 @@ if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) th
 send(msg.chat_id_, msg.id_,'܁༯┆لقد تم تعطيل الحظر و الطرد من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if Rank_Checking(result.id_, msg.chat_id_) == true then
 send(msg.chat_id_, msg.id_, "\n܁༯┆عذرا لا تستطيع طرد او حظر او كتم او تقييد ( "..Get_Rank(result.id_,msg.chat_id_).." )")
@@ -4101,7 +4101,7 @@ else
 send(msg.chat_id_, msg.id_, "܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end  
 
@@ -4213,7 +4213,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆لا يمكنني تعديل  او وضع ل
 return false  
 end
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n܁༯┆ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Source-Becca')..') '
+usertext = '\n܁༯┆ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'SourceBeccaa')..') '
 status  = '\n܁༯┆ الايدي » '..result.sender_user_id_..'\n܁༯┆تم ضافه {'..timsh..'} كلقب له'
 send(msg.chat_id_, msg.id_, usertext..status)
 https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=True&can_restrict_members=false&can_pin_messages=True&can_promote_members=false")
@@ -4280,14 +4280,14 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-if database:sismember(bot_id.."Source-Becca:Lock:pin",msg.chat_id_) and not Constructor(msg) then
+if database:sismember(bot_id.."SourceBeccaa:Lock:pin",msg.chat_id_) and not Constructor(msg) then
 send(msg.chat_id_,msg.id_,"܁༯┆التثبيت والغاء التثبيت تم قفله من قبل المنشئين")  
 return false  
 end
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",""),message_id_ = msg.reply_to_message_id_,disable_notification_ = 1},function(arg,data) 
 if data.ID == "Ok" then
 send(msg.chat_id_, msg.id_,"܁༯┆تم تثبيت الرساله")   
-database:set(bot_id.."Source-Becca:Pin:Id:Msg"..msg.chat_id_,msg.reply_to_message_id_)
+database:set(bot_id.."SourceBeccaa:Pin:Id:Msg"..msg.chat_id_,msg.reply_to_message_id_)
 elseif data.code_ == 6 then
 send(msg.chat_id_,msg.id_,"܁༯┆انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
 elseif data.message_ == "CHAT_ADMIN_REQUIRED" then
@@ -4305,14 +4305,14 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-if database:sismember(bot_id.."Source-Becca:Lock:pin",msg.chat_id_) and not Constructor(msg) then
+if database:sismember(bot_id.."SourceBeccaa:Lock:pin",msg.chat_id_) and not Constructor(msg) then
 send(msg.chat_id_,msg.id_,"܁༯┆التثبيت والغاء التثبيت تم قفله من قبل المنشئين")  
 return false  
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء تثبيت الرساله")   
-database:del(bot_id.."Source-Becca:Pin:Id:Msg"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Pin:Id:Msg"..msg.chat_id_)
 elseif data.code_ == 6 then
 send(msg.chat_id_,msg.id_,"܁༯┆انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
 elseif data.message_ == "CHAT_ADMIN_REQUIRED" then
@@ -4330,7 +4330,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-if database:sismember(bot_id.."Source-Becca:Lock:pin",msg.chat_id_) and not Constructor(msg) then
+if database:sismember(bot_id.."SourceBeccaa:Lock:pin",msg.chat_id_) and not Constructor(msg) then
 send(msg.chat_id_,msg.id_,"܁༯┆التثبيت والغاء التثبيت تم قفله من قبل المنشئين")  
 return false  
 end
@@ -4338,7 +4338,7 @@ tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",
 if data.ID == "Ok" then
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء تثبيت الكل")   
 https.request('https://api.telegram.org/bot'..token..'/unpinAllChatMessages?chat_id='..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Pin:Id:Msg"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Pin:Id:Msg"..msg.chat_id_)
 elseif data.code_ == 6 then
 send(msg.chat_id_,msg.id_,"܁༯┆انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
 elseif data.message_ == "CHAT_ADMIN_REQUIRED" then
@@ -4348,12 +4348,12 @@ end,nil)
 end
 if text and text:match("^وضع تكرار (%d+)$") and Addictive(msg) then   
 local Num = text:match("وضع تكرار (.*)")
-database:hset(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"floodmax" ,Num) 
+database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"floodmax" ,Num) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم وضع عدد التكرار ("..Num..")")  
 end 
 if text and text:match("^وضع زمن التكرار (%d+)$") and Addictive(msg) then   
 local Num = text:match("^وضع زمن التكرار (%d+)$")
-database:hset(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_ ,"floodtime" ,Num) 
+database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"floodtime" ,Num) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم وضع زمن التكرار ("..Num..")") 
 end
 if text == "ضع رابط" or text == "وضع رابط" then
@@ -4368,7 +4368,7 @@ return false
 end
 if msg.reply_to_message_id_ == 0  and Addictive(msg) then  
 send(msg.chat_id_,msg.id_,"܁༯┆ارسل رابط المجموعه او رابط قناة المجموعه")
-database:setex(bot_id.."Source-Becca:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_,120,true) 
+database:setex(bot_id.."SourceBeccaa:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_,120,true) 
 return false
 end
 end
@@ -4383,7 +4383,7 @@ end
 return false
 end
 if Addictive(msg) then  
-database:set(bot_id.."Source-Becca:Link_Group"..msg.chat_id_,true) 
+database:set(bot_id.."SourceBeccaa:Link_Group"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم تفعيل جلب الرابط المجموعه") 
 return false  
 end
@@ -4399,7 +4399,7 @@ end
 return false
 end
 if Addictive(msg) then  
-database:del(bot_id.."Source-Becca:Link_Group"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Link_Group"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم تعطيل جلب رابط المجموعه") 
 return false end
 end
@@ -4413,12 +4413,12 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local status_Link = database:get(bot_id.."Source-Becca:Link_Group"..msg.chat_id_)
+local status_Link = database:get(bot_id.."SourceBeccaa:Link_Group"..msg.chat_id_)
 if not status_Link then
 send(msg.chat_id_, msg.id_,"܁༯┆جلب الرابط معطل") 
 return false  
 end
-local link = database:get(bot_id.."Source-Becca:Private:Group:Link"..msg.chat_id_)            
+local link = database:get(bot_id.."SourceBeccaa:Private:Group:Link"..msg.chat_id_)            
 if link then                              
 send(msg.chat_id_,msg.id_,"܁༯┆LinK GrOup : \n ["..link.."]")                          
 else                
@@ -4437,22 +4437,22 @@ return false
 end
 if Addictive(msg) then     
 send(msg.chat_id_,msg.id_,"܁༯┆تم مسح الرابط ")           
-database:del(bot_id.."Source-Becca:Private:Group:Link"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Private:Group:Link"..msg.chat_id_) 
 return false      
 end
 return false  
 end
 if (msg.content_.animation_) or (msg.content_.photo_) or (msg.content_.video_) or (msg.content_.document) or (msg.content_.sticker_) or (msg.content_.voice_) or (msg.content_.audio_) and msg.reply_to_message_id_ == 0 then      
-database:sadd(bot_id.."Source-Becca:allM"..msg.chat_id_, msg.id_)
+database:sadd(bot_id.."SourceBeccaa:allM"..msg.chat_id_, msg.id_)
 end
 if text == ("امسح") and cleaner(msg) then  
-local list = database:smembers(bot_id.."Source-Becca:allM"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:allM"..msg.chat_id_)
 for k,v in pairs(list) do
 local Message = v
 if Message then
 t = "܁༯┆تم مسح "..k.." من الوسائط الموجوده"
 DeleteMessage(msg.chat_id_,{[0]=Message})
-database:del(bot_id.."Source-Becca:allM"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:allM"..msg.chat_id_)
 end
 end
 if #list == 0 then
@@ -4461,7 +4461,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == ("عدد الميديا") and cleaner(msg) then  
-local num = database:smembers(bot_id.."Source-Becca:allM"..msg.chat_id_)
+local num = database:smembers(bot_id.."SourceBeccaa:allM"..msg.chat_id_)
 for k,v in pairs(num) do
 local numl = v
 if numl then
@@ -4483,7 +4483,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_,true) 
+database:set(bot_id.."SourceBeccaa:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_,true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي الصوره") 
 return false
 end
@@ -4514,7 +4514,7 @@ end
 return false
 end
 if Addictive(msg) then
-database:setex(bot_id.."Source-Becca:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
+database:setex(bot_id.."SourceBeccaa:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الان الوصف")
 end
 return false  
@@ -4530,7 +4530,7 @@ end
 return false
 end
 if Addictive(msg) then
-database:setex(bot_id.."Source-Becca:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
+database:setex(bot_id.."SourceBeccaa:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 t  = "܁༯┆ارسل لي الترحيب الان"
 tt = "\n܁༯┆تستطيع اضافة مايلي !\n܁༯┆دالة عرض الاسم »{`name`}\n܁༯┆دالة عرض المعرف »{`user`}"
 send(msg.chat_id_, msg.id_,t..tt) 
@@ -4547,8 +4547,8 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-if database:get(bot_id.."Source-Becca:Get:Welcome:Group"..msg.chat_id_)   then 
-Welcome = database:get(bot_id.."Source-Becca:Get:Welcome:Group"..msg.chat_id_)  
+if database:get(bot_id.."SourceBeccaa:Get:Welcome:Group"..msg.chat_id_)   then 
+Welcome = database:get(bot_id.."SourceBeccaa:Get:Welcome:Group"..msg.chat_id_)  
 else 
 Welcome = "܁༯┆لم يتم تعيين ترحيب للمجموعه"
 end 
@@ -4565,7 +4565,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Chek:Welcome"..msg.chat_id_,true) 
+database:set(bot_id.."SourceBeccaa:Chek:Welcome"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم تفعيل ترحيب المجموعه") 
 return false  
 end
@@ -4579,7 +4579,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Chek:Welcome"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Chek:Welcome"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم تعطيل ترحيب المجموعه") 
 return false  
 end
@@ -4594,7 +4594,7 @@ end
 return false
 end
 if Addictive(msg) then
-database:del(bot_id.."Source-Becca:Get:Welcome:Group"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Get:Welcome:Group"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم ازالة ترحيب المجموعه") 
 end
 return false  
@@ -4610,11 +4610,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:List:Filter"..msg.chat_id_)  
+local list = database:smembers(bot_id.."SourceBeccaa:List:Filter"..msg.chat_id_)  
 for k,v in pairs(list) do  
-database:del(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
-database:del(bot_id.."Source-Becca:Add:Filter:Rp2"..v..msg.chat_id_)  
-database:srem(bot_id.."Source-Becca:List:Filter"..msg.chat_id_,v)  
+database:del(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Add:Filter:Rp2"..v..msg.chat_id_)  
+database:srem(bot_id.."SourceBeccaa:List:Filter"..msg.chat_id_,v)  
 end  
 send(msg.chat_id_, msg.id_,"܁༯┆تم مسح قائمه المنع")  
 end
@@ -4629,11 +4629,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:List:Filter"..msg.chat_id_)  
+local list = database:smembers(bot_id.."SourceBeccaa:List:Filter"..msg.chat_id_)  
 t = "\n܁༯┆قائمة المنع \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do  
-local Source-Becca_Msg = database:get(bot_id.."Source-Becca:Add:Filter:Rp2"..v..msg.chat_id_)   
-t = t..""..k.."- "..v.." » {"..Source-Becca_Msg.."}\n"    
+local SourceBeccaa_Msg = database:get(bot_id.."SourceBeccaa:Add:Filter:Rp2"..v..msg.chat_id_)   
+t = t..""..k.."- "..v.." » {"..SourceBeccaa_Msg.."}\n"    
 end  
 if #list == 0 then  
 t = "܁༯┆لا يوجد كلمات ممنوعه"  
@@ -4642,28 +4642,28 @@ send(msg.chat_id_, msg.id_,t)
 end  
 if text and text == "منع" and msg.reply_to_message_id_ == 0 and Addictive(msg) then       
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الكلمه لمنعها")  
-database:set(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"rep")  
+database:set(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"rep")  
 return false  
 end    
 if text then   
-local tsssst = database:get(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
+local tsssst = database:get(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 if tsssst == "rep" then   
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل التحذير عند ارسال الكلمه")  
-database:set(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"repp")  
-database:set(bot_id.."Source-Becca:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_, text)  
-database:sadd(bot_id.."Source-Becca:List:Filter"..msg.chat_id_,text)  
+database:set(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"repp")  
+database:set(bot_id.."SourceBeccaa:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_, text)  
+database:sadd(bot_id.."SourceBeccaa:List:Filter"..msg.chat_id_,text)  
 return false  end  
 end
 if text then  
-local test = database:get(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
+local test = database:get(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 if test == "repp" then  
 send(msg.chat_id_, msg.id_,"܁༯┆تم منع الكلمه مع التحذير")  
-database:del(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
-local test = database:get(bot_id.."Source-Becca:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
+local test = database:get(bot_id.."SourceBeccaa:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_)  
 if text then   
-database:set(bot_id.."Source-Becca:Add:Filter:Rp2"..test..msg.chat_id_, text)  
+database:set(bot_id.."SourceBeccaa:Add:Filter:Rp2"..test..msg.chat_id_, text)  
 end  
-database:del(bot_id.."Source-Becca:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_)  
 return false  end  
 end
 
@@ -4678,15 +4678,15 @@ end
 return false
 end
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الكلمه الان")  
-database:set(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"reppp")  
+database:set(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"reppp")  
 return false  end
 if text then 
-local test = database:get(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
+local test = database:get(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 if test and test == "reppp" then   
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء منعها ")  
-database:del(bot_id.."Source-Becca:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
-database:del(bot_id.."Source-Becca:Add:Filter:Rp2"..text..msg.chat_id_)  
-database:srem(bot_id.."Source-Becca:List:Filter"..msg.chat_id_,text)  
+database:del(bot_id.."SourceBeccaa:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Add:Filter:Rp2"..text..msg.chat_id_)  
+database:srem(bot_id.."SourceBeccaa:List:Filter"..msg.chat_id_,text)  
 return false  end  
 end
 
@@ -4761,15 +4761,15 @@ end
 end,nil)
 end
 
-if database:get(bot_id.."Source-Becca:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" then 
 send(msg.chat_id_, msg.id_, "܁༯┆تم الغاء حفظ القوانين") 
-database:del(bot_id.."Source-Becca:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
+database:del(bot_id.."SourceBeccaa:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 return false  
 end 
-database:set(bot_id.."Source-Becca:Set:Rules:Group" .. msg.chat_id_,text) 
+database:set(bot_id.."SourceBeccaa:Set:Rules:Group" .. msg.chat_id_,text) 
 send(msg.chat_id_, msg.id_,"܁༯┆تم حفظ قوانين المجموعه") 
-database:del(bot_id.."Source-Becca:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
+database:del(bot_id.."SourceBeccaa:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end  
 
 if text == "ضع قوانين" or text == "وضع قوانين" then 
@@ -4783,7 +4783,7 @@ end
 return false
 end
 if Addictive(msg) then
-database:setex(bot_id.."Source-Becca:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_,msg.id_,"܁༯┆ارسل لي القوانين الان")  
 end
 end
@@ -4799,7 +4799,7 @@ return false
 end
 if Addictive(msg) then
 send(msg.chat_id_, msg.id_,"܁༯┆تم ازالة قوانين المجموعه")  
-database:del(bot_id.."Source-Becca:Set:Rules:Group"..msg.chat_id_) 
+database:del(bot_id.."SourceBeccaa:Set:Rules:Group"..msg.chat_id_) 
 end
 end
 if text == "القوانين" then 
@@ -4812,7 +4812,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local Set_Rules = database:get(bot_id.."Source-Becca:Set:Rules:Group" .. msg.chat_id_)   
+local Set_Rules = database:get(bot_id.."SourceBeccaa:Set:Rules:Group" .. msg.chat_id_)   
 if Set_Rules then     
 send(msg.chat_id_,msg.id_, Set_Rules)   
 else      
@@ -4830,10 +4830,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:List:Cmd:Group:New"..msg.chat_id_.."")
+local list = database:smembers(bot_id.."SourceBeccaa:List:Cmd:Group:New"..msg.chat_id_.."")
 t = "܁༯┆قائمه الاوامر المضافه  \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-Cmds = database:get(bot_id.."Source-Becca:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
+Cmds = database:get(bot_id.."SourceBeccaa:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
 t = t..""..k.."- ("..v..") ~ {"..Cmds.."}\n"
 else
@@ -4856,10 +4856,10 @@ end
 return false
 end
 if Constructor(msg) then 
-local list = database:smembers(bot_id.."Source-Becca:List:Cmd:Group:New"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:List:Cmd:Group:New"..msg.chat_id_)
 for k,v in pairs(list) do
-database:del(bot_id.."Source-Becca:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
-database:del(bot_id.."Source-Becca:List:Cmd:Group:New"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
+database:del(bot_id.."SourceBeccaa:List:Cmd:Group:New"..msg.chat_id_)
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تم مسح جميع الاوامر التي تم اضافتها")  
 end
@@ -4874,7 +4874,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
+database:set(bot_id.."SourceBeccaa:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
 send(msg.chat_id_, msg.id_,"܁༯┆الان ارسل لي الامر القديم ..")  
 return false
 end
@@ -4889,7 +4889,7 @@ end
 return false
 end
 if Constructor(msg) then
-database:set(bot_id.."Source-Becca:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
+database:set(bot_id.."SourceBeccaa:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الامر الذي قم بوضعه بدلا عن القديم")  
 return false
 end
@@ -4908,11 +4908,11 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:sadd(bot_id.."Source-Becca:MN:TF"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:sadd(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم ترقيته منظف للمجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع منظف @(.*)$") and BasicConstructor(msg) then  
@@ -4926,19 +4926,19 @@ end
 return false
 end
 local username = text:match("^رفع منظف @(.*)$")
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"܁༯┆عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-database:sadd(bot_id.."Source-Becca:MN:TF"..msg.chat_id_, result.id_)
+database:sadd(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم ترقيته منظف للمجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^رفع منظف (%d+)$") and BasicConstructor(msg) then  
@@ -4956,7 +4956,7 @@ if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_i
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
 end
-database:sadd(bot_id.."Source-Becca:MN:TF"..msg.chat_id_, userid)
+database:sadd(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم ترقيته منظف للمجموعه")  
 return false
 end
@@ -4970,11 +4970,11 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-database:srem(bot_id.."Source-Becca:MN:TF"..msg.chat_id_, result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+database:srem(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","܁༯┆تم تنزيله من منظفيه المجموعه")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل منظف @(.*)$") and BasicConstructor(msg) then  
@@ -4988,15 +4988,15 @@ end
 return false
 end
 local username = text:match("^تنزيل منظف @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-database:srem(bot_id.."Source-Becca:MN:TF"..msg.chat_id_, result.id_)
+database:srem(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_, result.id_)
 Reply_Status(msg,result.id_,"reply","܁༯┆تم تنزيله من منظفيه المجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text and text:match("^تنزيل منظف (%d+)$") and BasicConstructor(msg) then  
@@ -5010,7 +5010,7 @@ end
 return false
 end
 local userid = text:match("^تنزيل منظف (%d+)$")
-database:srem(bot_id.."Source-Becca:MN:TF"..msg.chat_id_, userid)
+database:srem(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","܁༯┆تم تنزيله من منظفيه المجموعه")  
 return false
 end
@@ -5025,14 +5025,14 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:Coomds"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_)
 if #list == 0 then
 send(msg.chat_id_, msg.id_,"܁༯┆لا توجد صلاحيات مضافه")
 return false
 end
 t = "\n܁༯┆قائمة الصلاحيات المضافه \n━━━━━━━━━━━━━\n"
 for k,v in pairs(list) do
-var = database:get(bot_id.."Source-Becca:Comd:New:rt:bot:"..v..msg.chat_id_)
+var = database:get(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
 t = t..""..k.."- "..v.." ~ ("..var..")\n"
 else
@@ -5051,7 +5051,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:MN:TF"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "🗑︙ تم مسح  قائمة المنظفين  ")
 end
 if text == ("المنظفين") and Owner(msg) then  
@@ -5064,10 +5064,10 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-local list = database:smembers(bot_id.."Source-Becca:MN:TF"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:MN:TF"..msg.chat_id_)
 t = "\n܁༯┆قائمة المنظفين \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -5080,10 +5080,10 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == "مسح الصلاحيات" then
-local list = database:smembers(bot_id.."Source-Becca:Coomds"..msg.chat_id_)
+local list = database:smembers(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_)
 for k,v in pairs(list) do
-database:del(bot_id.."Source-Becca:Comd:New:rt:bot:"..v..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Coomds"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..v..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_)
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تم مسح الصلاحيات")
 end
@@ -5098,9 +5098,9 @@ end
 return false
 end
 ComdNew = text:match("^اضف صلاحيه (.*)$")
-database:set(bot_id.."Source-Becca:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_,ComdNew)  
-database:sadd(bot_id.."Source-Becca:Coomds"..msg.chat_id_,ComdNew)  
-database:setex(bot_id.."Source-Becca:Comd:New"..msg.chat_id_..""..msg.sender_user_id_,200,true)  
+database:set(bot_id.."SourceBeccaa:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_,ComdNew)  
+database:sadd(bot_id.."SourceBeccaa:Coomds"..msg.chat_id_,ComdNew)  
+database:setex(bot_id.."SourceBeccaa:Comd:New"..msg.chat_id_..""..msg.sender_user_id_,200,true)  
 send(msg.chat_id_, msg.id_, "܁༯┆ارسل نوع الصلاحيه ⌔\n܁༯┆(عضو ~ مميز  ~ ادمن  ~ مدير )") 
 end
 if text and text:match("^مسح صلاحيه (.*)$") and Addictive(msg) or text and text:match("^حذف صلاحيه (.*)$") and Addictive(msg) then 
@@ -5114,13 +5114,13 @@ end
 return false
 end
 ComdNew = text:match("^مسح صلاحيه (.*)$") or text:match("^حذف صلاحيه (.*)$")
-database:del(bot_id.."Source-Becca:Comd:New:rt:bot:"..ComdNew..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..ComdNew..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "܁༯┆تم مسح الصلاحيه ") 
 end
-if database:get(bot_id.."Source-Becca:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء الامر ") 
-database:del(bot_id.."Source-Becca:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
 if text == "مدير" then
@@ -5142,85 +5142,85 @@ return false
 end
 end
 if text == "مدير" or text == "ادمن" or text == "مميز" or text == "عضو" then
-local textn = database:get(bot_id.."Source-Becca:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_)  
-database:set(bot_id.."Source-Becca:Comd:New:rt:bot:"..textn..msg.chat_id_,text)
+local textn = database:get(bot_id.."SourceBeccaa:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_)  
+database:set(bot_id.."SourceBeccaa:Comd:New:rt:bot:"..textn..msg.chat_id_,text)
 send(msg.chat_id_, msg.id_, "܁༯┆تم اضافة صلاحية ") 
-database:del(bot_id.."Source-Becca:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
 end
 
 if text and text:match("^تغير رد المطور (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
-database:set(bot_id.."Source-Becca:Sudo:Rd"..msg.chat_id_,Teext)
+database:set(bot_id.."SourceBeccaa:Sudo:Rd"..msg.chat_id_,Teext)
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد المطور الى » "..Teext)
 end
 if text and text:match("^تغير رد المنشئ الاساسي (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد المنشئ الاساسي (.*)$") 
-database:set(bot_id.."Source-Becca:BasicConstructor:Rd"..msg.chat_id_,Teext)
+database:set(bot_id.."SourceBeccaa:BasicConstructor:Rd"..msg.chat_id_,Teext)
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد المنشئ الاساسي الى » "..Teext)
 end
 if text and text:match("^تغير رد المنشئ (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد المنشئ (.*)$") 
-database:set(bot_id.."Source-Becca:Constructor:Rd"..msg.chat_id_,Teext)
+database:set(bot_id.."SourceBeccaa:Constructor:Rd"..msg.chat_id_,Teext)
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد المنشئ الى » "..Teext)
 end
 if text and text:match("^تغير رد المدير (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد المدير (.*)$") 
-database:set(bot_id.."Source-Becca:Manager:Rd"..msg.chat_id_,Teext) 
+database:set(bot_id.."SourceBeccaa:Manager:Rd"..msg.chat_id_,Teext) 
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد المدير الى » "..Teext)
 end
 if text and text:match("^تغير رد الادمن (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد الادمن (.*)$") 
-database:set(bot_id.."Source-Becca:Mod:Rd"..msg.chat_id_,Teext)
+database:set(bot_id.."SourceBeccaa:Mod:Rd"..msg.chat_id_,Teext)
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد الادمن الى » "..Teext)
 end
 if text and text:match("^تغير رد المميز (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد المميز (.*)$") 
-database:set(bot_id.."Source-Becca:Special:Rd"..msg.chat_id_,Teext)
+database:set(bot_id.."SourceBeccaa:Special:Rd"..msg.chat_id_,Teext)
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد المميز الى » "..Teext)
 end
 if text and text:match("^تغير رد العضو (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد العضو (.*)$") 
-database:set(bot_id.."Source-Becca:Memp:Rd"..msg.chat_id_,Teext)
+database:set(bot_id.."SourceBeccaa:Memp:Rd"..msg.chat_id_,Teext)
 send(msg.chat_id_, msg.id_,"܁༯┆ تم تغير رد العضو الى » "..Teext)
 end
 
 
 if text == ("مسح ردود المدير") and BasicConstructor(msg) then
-local list = database:smembers(bot_id.."Source-Becca:List:Manager"..msg.chat_id_.."")
+local list = database:smembers(bot_id.."SourceBeccaa:List:Manager"..msg.chat_id_.."")
 for k,v in pairs(list) do
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Gif"..v..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Vico"..v..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Stekrs"..v..msg.chat_id_)     
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Text"..v..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Photo"..v..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Video"..v..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:File"..v..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Audio"..v..msg.chat_id_)
-database:del(bot_id.."Source-Becca:List:Manager"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Gif"..v..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Vico"..v..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Stekrs"..v..msg.chat_id_)     
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Text"..v..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Photo"..v..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Video"..v..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:File"..v..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Audio"..v..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:List:Manager"..msg.chat_id_)
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تم مسح ردود المدير")
 end
 if text == ("ردود المدير") and Owner(msg) then
-local list = database:smembers(bot_id.."Source-Becca:List:Manager"..msg.chat_id_.."")
+local list = database:smembers(bot_id.."SourceBeccaa:List:Manager"..msg.chat_id_.."")
 text = "܁༯┆قائمه ردود المدير \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(list) do
-if database:get(bot_id.."Source-Becca:Add:Rd:Manager:Gif"..v..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = "متحركه 🎭"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
 db = "بصمه 📢"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
 db = "ملصق ⌔"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:Text"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Text"..v..msg.chat_id_) then
 db = "رساله ✉"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:Photo"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Photo"..v..msg.chat_id_) then
 db = "صوره ⌔"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:Video"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Video"..v..msg.chat_id_) then
 db = "فيديو 📹"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:File"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:File"..v..msg.chat_id_) then
 db = "ملف ⌔"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Manager:Audio"..v..msg.chat_id_) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Audio"..v..msg.chat_id_) then
 db = "اغنيه 🎵"
 end
 text = text..""..k..">> ("..v..") » {"..db.."}\n"
@@ -5231,33 +5231,33 @@ end
 send(msg.chat_id_, msg.id_,"["..text.."]")
 end
 if text or msg.content_.sticker_ or msg.content_.voice_ or msg.content_.animation_ or msg.content_.audio_ or msg.content_.document_ or msg.content_.photo_ or msg.content_.video_ then  
-local test = database:get(bot_id.."Source-Becca:Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_.."")
-if database:get(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true1" then
-database:del(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_)
+local test = database:get(bot_id.."SourceBeccaa:Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_.."")
+if database:get(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true1" then
+database:del(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_)
 if msg.content_.sticker_ then   
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Stekrs"..test..msg.chat_id_, msg.content_.sticker_.sticker_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Stekrs"..test..msg.chat_id_, msg.content_.sticker_.sticker_.persistent_id_)  
 end   
 if msg.content_.voice_ then  
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Vico"..test..msg.chat_id_, msg.content_.voice_.voice_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Vico"..test..msg.chat_id_, msg.content_.voice_.voice_.persistent_id_)  
 end   
 if msg.content_.animation_ then   
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Gif"..test..msg.chat_id_, msg.content_.animation_.animation_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Gif"..test..msg.chat_id_, msg.content_.animation_.animation_.persistent_id_)  
 end  
 if text then   
 text = text:gsub('"',"") 
 text = text:gsub('"',"") 
 text = text:gsub("`","") 
 text = text:gsub("*","") 
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Text"..test..msg.chat_id_, text)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Text"..test..msg.chat_id_, text)  
 end  
 if msg.content_.audio_ then
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Audio"..test..msg.chat_id_, msg.content_.audio_.audio_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Audio"..test..msg.chat_id_, msg.content_.audio_.audio_.persistent_id_)  
 end
 if msg.content_.document_ then
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:File"..test..msg.chat_id_, msg.content_.document_.document_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:File"..test..msg.chat_id_, msg.content_.document_.document_.persistent_id_)  
 end
 if msg.content_.video_ then
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Video"..test..msg.chat_id_, msg.content_.video_.video_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Video"..test..msg.chat_id_, msg.content_.video_.video_.persistent_id_)  
 end
 if msg.content_.photo_ then
 if msg.content_.photo_.sizes_[0] then
@@ -5272,7 +5272,7 @@ end
 if msg.content_.photo_.sizes_[3] then
 photo_in_group = msg.content_.photo_.sizes_[3].photo_.persistent_id_
 end
-database:set(bot_id.."Source-Becca:Add:Rd:Manager:Photo"..test..msg.chat_id_, photo_in_group)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Manager:Photo"..test..msg.chat_id_, photo_in_group)  
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تم حفظ الرد بنجاح")
 return false  
@@ -5289,7 +5289,7 @@ end
 return false
 end
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الكلمه التي تريد اضافتها")
-database:set(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
+database:set(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
 if text == "حذف رد" and Owner(msg) then
@@ -5303,57 +5303,57 @@ end
 return false
 end
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل الكلمه التي تريد حذفها")
-database:set(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true2")
+database:set(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true2")
 return false 
 end
 if text and text:match("^(.*)$") then
-if database:get(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
+if database:get(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
 send(msg.chat_id_, msg.id_, '܁༯┆الان ارسل الرد الذي تريد اضافته \n܁༯┆ قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركه )\n܁༯┆ يمكنك اضافه الى النص :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#name` > اسم المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات ')
-database:set(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true1")
-database:set(bot_id.."Source-Becca:Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_, text)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Text"..text..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Photo"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Video"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:File"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Audio"..text..msg.chat_id_)
-database:sadd(bot_id.."Source-Becca:List:Manager"..msg.chat_id_.."", text)
+database:set(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true1")
+database:set(bot_id.."SourceBeccaa:Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_, text)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Text"..text..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Photo"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Video"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:File"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Audio"..text..msg.chat_id_)
+database:sadd(bot_id.."SourceBeccaa:List:Manager"..msg.chat_id_.."", text)
 return false end
 end
 if text and text:match("^(.*)$") then
-if database:get(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_.."") == "true2" then
+if database:get(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_.."") == "true2" then
 send(msg.chat_id_, msg.id_,"܁༯┆تم ازالة الرد من قائمه الردود")
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Text"..text..msg.chat_id_)   
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Photo"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Video"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:File"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Add:Rd:Manager:Audio"..text..msg.chat_id_)
-database:del(bot_id.."Source-Becca:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_)
-database:srem(bot_id.."Source-Becca:List:Manager"..msg.chat_id_.."", text)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Text"..text..msg.chat_id_)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Photo"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Video"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:File"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Manager:Audio"..text..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_)
+database:srem(bot_id.."SourceBeccaa:List:Manager"..msg.chat_id_.."", text)
 return false
 end
 end
-if text and not database:get(bot_id.."Source-Becca:Reply:Manager"..msg.chat_id_) then
-if not database:sismember(bot_id..'Source-Becca:Spam:Group'..msg.sender_user_id_,text) then
-local anemi = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
-local veico = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
-local stekr = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
-local Text = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Text"..text..msg.chat_id_)   
-local photo = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Photo"..text..msg.chat_id_)
-local video = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Video"..text..msg.chat_id_)
-local document = database:get(bot_id.."Source-Becca:Add:Rd:Manager:File"..text..msg.chat_id_)
-local audio = database:get(bot_id.."Source-Becca:Add:Rd:Manager:Audio"..text..msg.chat_id_)
+if text and not database:get(bot_id.."SourceBeccaa:Reply:Manager"..msg.chat_id_) then
+if not database:sismember(bot_id..'SourceBeccaa:Spam:Group'..msg.sender_user_id_,text) then
+local anemi = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
+local veico = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
+local stekr = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
+local Text = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Text"..text..msg.chat_id_)   
+local photo = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Photo"..text..msg.chat_id_)
+local video = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Video"..text..msg.chat_id_)
+local document = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:File"..text..msg.chat_id_)
+local audio = database:get(bot_id.."SourceBeccaa:Add:Rd:Manager:Audio"..text..msg.chat_id_)
 if Text then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,data)
-local NumMsg = database:get(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
+local NumMsg = database:get(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(msg.sender_user_id_,msg.chat_id_)
-local message_edit = database:get(bot_id..'Source-Becca:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
+local message_edit = database:get(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Text = Text:gsub('#username',(data.username_ or 'لا يوجد')) 
 local Text = Text:gsub('#name',data.first_name_)
 local Text = Text:gsub('#id',msg.sender_user_id_)
@@ -5361,74 +5361,74 @@ local Text = Text:gsub('#edit',message_edit)
 local Text = Text:gsub('#msgs',NumMsg)
 local Text = Text:gsub('#stast',Status_Gps)
 send(msg.chat_id_, msg.id_, Text)
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end,nil)
 end
 if stekr then 
 sendSticker(msg.chat_id_,msg.id_,stekr)
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if veico then 
 sendVoice(msg.chat_id_, msg.id_,veico,"")
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if video then 
 sendVideo(msg.chat_id_, msg.id_,video,"")
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if anemi then 
 sendAnimation(msg.chat_id_, msg.id_,anemi,"")   
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if document then
 sendDocument(msg.chat_id_, msg.id_, document)   
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end  
 if audio then
 sendAudio(msg.chat_id_,msg.id_,audio)  
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if photo then
 sendPhoto(msg.chat_id_,msg.id_,photo,photo_caption)
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end  
 end
 end
 ------------------------------------------------------------------------
-if text == ("مسح ردود المطور") and DevSource-Becca(msg) then 
-local list = database:smembers(bot_id.."Source-Becca:List:Rd:Sudo")
+if text == ("مسح ردود المطور") and DevSourceBeccaa(msg) then 
+local list = database:smembers(bot_id.."SourceBeccaa:List:Rd:Sudo")
 for k,v in pairs(list) do
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:Gif"..v)   
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:vico"..v)   
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:stekr"..v)     
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:Text"..v)   
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:Photo"..v)
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:Video"..v)
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:File"..v)
-database:del(bot_id.."Source-Becca:Add:Rd:Sudo:Audio"..v)
-database:del(bot_id.."Source-Becca:List:Rd:Sudo")
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:Gif"..v)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:vico"..v)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:stekr"..v)     
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:Text"..v)   
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:Photo"..v)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:Video"..v)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:File"..v)
+database:del(bot_id.."SourceBeccaa:Add:Rd:Sudo:Audio"..v)
+database:del(bot_id.."SourceBeccaa:List:Rd:Sudo")
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تم مسح ردود المطور")
 end
-if text == ("ردود المطور") and DevSource-Becca(msg) then 
-local list = database:smembers(bot_id.."Source-Becca:List:Rd:Sudo")
+if text == ("ردود المطور") and DevSourceBeccaa(msg) then 
+local list = database:smembers(bot_id.."SourceBeccaa:List:Rd:Sudo")
 text = "\n܁༯┆قائمة ردود المطور \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(list) do
-if database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Gif"..v) then
+if database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Gif"..v) then
 db = "متحركه 🎭"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:vico"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:vico"..v) then
 db = "بصمه 📢"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:stekr"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:stekr"..v) then
 db = "ملصق ⌔"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Text"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Text"..v) then
 db = "رساله ✉"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Photo"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Photo"..v) then
 db = "صوره ⌔"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Video"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Video"..v) then
 db = "فيديو 📹"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:File"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:File"..v) then
 db = "ملف ⌔"
-elseif database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Audio"..v) then
+elseif database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Audio"..v) then
 db = "اغنيه 🎵"
 end
 text = text..""..k.." >> ("..v..") » {"..db.."}\n"
@@ -5439,33 +5439,33 @@ end
 send(msg.chat_id_, msg.id_,"["..text.."]")
 end
 if text or msg.content_.sticker_ or msg.content_.voice_ or msg.content_.animation_ or msg.content_.audio_ or msg.content_.document_ or msg.content_.photo_ or msg.content_.video_ then  
-local test = database:get(bot_id.."Source-Becca:Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_)
-if database:get(bot_id.."Source-Becca:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true1" then
-database:del(bot_id.."Source-Becca:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_)
+local test = database:get(bot_id.."SourceBeccaa:Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_)
+if database:get(bot_id.."SourceBeccaa:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true1" then
+database:del(bot_id.."SourceBeccaa:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_)
 if msg.content_.sticker_ then   
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:stekr"..test, msg.content_.sticker_.sticker_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:stekr"..test, msg.content_.sticker_.sticker_.persistent_id_)  
 end   
 if msg.content_.voice_ then  
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:vico"..test, msg.content_.voice_.voice_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:vico"..test, msg.content_.voice_.voice_.persistent_id_)  
 end   
 if msg.content_.animation_ then   
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:Gif"..test, msg.content_.animation_.animation_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:Gif"..test, msg.content_.animation_.animation_.persistent_id_)  
 end  
 if text then   
 text = text:gsub('"',"") 
 text = text:gsub('"',"") 
 text = text:gsub("`","") 
 text = text:gsub("*","") 
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:Text"..test, text)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:Text"..test, text)  
 end  
 if msg.content_.audio_ then
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:Audio"..test, msg.content_.audio_.audio_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:Audio"..test, msg.content_.audio_.audio_.persistent_id_)  
 end
 if msg.content_.document_ then
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:File"..test, msg.content_.document_.document_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:File"..test, msg.content_.document_.document_.persistent_id_)  
 end
 if msg.content_.video_ then
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:Video"..test, msg.content_.video_.video_.persistent_id_)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:Video"..test, msg.content_.video_.video_.persistent_id_)  
 end
 if msg.content_.photo_ then
 if msg.content_.photo_.sizes_[0] then
@@ -5480,61 +5480,61 @@ end
 if msg.content_.photo_.sizes_[3] then
 photo_in_group = msg.content_.photo_.sizes_[3].photo_.persistent_id_
 end
-database:set(bot_id.."Source-Becca:Add:Rd:Sudo:Photo"..test, photo_in_group)  
+database:set(bot_id.."SourceBeccaa:Add:Rd:Sudo:Photo"..test, photo_in_group)  
 end
 send(msg.chat_id_, msg.id_,"܁༯┆تم حفظ الرد بنجاح")
 return false  
 end  
 end
 
-if text == "اضف رد للكل" and DevSource-Becca(msg) then 
+if text == "اضف رد للكل" and DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆ ارسل الكلمه التري تريد اضافتها")
-database:set(bot_id.."Source-Becca:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
+database:set(bot_id.."SourceBeccaa:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
-if text == "حذف رد للكل" and DevSource-Becca(msg) then 
+if text == "حذف رد للكل" and DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆ ارسل الكلمه التري تريد حذفها")
-database:set(bot_id.."Source-Becca:Set:On"..msg.sender_user_id_..":"..msg.chat_id_,true)
+database:set(bot_id.."SourceBeccaa:Set:On"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
 if text and text:match("^(.*)$") then
-if database:get(bot_id.."Source-Becca:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
+if database:get(bot_id.."SourceBeccaa:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
 send(msg.chat_id_, msg.id_, '܁༯┆الان ارسل الرد الذي تريد اضافته \n܁༯┆ قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركه )\n܁༯┆ يمكنك اضافه الى النص :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#name` > اسم المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات ')
-database:set(bot_id.."Source-Becca:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_, "true1")
-database:set(bot_id.."Source-Becca:Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_, text)
-database:sadd(bot_id.."Source-Becca:List:Rd:Sudo", text)
+database:set(bot_id.."SourceBeccaa:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_, "true1")
+database:set(bot_id.."SourceBeccaa:Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_, text)
+database:sadd(bot_id.."SourceBeccaa:List:Rd:Sudo", text)
 return false end
 end
 if text and text:match("^(.*)$") then
-if database:get(bot_id.."Source-Becca:Set:On"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
+if database:get(bot_id.."SourceBeccaa:Set:On"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
 send(msg.chat_id_, msg.id_,"܁༯┆تم ازالة الرد من قائمه ردود المطور")
 list = {"Add:Rd:Sudo:Audio","Add:Rd:Sudo:File","Add:Rd:Sudo:Video","Add:Rd:Sudo:Photo","Add:Rd:Sudo:Text","Add:Rd:Sudo:stekr","Add:Rd:Sudo:vico","Add:Rd:Sudo:Gif"}
 for k,v in pairs(list) do
-database:del(bot_id..'Source-Becca:'..v..text)
+database:del(bot_id..'SourceBeccaa:'..v..text)
 end
-database:del(bot_id.."Source-Becca:Set:On"..msg.sender_user_id_..":"..msg.chat_id_)
-database:srem(bot_id.."Source-Becca:List:Rd:Sudo", text)
+database:del(bot_id.."SourceBeccaa:Set:On"..msg.sender_user_id_..":"..msg.chat_id_)
+database:srem(bot_id.."SourceBeccaa:List:Rd:Sudo", text)
 return false
 end
 end
 
-if text and not database:get(bot_id.."Source-Becca:Reply:Sudo"..msg.chat_id_) then
-if not database:sismember(bot_id..'Source-Becca:Spam:Group'..msg.sender_user_id_,text) then
-local anemi = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Gif"..text)   
-local veico = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:vico"..text)   
-local stekr = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:stekr"..text)     
-local Text = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Text"..text)   
-local photo = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Photo"..text)
-local video = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Video"..text)
-local document = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:File"..text)
-local audio = database:get(bot_id.."Source-Becca:Add:Rd:Sudo:Audio"..text)
+if text and not database:get(bot_id.."SourceBeccaa:Reply:Sudo"..msg.chat_id_) then
+if not database:sismember(bot_id..'SourceBeccaa:Spam:Group'..msg.sender_user_id_,text) then
+local anemi = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Gif"..text)   
+local veico = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:vico"..text)   
+local stekr = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:stekr"..text)     
+local Text = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Text"..text)   
+local photo = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Photo"..text)
+local video = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Video"..text)
+local document = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:File"..text)
+local audio = database:get(bot_id.."SourceBeccaa:Add:Rd:Sudo:Audio"..text)
 
 if Text then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,data)
-local NumMsg = database:get(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
+local NumMsg = database:get(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(msg.sender_user_id_,msg.chat_id_)
-local message_edit = database:get(bot_id..'Source-Becca:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
+local message_edit = database:get(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Text = Text:gsub('#username',(data.username_ or 'لا يوجد')) 
 local Text = Text:gsub('#name',data.first_name_)
 local Text = Text:gsub('#id',msg.sender_user_id_)
@@ -5542,36 +5542,36 @@ local Text = Text:gsub('#edit',message_edit)
 local Text = Text:gsub('#msgs',NumMsg)
 local Text = Text:gsub('#stast',Status_Gps)
 send(msg.chat_id_, msg.id_,Text)
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end,nil)
 end
 if stekr then 
 sendSticker(msg.chat_id_,msg.id_,stekr) 
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if veico then 
 sendVoice(msg.chat_id_, msg.id_,veico,"")
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if video then 
 sendVideo(msg.chat_id_, msg.id_,video,"")
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if anemi then 
 sendAnimation(msg.chat_id_, msg.id_,anemi,"")   
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if document then
 sendDocument(msg.chat_id_, msg.id_, document)     
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end  
 if audio then
 sendAudio(msg.chat_id_,msg.id_,audio)  
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end
 if photo then
 sendPhoto(msg.chat_id_,msg.id_,photo,"")
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 end  
 end
 end
@@ -5600,19 +5600,19 @@ end
 end
 
 if text == "تفعيل ردود المدير" and Owner(msg) then   
-database:del(bot_id.."Source-Becca:Reply:Manager"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Reply:Manager"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,"܁༯┆تم تفعيل ردود المدير") 
 end
 if text == "تعطيل ردود المدير" and Owner(msg) then  
-database:set(bot_id.."Source-Becca:Reply:Manager"..msg.chat_id_,true)  
+database:set(bot_id.."SourceBeccaa:Reply:Manager"..msg.chat_id_,true)  
 send(msg.chat_id_, msg.id_,"܁༯┆تم تعطيل ردود المدير" ) 
 end
 if text == "تفعيل ردود المطور" and Owner(msg) then   
-database:del(bot_id.."Source-Becca:Reply:Sudo"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Reply:Sudo"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,"܁༯┆تم تفعيل ردود المطور" ) 
 end
 if text == "تعطيل ردود المطور" and Owner(msg) then  
-database:set(bot_id.."Source-Becca:Reply:Sudo"..msg.chat_id_,true)   
+database:set(bot_id.."SourceBeccaa:Reply:Sudo"..msg.chat_id_,true)   
 send(msg.chat_id_, msg.id_,"܁༯┆تم تعطيل ردود المطور" ) 
 end
 
@@ -5627,37 +5627,37 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if tonumber(Id_Sudo) == tonumber(result.sender_user_id_) then
 send(msg.chat_id_, msg.id_,"܁༯┆ لا تستطيع تنزيل المطور الاساسي")
 return false 
 end
-if database:sismember(bot_id.."Source-Becca:Sudo:User",result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Sudo:User",result.sender_user_id_) then
 dev = "܁༯┆تم تنزيله من المطورين"
 else 
 dev = "܁༯┆هو ليس مطور" 
 end
-if database:sismember(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, result.sender_user_id_) then
 crr = "܁༯┆تم تنزيل من الاساسيين" 
 else 
 crr = "܁༯┆هو ليس منشئ اساسي" 
 end
-if database:sismember(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.sender_user_id_) then
 cr = "܁༯┆تم تنزيله من المنشئين" 
 else 
 cr = "܁༯┆هو ليس منشئ" 
 end
-if database:sismember(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_) then
 own = "܁༯┆تم تنزيله من المدراء" 
 else 
 own = "܁༯┆هو ليس مدير" 
 end
-if database:sismember(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_) then
 mod = "܁༯┆تم تنزيله من الادميه"
  else 
 mod = "܁༯┆هو ليس ادمن" 
 end
-if database:sismember(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_) then
 vip = "܁༯┆تم تنزيل من المميزين"
 else
 vip = "܁༯┆هو ليس مميز"
@@ -5668,33 +5668,33 @@ else
 send(msg.chat_id_, msg.id_,"\n܁༯┆ليس لديه رتب حتى استطيع تنزيله \n")
 end
 if tonumber(Id_Sudo) == tonumber(msg.sender_user_id_) then
-database:srem(bot_id.."Source-Becca:Sudo:User", result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_,result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
-elseif database:sismember(bot_id.."Source-Becca:Sudo:User",msg.sender_user_id_) then
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_,result.sender_user_id_)
-elseif database:sismember(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_, msg.sender_user_id_) then
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Constructor"..msg.chat_id_, result.sender_user_id_)
-elseif database:sismember(bot_id.."Source-Becca:Constructor"..msg.chat_id_, msg.sender_user_id_) then
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Manager"..msg.chat_id_, result.sender_user_id_)
-elseif database:sismember(bot_id.."Source-Becca:Manager"..msg.chat_id_, msg.sender_user_id_) then
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Special:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Sudo:User", result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_,result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
+elseif database:sismember(bot_id.."SourceBeccaa:Sudo:User",msg.sender_user_id_) then
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_,result.sender_user_id_)
+elseif database:sismember(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_, msg.sender_user_id_) then
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, result.sender_user_id_)
+elseif database:sismember(bot_id.."SourceBeccaa:Constructor"..msg.chat_id_, msg.sender_user_id_) then
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, result.sender_user_id_)
+elseif database:sismember(bot_id.."SourceBeccaa:Manager"..msg.chat_id_, msg.sender_user_id_) then
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Special:User"..msg.chat_id_, result.sender_user_id_)
 end
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 end
 if text == "تاك للكل" and Addictive(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -5712,8 +5712,8 @@ x = 0
 local list = taha.members_
 for k, v in pairs(list) do
 x = x + 1
-if database:get(bot_id.."Source-Becca:User:Name"..v.user_id_) then
-t = t.."܁༯┆"..x.."︙[@"..database:get(bot_id.."Source-Becca:User:Name"..v.user_id_).."]\n"
+if database:get(bot_id.."SourceBeccaa:User:Name"..v.user_id_) then
+t = t.."܁༯┆"..x.."︙[@"..database:get(bot_id.."SourceBeccaa:User:Name"..v.user_id_).."]\n"
 end
 end
 send(msg.chat_id_,msg.id_,t)
@@ -5791,7 +5791,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-if not database:get(bot_id.."Source-Becca:Kick:Me"..msg.chat_id_) then
+if not database:get(bot_id.."SourceBeccaa:Kick:Me"..msg.chat_id_) then
 if Rank_Checking(msg.sender_user_id_, msg.chat_id_) == true then
 send(msg.chat_id_, msg.id_, "\n܁༯┆ عذرا لا استطيع طرد ( "..Get_Rank(msg.sender_user_id_,msg.chat_id_).." )")
 return false
@@ -5830,7 +5830,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:del(bot_id.."Source-Becca:Kick:Me"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Kick:Me"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == "تعطيل اطردني" and Owner(msg) then  
@@ -5843,7 +5843,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id.."Source-Becca:Kick:Me"..msg.chat_id_,true)  
+database:set(bot_id.."SourceBeccaa:Kick:Me"..msg.chat_id_,true)  
 Text = "\n܁༯┆تم تعطيل امر اطردني"
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -5859,19 +5859,19 @@ end
 return false
 end
 local username = text:match("^رفع القيود @(.*)") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-if DevSource-Becca(msg) then
-database:srem(bot_id.."Source-Becca:GBan:User",result.id_)
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_,result.id_)
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,result.id_)
+if DevSourceBeccaa(msg) then
+database:srem(bot_id.."SourceBeccaa:GBan:User",result.id_)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_,result.id_)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,result.id_)
 usertext = "\n܁༯┆ العضو » ["..result.title_.."](t.me/"..(username or "kenwa")..")"
 status  = "\n܁༯┆ تم الغاء القيود عنه"
 texts = usertext..status
 send(msg.chat_id_, msg.id_,texts)
 else
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_,result.id_)
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,result.id_)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_,result.id_)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,result.id_)
 Reply_Status(msg,result.id_,"reply","\n܁༯┆ تم الغاء القيود عنه")  
 end
 else
@@ -5879,7 +5879,7 @@ Text = "܁༯┆ المعرف غلط"
 send(msg.chat_id_, msg.id_,Text)
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 end
 if text == "رفع القيود" and Owner(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -5891,15 +5891,15 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-if DevSource-Becca(msg) then
-database:srem(bot_id.."Source-Becca:GBan:User",result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_,result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,result.sender_user_id_)
+function Function_SourceBeccaa(extra, result, success)
+if DevSourceBeccaa(msg) then
+database:srem(bot_id.."SourceBeccaa:GBan:User",result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_,result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","\n܁༯┆ تم الغاء القيود عنه")  
 else
-database:srem(bot_id.."Source-Becca:Ban:User"..msg.chat_id_,result.sender_user_id_)
-database:srem(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_,result.sender_user_id_)
+database:srem(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = "\n܁༯┆ العضو » ["..data.first_name_.."](t.me/"..(data.username_ or "kenwa")..")"
 status  = "\n܁༯┆ تم الغاء القيود عنه"
@@ -5907,7 +5907,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 end
 if text and text:match("^كشف القيود @(.*)") and Owner(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
@@ -5920,19 +5920,19 @@ end
 return false
 end
 local username = text:match("^كشف القيود @(.*)") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-if database:sismember(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,result.id_) then
+if database:sismember(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,result.id_) then
 Muted = "مكتوم"
 else
 Muted = "غير مكتوم"
 end
-if database:sismember(bot_id.."Source-Becca:Ban:User"..msg.chat_id_,result.id_) then
+if database:sismember(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_,result.id_) then
 Ban = "محظور"
 else
 Ban = "غير محظور"
 end
-if database:sismember(bot_id.."Source-Becca:GBan:User",result.id_) then
+if database:sismember(bot_id.."SourceBeccaa:GBan:User",result.id_) then
 GBan = "محظور عام"
 else
 GBan = "غير محظور عام"
@@ -5942,7 +5942,7 @@ else
 send(msg.chat_id_, msg.id_,"܁༯┆ المعرف غلط")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 end
 
 if text == "كشف القيود" and Owner(msg) then 
@@ -5955,18 +5955,18 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-function Function_Source-Becca(extra, result, success)
-if database:sismember(bot_id.."Source-Becca:Muted:User"..msg.chat_id_,result.sender_user_id_) then
+function Function_SourceBeccaa(extra, result, success)
+if database:sismember(bot_id.."SourceBeccaa:Muted:User"..msg.chat_id_,result.sender_user_id_) then
 Muted = "مكتوم"
 else
 Muted = "غير مكتوم"
 end
-if database:sismember(bot_id.."Source-Becca:Ban:User"..msg.chat_id_,result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:Ban:User"..msg.chat_id_,result.sender_user_id_) then
 Ban = "محظور"
 else
 Ban = "غير محظور"
 end
-if database:sismember(bot_id.."Source-Becca:GBan:User",result.sender_user_id_) then
+if database:sismember(bot_id.."SourceBeccaa:GBan:User",result.sender_user_id_) then
 GBan = "محظور عام"
 else
 GBan = "غير محظور عام"
@@ -5974,7 +5974,7 @@ end
 Textt = "܁༯┆ الحظر العام » "..GBan.."\n܁༯┆ الحظر » "..Ban.."\n܁༯┆ الكتم » "..Muted..""
 send(msg.chat_id_, msg.id_,Textt)
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 end
 
 if text and text:match("^ضع اسم (.*)") and Owner(msg) or text and text:match("^وضع اسم (.*)") and Owner(msg) then 
@@ -6016,17 +6016,17 @@ local num2 = 0
 local admins = data.members_
 for i=0 , #admins do
 if data.members_[i].bot_info_ == false and data.members_[i].status_.ID == "ChatMemberStatusEditor" then
-database:sadd(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, admins[i].user_id_)
+database:sadd(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, admins[i].user_id_)
 num2 = num2 + 1
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,b) 
 if b.username_ == true then
 end
 if b.first_name_ == false then
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, admins[i].user_id_)
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, admins[i].user_id_)
 end
 end,nil)   
 else
-database:srem(bot_id.."Source-Becca:Mod:User"..msg.chat_id_, admins[i].user_id_)
+database:srem(bot_id.."SourceBeccaa:Mod:User"..msg.chat_id_, admins[i].user_id_)
 end
 end
 if num2 == 0 then
@@ -6047,7 +6047,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "Source-BeccaTEAM")
+local UserName = (b.username_ or "SourceBeccaaTEAM")
 send(msg.chat_id_, msg.id_,"܁༯┆منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6067,42 +6067,42 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"܁༯┆حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "Source-BeccaTEAM")
+local UserName = (b.username_ or "SourceBeccaaTEAM")
 send(msg.chat_id_, msg.id_,"܁༯┆تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
-database:sadd(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_,b.id_)
+database:sadd(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
 end,nil)   
 end
 
 if text == "غادر" then 
-if DevBot(msg) and not database:get(bot_id.."Source-Becca:Left:Bot"..msg.chat_id_) then 
+if DevBot(msg) and not database:get(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_) then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,"܁༯┆ تم مغادرة المجموعه") 
-database:srem(bot_id.."Source-Becca:Chek:Groups",msg.chat_id_)  
+database:srem(bot_id.."SourceBeccaa:Chek:Groups",msg.chat_id_)  
 end
 return false  
 end
 if text and text:match("^غادر (-%d+)$") then
 local GP_ID = {string.match(text, "^(غادر) (-%d+)$")}
-if DevBot(msg) and not database:get(bot_id.."Source-Becca:Left:Bot"..msg.chat_id_) then 
+if DevBot(msg) and not database:get(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_) then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=GP_ID[2],user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,"܁༯┆ تم مغادرة المجموعه") 
 send(GP_ID[2], 0,"܁༯┆ تم مغادرة المجموعه بامر من مطور البوت") 
-database:srem(bot_id.."Source-Becca:Chek:Groups",GP_ID[2])  
+database:srem(bot_id.."SourceBeccaa:Chek:Groups",GP_ID[2])  
 return false 
 end
 end
-if text == "تفعيل المغادره" and DevSource-Becca(msg) then   
-database:del(bot_id.."Source-Becca:Left:Bot"..msg.chat_id_)  
+if text == "تفعيل المغادره" and DevSourceBeccaa(msg) then   
+database:del(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,"܁༯┆تم تفعيل مغادرة البوت") 
 return false 
 end
-if text == "تعطيل المغادره" and DevSource-Becca(msg) then  
-database:set(bot_id.."Source-Becca:Left:Bot"..msg.chat_id_,true)   
+if text == "تعطيل المغادره" and DevSourceBeccaa(msg) then  
+database:set(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_,true)   
 send(msg.chat_id_, msg.id_, "܁༯┆تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."Source-Becca:Name:Bot") or "كوربيكا") then
+if text == (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6112,7 +6112,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-Namebot = (database:get(bot_id.."Source-Becca:Name:Bot") or "كوربيكا")
+Namebot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -6131,12 +6131,12 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."Source-Becca:Name:Bot") or "كوربيكا")
+Namebot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
-if DevSource-Becca(msg) then
-database:setex(bot_id.."Source-Becca:Set:Name:Bot"..msg.sender_user_id_,300,true) 
+if DevSourceBeccaa(msg) then
+database:setex(bot_id.."SourceBeccaa:Set:Name:Bot"..msg.sender_user_id_,300,true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ ارسل لي الاسم الان ")  
 end
 return false
@@ -6158,352 +6158,352 @@ end
 tdcli_function({ID="GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersKicked"},offset_ = 0,limit_ = 200}, delbans, {chat_id_ = msg.chat_id_, msg_id_ = msg.id_})    
 end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n܁༯┆للخروج ارسل الغاء ") 
 return false
 end 
 if text=="اذاعه" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n܁༯┆للخروج ارسل الغاء ") 
 return false
 end  
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n܁༯┆للخروج ارسل الغاء ") 
 return false
 end  
 if text=="اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي التوجيه الان") 
 return false
 end 
 if text=="اذاعه بالتوجيه خاص" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي التوجيه الان") 
 return false
 end 
 
-if text == "تفعيل الاذاعه" and DevSource-Becca(msg) then  
-database:del(bot_id.."Source-Becca:Status:Bc") 
+if text == "تفعيل الاذاعه" and DevSourceBeccaa(msg) then  
+database:del(bot_id.."SourceBeccaa:Status:Bc") 
 send(msg.chat_id_, msg.id_,"\n܁༯┆تم تفعيل الاذاعه " ) 
 return false
 end 
-if text == "تعطيل الاذاعه" and DevSource-Becca(msg) then  
-database:set(bot_id.."Source-Becca:Status:Bc",true) 
+if text == "تعطيل الاذاعه" and DevSourceBeccaa(msg) then  
+database:set(bot_id.."SourceBeccaa:Status:Bc",true) 
 send(msg.chat_id_, msg.id_,"\n܁༯┆تم تعطيل الاذاعه") 
 return false
 end 
 
 if text == "الاعدادات" and Addictive(msg) then    
-if database:get(bot_id.."Source-Becca:lockpin"..msg.chat_id_) then    
+if database:get(bot_id.."SourceBeccaa:lockpin"..msg.chat_id_) then    
 lock_pin = "✓"
 else 
 lock_pin = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:tagservr"..msg.chat_id_) then    
+if database:get(bot_id.."SourceBeccaa:Lock:tagservr"..msg.chat_id_) then    
 lock_tagservr = "✓"
 else 
 lock_tagservr = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:text"..msg.chat_id_) then    
+if database:get(bot_id.."SourceBeccaa:Lock:text"..msg.chat_id_) then    
 lock_text = "✓"
 else 
 lock_text = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:AddMempar"..msg.chat_id_) == "kick" then
+if database:get(bot_id.."SourceBeccaa:Lock:AddMempar"..msg.chat_id_) == "kick" then
 lock_add = "✓"
 else 
 lock_add = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:Join"..msg.chat_id_) == "kick" then
+if database:get(bot_id.."SourceBeccaa:Lock:Join"..msg.chat_id_) == "kick" then
 lock_join = "✓"
 else 
 lock_join = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:edit"..msg.chat_id_) then    
+if database:get(bot_id.."SourceBeccaa:Lock:edit"..msg.chat_id_) then    
 lock_edit = "✓"
 else 
 lock_edit = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Get:Welcome:Group"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Get:Welcome:Group"..msg.chat_id_) then
 welcome = "✓"
 else 
 welcome = "✘"    
 end
-if database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_, "flood") == "kick" then     
+if database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_, "flood") == "kick" then     
 flood = "بالطرد"     
-elseif database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"flood") == "keed" then     
+elseif database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"flood") == "keed" then     
 flood = "بالتقيد"     
-elseif database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"flood") == "mute" then     
+elseif database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"flood") == "mute" then     
 flood = "بالكتم"           
-elseif database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"flood") == "del" then     
+elseif database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"flood") == "del" then     
 flood = "بالمسح"           
 else     
 flood = "✘"     
 end
-if database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "del" then
 lock_photo = "✓" 
-elseif database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "ked" then 
 lock_photo = "بالتقيد"   
-elseif database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "ktm" then 
 lock_photo = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Photo"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Photo"..msg.chat_id_) == "kick" then 
 lock_photo = "بالطرد"   
 else
 lock_photo = "✘"   
 end    
-if database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "del" then
 lock_phon = "✓" 
-elseif database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "ked" then 
 lock_phon = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "ktm" then 
 lock_phon = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Contact"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Contact"..msg.chat_id_) == "kick" then 
 lock_phon = "بالطرد"    
 else
 lock_phon = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "del" then
 lock_links = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "ked" then
 lock_links = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "ktm" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "ktm" then
 lock_links = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) == "kick" then
 lock_links = "بالطرد"    
 else
 lock_links = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "del" then
 lock_cmds = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "ked" then
 lock_cmds = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "ktm" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "ktm" then
 lock_cmds = "بالكتم"   
-elseif database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) == "kick" then
 lock_cmds = "بالطرد"    
 else
 lock_cmds = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "del" then
 lock_user = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "ked" then
 lock_user = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "ktm" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "ktm" then
 lock_user = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) == "kick" then
 lock_user = "بالطرد"    
 else
 lock_user = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "del" then
 lock_hash = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "ked" then 
 lock_hash = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "ktm" then 
 lock_hash = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) == "kick" then 
 lock_hash = "بالطرد"    
 else
 lock_hash = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "del" then
 lock_muse = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "ked" then 
 lock_muse = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "ktm" then 
 lock_muse = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "kick" then 
 lock_muse = "بالطرد"    
 else
 lock_muse = "✘"    
 end 
-if database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "del" then
 lock_ved = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "ked" then 
 lock_ved = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "ktm" then 
 lock_ved = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Video"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Video"..msg.chat_id_) == "kick" then 
 lock_ved = "بالطرد"    
 else
 lock_ved = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "del" then
 lock_gif = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "ked" then 
 lock_gif = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "ktm" then 
 lock_gif = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Animation"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_) == "kick" then 
 lock_gif = "بالطرد"    
 else
 lock_gif = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "del" then
 lock_ste = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "ked" then 
 lock_ste = "بالتقيد "    
-elseif database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "ktm" then 
 lock_ste = "بالكتم "    
-elseif database:get(bot_id.."Source-Becca:Lock:Sticker"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Sticker"..msg.chat_id_) == "kick" then 
 lock_ste = "بالطرد"    
 else
 lock_ste = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "del" then
 lock_geam = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "ked" then 
 lock_geam = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "ktm" then 
 lock_geam = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:geam"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:geam"..msg.chat_id_) == "kick" then 
 lock_geam = "بالطرد"    
 else
 lock_geam = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "del" then
 lock_vico = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "ked" then 
 lock_vico = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "ktm" then 
 lock_vico = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:vico"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:vico"..msg.chat_id_) == "kick" then 
 lock_vico = "بالطرد"    
 else
 lock_vico = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "del" then
 lock_inlin = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "ked" then 
 lock_inlin = "بالتقيد"
-elseif database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "ktm" then 
 lock_inlin = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Keyboard"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Keyboard"..msg.chat_id_) == "kick" then 
 lock_inlin = "بالطرد"
 else
 lock_inlin = "✘"
 end
-if database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "del" then
 lock_fwd = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "ked" then 
 lock_fwd = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "ktm" then 
 lock_fwd = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:forward"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:forward"..msg.chat_id_) == "kick" then 
 lock_fwd = "بالطرد"    
 else
 lock_fwd = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "del" then
 lock_file = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "ked" then 
 lock_file = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "ktm" then 
 lock_file = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Document"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Document"..msg.chat_id_) == "kick" then 
 lock_file = "بالطرد"    
 else
 lock_file = "✘"    
 end    
-if database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "del" then
 lock_self = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "ked" then 
 lock_self = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "ktm" then 
 lock_self = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Unsupported"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Unsupported"..msg.chat_id_) == "kick" then 
 lock_self = "بالطرد"    
 else
 lock_self = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_) == "del" then
 lock_bots = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_) == "ked" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_) == "ked" then
 lock_bots = "بالتقيد"   
-elseif database:get(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_) == "kick" then
+elseif database:get(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_) == "kick" then
 lock_bots = "بالطرد"    
 else
 lock_bots = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "del" then
+if database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "del" then
 lock_mark = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "ked" then 
 lock_mark = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "ktm" then 
 lock_mark = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Markdaun"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Markdaun"..msg.chat_id_) == "kick" then 
 lock_mark = "بالطرد"    
 else
 lock_mark = "✘"    
 end
-if database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "del" then    
+if database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "del" then    
 lock_spam = "✓"
-elseif database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "ked" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "ked" then 
 lock_spam = "بالتقيد"    
-elseif database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "ktm" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "ktm" then 
 lock_spam = "بالكتم"    
-elseif database:get(bot_id.."Source-Becca:Lock:Spam"..msg.chat_id_) == "kick" then 
+elseif database:get(bot_id.."SourceBeccaa:Lock:Spam"..msg.chat_id_) == "kick" then 
 lock_spam = "بالطرد"    
 else
 lock_spam = "✘"    
 end        
-if not database:get(bot_id.."Source-Becca:Reply:Manager"..msg.chat_id_) then
+if not database:get(bot_id.."SourceBeccaa:Reply:Manager"..msg.chat_id_) then
 rdmder = "✓"
 else
 rdmder = "✘"
 end
-if not database:get(bot_id.."Source-Becca:Reply:Sudo"..msg.chat_id_) then
+if not database:get(bot_id.."SourceBeccaa:Reply:Sudo"..msg.chat_id_) then
 rdsudo = "✓"
 else
 rdsudo = "✘"
 end
-if not database:get(bot_id.."Source-Becca:Lock:ID:Bot"..msg.chat_id_)  then
+if not database:get(bot_id.."SourceBeccaa:Lock:ID:Bot"..msg.chat_id_)  then
 idgp = "✓"
 else
 idgp = "✘"
 end
-if not database:get(bot_id.."Source-Becca:Lock:ID:Bot:Photo"..msg.chat_id_) then
+if not database:get(bot_id.."SourceBeccaa:Lock:ID:Bot:Photo"..msg.chat_id_) then
 idph = "✓"
 else
 idph = "✘"
 end
-if not database:get(bot_id.."Source-Becca:Lock:kick"..msg.chat_id_)  then
+if not database:get(bot_id.."SourceBeccaa:Lock:kick"..msg.chat_id_)  then
 setadd = "✓"
 else
 setadd = "✘"
 end
-if not database:get(bot_id.."Source-Becca:Lock:Add:Bot"..msg.chat_id_)  then
+if not database:get(bot_id.."SourceBeccaa:Lock:Add:Bot"..msg.chat_id_)  then
 banm = "✓"
 else
 banm = "✘"
 end
-if not database:get(bot_id.."Source-Becca:Kick:Me"..msg.chat_id_) then
+if not database:get(bot_id.."SourceBeccaa:Kick:Me"..msg.chat_id_) then
 kickme = "✓"
 else
 kickme = "✘"
 end
-Num_Flood = database:hget(bot_id.."Source-Becca:flooding:settings:"..msg.chat_id_,"floodmax") or 0
+Num_Flood = database:hget(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
 "*\n܁༯┆ااعدادات المجموعه "..
 "\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ "..
@@ -6553,7 +6553,7 @@ end
 return false
 end
 send(msg.chat_id_, msg.id_, '܁༯┆تم تعطيل اوامر التحشيش')
-database:set(bot_id.."Source-Becca:Fun_Bots"..msg.chat_id_,"true")
+database:set(bot_id.."SourceBeccaa:Fun_Bots"..msg.chat_id_,"true")
 end
 if text == "تفعيل اوامر التحشيش" and Owner(msg) then    
 if AddChannel(msg.sender_user_id_) == false then
@@ -6566,17 +6566,17 @@ end
 return false
 end
 send(msg.chat_id_, msg.id_,'܁༯┆تم تفعيل اوامر التحشيش')
-database:del(bot_id.."Source-Becca:Fun_Bots"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Fun_Bots"..msg.chat_id_)
 end
 
 if text == 'تفعيل الايدي' and Owner(msg) then 
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:del(bot_id..'Source-Becca:Lock:ID:Bot'..msg.chat_id_) 
+database:del(bot_id..'SourceBeccaa:Lock:ID:Bot'..msg.chat_id_) 
 send(msg.chat_id_, msg.id_,'܁༯┆تم تفعيل الايدي') 
 end
 if text == 'تعطيل الايدي' and Owner(msg) then  
@@ -6589,17 +6589,17 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id..'Source-Becca:Lock:ID:Bot'..msg.chat_id_,true) 
+database:set(bot_id..'SourceBeccaa:Lock:ID:Bot'..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_,'܁༯┆تم تعطيل الايدي') 
 end
 if text == 'تفعيل الايدي بالصوره' and Owner(msg) then   
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:del(bot_id..'Source-Becca:Lock:ID:Bot:Photo'..msg.chat_id_) 
+database:del(bot_id..'SourceBeccaa:Lock:ID:Bot:Photo'..msg.chat_id_) 
 send(msg.chat_id_, msg.id_,'܁༯┆تم تفعيل الايدي بالصوره') 
 end
 if text == 'تعطيل الايدي بالصوره' and Owner(msg) then  
@@ -6612,17 +6612,17 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-database:set(bot_id..'Source-Becca:Lock:ID:Bot:Photo'..msg.chat_id_,true) 
+database:set(bot_id..'SourceBeccaa:Lock:ID:Bot:Photo'..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_,'܁༯┆تم تعطيل الايدي بالصوره') 
 end
 if text == 'تعين الايدي' and Owner(msg) then
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
-database:setex(bot_id.."Source-Becca:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
+database:setex(bot_id.."SourceBeccaa:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
 ܁༯┆ ارسل الان النص
 ܁༯┆ يمكنك اضافه :
@@ -6642,26 +6642,26 @@ return false
 end 
 if text == 'حذف الايدي' or text == 'مسح الايدي' then
 if Owner(msg) then
-database:del(bot_id.."Source-Becca:Klesh:Id:Bot"..msg.chat_id_)
+database:del(bot_id.."SourceBeccaa:Klesh:Id:Bot"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '܁༯┆تم ازالة كليشة الايدي ')
 end
 return false  
 end 
 
-if database:get(bot_id.."Source-Becca:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) then 
+if database:get(bot_id.."SourceBeccaa:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) then 
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_,"܁༯┆تم الغاء تعين الايدي") 
-database:del(bot_id.."Source-Becca:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
+database:del(bot_id.."SourceBeccaa:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
-database:del(bot_id.."Source-Becca:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
-database:set(bot_id.."Source-Becca:Klesh:Id:Bot"..msg.chat_id_,text:match("(.*)"))
+database:del(bot_id.."SourceBeccaa:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
+database:set(bot_id.."SourceBeccaa:Klesh:Id:Bot"..msg.chat_id_,text:match("(.*)"))
 send(msg.chat_id_, msg.id_,'܁༯┆تم تعين الايدي')    
 end
 
-if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not database:get(bot_id..'Source-Becca:Lock:ID:Bot'..msg.chat_id_) then
-if not database:sismember(bot_id..'Source-Becca:Spam:Group'..msg.sender_user_id_,text) then
-database:sadd(bot_id.."Source-Becca:Spam:Group"..msg.sender_user_id_,text) 
+if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not database:get(bot_id..'SourceBeccaa:Lock:ID:Bot'..msg.chat_id_) then
+if not database:sismember(bot_id..'SourceBeccaa:Spam:Group'..msg.sender_user_id_,text) then
+database:sadd(bot_id.."SourceBeccaa:Spam:Group"..msg.sender_user_id_,text) 
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
@@ -6670,12 +6670,12 @@ else
 UserName_User = 'لا يوجد'
 end
 local Id = msg.sender_user_id_
-local NumMsg = database:get(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
+local NumMsg = database:get(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(Id,msg.chat_id_)
-local message_edit = database:get(bot_id..'Source-Becca:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
+local message_edit = database:get(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_) or 0
-local Add_Mem = database:get(bot_id.."Source-Becca:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
+local Add_Mem = database:get(bot_id.."SourceBeccaa:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
 local Total_Photp = (taha.total_count_ or 0)
 local Texting = {
 'صورتك فدشي 😘😔❤️',
@@ -6686,8 +6686,8 @@ local Texting = {
 "عمري الحلوين 💘",
 }
 local Description = Texting[math.random(#Texting)]
-local get_id = database:get(bot_id.."Source-Becca:Klesh:Id:Bot"..msg.chat_id_)
-if not database:get(bot_id..'Source-Becca:Lock:ID:Bot:Photo'..msg.chat_id_) then
+local get_id = database:get(bot_id.."SourceBeccaa:Klesh:Id:Bot"..msg.chat_id_)
+if not database:get(bot_id..'SourceBeccaa:Lock:ID:Bot:Photo'..msg.chat_id_) then
 if taha.photos_[0] then
 if get_id then
 local get_id = get_id:gsub('#AddMem',Add_Mem) 
@@ -6747,7 +6747,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and text:match('^تنظيف (%d+)$') and Constructor(msg) and database:get(bot_id..'Lock:delmsg'..msg.chat_id_) then                
-if not database:get(bot_id..'Source-Becca:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_) then           
+if not database:get(bot_id..'SourceBeccaa:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_) then           
 local Number = tonumber(text:match('^تنظيف (%d+)$')) 
 if Number > 1000 then 
 send(msg.chat_id_, msg.id_,'܁༯┆لا تستطيع تنضيف اكثر من *~ 1000* رساله') 
@@ -6759,13 +6759,13 @@ DeleteMessage(msg.chat_id_,{[0]=Message})
 Message = Message - 1048576
 end
 send(msg.chat_id_, msg.id_,'܁༯┆تم تنظيف *~ '..Number..'* رساله .')  
-database:setex(bot_id..'Source-Becca:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'SourceBeccaa:Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 end
 end
 
 
-if text == 'ايدي' and tonumber(msg.reply_to_message_id_) > 0 and not database:get(bot_id..'Source-Becca:Lock:ID:Bot'..msg.chat_id_) then
-function Function_Source-Becca(extra, result, success)
+if text == 'ايدي' and tonumber(msg.reply_to_message_id_) > 0 and not database:get(bot_id..'SourceBeccaa:Lock:ID:Bot'..msg.chat_id_) then
+function Function_SourceBeccaa(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 if data.first_name_ == false then
 send(msg.chat_id_, msg.id_,'܁༯┆ الحساب محذوف لا توجد معلوماته ')
@@ -6777,22 +6777,22 @@ else
 UserName_User = 'لا يوجد'
 end
 local Id = data.id_
-local NumMsg = database:get(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..data.id_) or 0
+local NumMsg = database:get(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..data.id_) or 0
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(Id,msg.chat_id_)
-local message_edit = database:get(bot_id..'Source-Becca:message_edit'..msg.chat_id_..data.id_) or 0
+local message_edit = database:get(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
-local Add_Mem = database:get(bot_id.."Source-Becca:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
+local Add_Mem = database:get(bot_id.."SourceBeccaa:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
 send(msg.chat_id_, msg.id_,'*܁༯┆ايديه - '..Id..'\n܁༯┆رسائله - '..NumMsg..'\n܁༯┆معرفه - *['..UserName_User..']*\n܁༯┆تفاعله - '..TotalMsg..'\n܁༯┆رتبته - '..Status_Gps..'\n܁༯┆تعديلاته - '..message_edit..'\n܁༯┆جهاته - '..Add_Mem..'\n܁༯┆نوع الكشف - بالرد \n*') 
 end,nil)   
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Source-Becca, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_SourceBeccaa, nil)
 return false
 end
 
-if text and text:match("^ايدي @(.*)$")  and not database:get(bot_id..'Source-Becca:Lock:ID:Bot'..msg.chat_id_) then
+if text and text:match("^ايدي @(.*)$")  and not database:get(bot_id..'SourceBeccaa:Lock:ID:Bot'..msg.chat_id_) then
 local username = text:match("^ايدي @(.*)$") 
-function Function_Source-Becca(extra, result, success)
+function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
 tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(arg,data) 
 if data.username_ then
@@ -6801,19 +6801,19 @@ else
 UserName_User = 'لا يوجد'
 end
 local Id = data.id_
-local NumMsg = database:get(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..data.id_) or 0
+local NumMsg = database:get(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..data.id_) or 0
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(Id,msg.chat_id_)
-local message_edit = database:get(bot_id..'Source-Becca:message_edit'..msg.chat_id_..data.id_) or 0
+local message_edit = database:get(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
-local Add_Mem = database:get(bot_id.."Source-Becca:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
+local Add_Mem = database:get(bot_id.."SourceBeccaa:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
 send(msg.chat_id_, msg.id_,'*܁༯┆ايديه - '..Id..'\n܁༯┆رسائله - '..NumMsg..'\n܁༯┆معرفه - *['..UserName_User..']*\n܁༯┆تفاعله - '..TotalMsg..'\n܁༯┆رتبته - '..Status_Gps..'\n܁༯┆تعديلاته - '..message_edit..'\n܁༯┆جهاته - '..Add_Mem..'\n܁༯┆نوع الكشف - بالمعرف \n*') 
 end,nil)   
 else
 send(msg.chat_id_, msg.id_,'܁༯┆لا يوجد حساب بهاذا المعرف')
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Source-Becca, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_SourceBeccaa, nil)
 return false
 end
 if text == "سمايلات" or text == "سمايل" then  
@@ -7307,32 +7307,32 @@ Teext = [[
 send(msg.chat_id_, msg.id_,Teext) 
 end
 if text == 'رسائلي' then
-local nummsg = database:get(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 1
+local nummsg = database:get(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 1
 local Text = '܁༯┆عدد رسائلك هنا *~ '..nummsg..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'مسح رسائلي' then
-database:del(bot_id..'Source-Becca:messageUser'..msg.chat_id_..':'..msg.sender_user_id_)
+database:del(bot_id..'SourceBeccaa:messageUser'..msg.chat_id_..':'..msg.sender_user_id_)
 local Text = '܁༯┆تم مسح جميع رسائلك '
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'سحكاتي' or text == 'تعديلاتي' then
-local edit = database:get(bot_id..'Source-Becca:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
+local edit = database:get(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Text = '܁༯┆عدد التعديلات هنا *~ '..edit..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' then
-database:del(bot_id..'Source-Becca:message_edit'..msg.chat_id_..':'..msg.sender_user_id_)
+database:del(bot_id..'SourceBeccaa:message_edit'..msg.chat_id_..':'..msg.sender_user_id_)
 local Text = '܁༯┆تم مسح جميع تعديلاتك '
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'جهاتي' then
-local addmem = database:get(bot_id.."Source-Becca:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
+local addmem = database:get(bot_id.."SourceBeccaa:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
 local Text = '܁༯┆عدد جهاتك المضافه هنا *~ '..addmem..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'مسح جهاتي' then
-database:del(bot_id..'Source-Becca:Add:Memp'..msg.chat_id_..':'..msg.sender_user_id_)
+database:del(bot_id..'SourceBeccaa:Add:Memp'..msg.chat_id_..':'..msg.sender_user_id_)
 local Text = '܁༯┆تم مسح جميع جهاتك المضافه '
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -7379,7 +7379,7 @@ return false
 end
 local NUMNKO = (NUMPY * 50)
 database:decrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_,NUMPY)  
-database:incrby(bot_id.."Source-Becca:messageUser"..msg.chat_id_..":"..msg.sender_user_id_,NUMNKO)  
+database:incrby(bot_id.."SourceBeccaa:messageUser"..msg.chat_id_..":"..msg.sender_user_id_,NUMNKO)  
 send(msg.chat_id_,msg.id_,"܁༯┆تم خصم *~ { "..NUMPY.." }* من مجوهراتك \n܁༯┆وتم اضافة* ~ { "..(NUMPY * 50).." } رساله الى رسالك *")
 end 
 return false 
@@ -7398,7 +7398,7 @@ database:del(bot_id.."Tshak:numadd:user" .. msg.chat_id_ .. "" .. msg.sender_use
 local numadded = string.match(text, "(%d+)") 
 local iduserr = database:get(bot_id.."Tshak:id:user"..msg.chat_id_)  
 database:del(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..msg.sender_user_id_) 
-database:incrby(bot_id.."Source-Becca:messageUser"..msg.chat_id_..":"..iduserr,numadded)  
+database:incrby(bot_id.."SourceBeccaa:messageUser"..msg.chat_id_..":"..iduserr,numadded)  
 send(msg.chat_id_, msg.id_,"܁༯┆تم اضافة له {"..numadded.."} من الرسائل")  
 end
 if database:get(bot_id.."Tshak:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
@@ -7469,15 +7469,15 @@ if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_
 local Num = text:match("^اضف رسائل (%d+)$")
 function reply(extra, result, success)
 database:del(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..result.sender_user_id_) 
-database:incrby(bot_id.."Source-Becca:messageUser"..msg.chat_id_..":"..result.sender_user_id_,Num)  
+database:incrby(bot_id.."SourceBeccaa:messageUser"..msg.chat_id_..":"..result.sender_user_id_,Num)  
 send(msg.chat_id_, msg.id_, "\n܁༯┆تم اضافة له {"..Num.."} من الرسائل")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
 end
 
-if text == "تنظيف المشتركين" and DevSource-Becca(msg) then
-local pv = database:smembers(bot_id..'Source-Becca:UsersBot')  
+if text == "تنظيف المشتركين" and DevSourceBeccaa(msg) then
+local pv = database:smembers(bot_id..'SourceBeccaa:UsersBot')  
 local sendok = 0
 for i = 1, #pv do
 tdcli_function({ID='GetChat',chat_id_ = pv[i]},function(arg,dataq)
@@ -7486,7 +7486,7 @@ if data.ID and data.ID == "Ok"  then
 print('\27[30;33m»» THE USER IS SAVE ME ↓\n»» '..pv[i]..'\n\27[1;37m')
 else
 print('\27[30;31m»» THE USER IS BLOCK ME ↓\n»» '..pv[i]..'\n\27[1;37m')
-database:srem(bot_id..'Source-Becca:UsersBot',pv[i])  
+database:srem(bot_id..'SourceBeccaa:UsersBot',pv[i])  
 sendok = sendok + 1
 end
 if #pv == i then 
@@ -7502,8 +7502,8 @@ end,nil)
 end
 return false
 end
-if text == "تنظيف الكروبات" and DevSource-Becca(msg) then
-local group = database:smembers(bot_id..'Source-Becca:Chek:Groups')  
+if text == "تنظيف الكروبات" and DevSourceBeccaa(msg) then
+local group = database:smembers(bot_id..'SourceBeccaa:Chek:Groups')  
 local w = 0
 local q = 0
 for i = 1, #group do
@@ -7511,21 +7511,21 @@ tdcli_function({ID='GetChat',chat_id_ = group[i]
 },function(arg,data)
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
 print('\27[30;34m»» THE BOT IS NOT ADMIN ↓\n»» '..group[i]..'\n\27[1;37m')
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 w = w + 1
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 q = q + 1
 print('\27[30;35m»» THE BOT IS LEFT GROUP ↓\n»» '..group[i]..'\n\27[1;37m')
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 q = q + 1
 print('\27[30;36m»» THE BOT IS KICKED GROUP ↓\n»» '..group[i]..'\n\27[1;37m')
 end
 if data and data.code_ and data.code_ == 400 then
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 w = w + 1
 end
 if #group == i then 
@@ -7551,13 +7551,13 @@ end,nil)
 end
 return false
 end
-if text == ("تحديث السورس") and DevSource-Becca(msg) then  
+if text == ("تحديث السورس") and DevSourceBeccaa(msg) then  
 send(msg.chat_id_,msg.id_,'܁༯┆تم التحديث')
-os.execute('rm -rf Source-Becca.lua')
+os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/start.lua')
-dofile('Source-Becca.lua')  
+os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/SourceBeccaa.lua')
+os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/start.lua')
+dofile('SourceBeccaa.lua')  
 return false
 end
 if text == "راسلني" then
@@ -7568,13 +7568,13 @@ https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. 
 end
 if text == "تعطيل الزخرفه" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الزخرفه')
-database:set(bot_id.."Source-Becca:zhrf_Bots"..msg.chat_id_,"close")
+database:set(bot_id.."SourceBeccaa:zhrf_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل الزخرفه" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الزخرفه')
-database:set(bot_id.."Source-Becca:zhrf_Bots"..msg.chat_id_,"open")
+database:set(bot_id.."SourceBeccaa:zhrf_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^زخرفه (.*)$") and database:get(bot_id.."Source-Becca:zhrf_Bots"..msg.chat_id_) == "open" then
+if text and text:match("^زخرفه (.*)$") and database:get(bot_id.."SourceBeccaa:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://forhassan.ml/Black/hso.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
@@ -7588,13 +7588,13 @@ send(msg.chat_id_, msg.id_, t..'┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n܁༯┆ا�
 end
 if text == "تعطيل الابراج" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الابراج')
-database:set(bot_id.."Source-Becca:brj_Bots"..msg.chat_id_,"close")
+database:set(bot_id.."SourceBeccaa:brj_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل الابراج" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الابراج')
-database:set(bot_id.."Source-Becca:brj_Bots"..msg.chat_id_,"open")
+database:set(bot_id.."SourceBeccaa:brj_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^برج (.*)$") and database:get(bot_id.."Source-Becca:brj_Bots"..msg.chat_id_) == "open" then
+if text and text:match("^برج (.*)$") and database:get(bot_id.."SourceBeccaa:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
 gk = https.request('https://forhassan.ml/Black/br.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
@@ -7602,13 +7602,13 @@ send(msg.chat_id_, msg.id_, br.ok.hso)
 end
 if text == "تعطيل حساب العمر" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل حساب العمر')
-database:set(bot_id.."Source-Becca:age_Bots"..msg.chat_id_,"close")
+database:set(bot_id.."SourceBeccaa:age_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل حساب العمر" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل حساب العمر')
-database:set(bot_id.."Source-Becca:age_Bots"..msg.chat_id_,"open")
+database:set(bot_id.."SourceBeccaa:age_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^احسب (.*)$") and database:get(bot_id.."Source-Becca:age_Bots"..msg.chat_id_) == "open" then
+if text and text:match("^احسب (.*)$") and database:get(bot_id.."SourceBeccaa:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
 ge = https.request('https://forhassan.ml/Black/age.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
@@ -7616,13 +7616,13 @@ send(msg.chat_id_, msg.id_, ag.ok.hso)
 end
 if text == "تعطيل الانستا" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الانستا')
-database:set(bot_id.."Source-Becca:insta_bot"..msg.chat_id_,"close")
+database:set(bot_id.."SourceBeccaa:insta_bot"..msg.chat_id_,"close")
 end
 if text == "تفعيل الانستا" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الانستا')
-database:set(bot_id.."Source-Becca:insta_bot"..msg.chat_id_,"open")
+database:set(bot_id.."SourceBeccaa:insta_bot"..msg.chat_id_,"open")
 end
-if text and text:match("^معلومات (.*)$") and database:get(bot_id.."Source-Becca:insta_bot"..msg.chat_id_) == "open" then
+if text and text:match("^معلومات (.*)$") and database:get(bot_id.."SourceBeccaa:insta_bot"..msg.chat_id_) == "open" then
 local Textni = text:match("^معلومات (.*)$")
 data,res = https.request('https://forhassan.ml/Black/insta.php?username='..URL.escape(Textni)..'')
 if res == 200 then
@@ -7636,14 +7636,14 @@ end
 end
 if text == "تعطيل الافلام" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الافلام')
-database:set(bot_id.."Source-Becca:movie_bot"..msg.chat_id_,"close")
+database:set(bot_id.."SourceBeccaa:movie_bot"..msg.chat_id_,"close")
 end
 if text == "تفعيل الافلام" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الافلام')
-database:set(bot_id.."Source-Becca:movie_bot"..msg.chat_id_,"open")
+database:set(bot_id.."SourceBeccaa:movie_bot"..msg.chat_id_,"open")
 end
 
-if text and text:match("^فلم (.*)$") and database:get(bot_id.."Source-Becca:movie_bot"..msg.chat_id_) == "open" then
+if text and text:match("^فلم (.*)$") and database:get(bot_id.."SourceBeccaa:movie_bot"..msg.chat_id_) == "open" then
 local Textm = text:match("^فلم (.*)$")
 data,res = https.request('https://forhassan.ml/Black/movie.php?serch='..URL.escape(Textm)..'')
 if res == 200 then
@@ -7675,38 +7675,38 @@ if text and text:match("^كول (.*)$") then
 local Textxt = text:match("^كول (.*)$")
 send(msg.chat_id_, msg.id_, Textxt)
 end
-if text == 'تفعيل البوت الخدمي' and DevSource-Becca(msg) then  
-database:del(bot_id..'Source-Becca:Free:Add:Bots') 
+if text == 'تفعيل البوت الخدمي' and DevSourceBeccaa(msg) then  
+database:del(bot_id..'SourceBeccaa:Free:Add:Bots') 
 send(msg.chat_id_, msg.id_,'܁༯┆تم تفعيل البوت الخدمي ') 
 end
-if text == 'تعطيل البوت الخدمي' and DevSource-Becca(msg) then  
-database:set(bot_id..'Source-Becca:Free:Add:Bots',true) 
+if text == 'تعطيل البوت الخدمي' and DevSourceBeccaa(msg) then  
+database:set(bot_id..'SourceBeccaa:Free:Add:Bots',true) 
 send(msg.chat_id_, msg.id_,'܁༯┆تم تعطيل البوت الخدمي') 
 end
-if text and text:match("^تعين عدد الاعضاء (%d+)$") and DevSource-Becca(msg) then
+if text and text:match("^تعين عدد الاعضاء (%d+)$") and DevSourceBeccaa(msg) then
 local Num = text:match("تعين عدد الاعضاء (%d+)$") 
-database:set(bot_id..'Source-Becca:Num:Add:Bot',Num) 
+database:set(bot_id..'SourceBeccaa:Num:Add:Bot',Num) 
 send(msg.chat_id_, msg.id_,'܁༯┆ تم وضع عدد الاعضاء *~'..Num..'* عضو')
 end
 if text =='الاحصائيات' and DevBot(msg) then
-local Groups = database:scard(bot_id..'Source-Becca:Chek:Groups')  
-local Users = database:scard(bot_id..'Source-Becca:UsersBot')  
+local Groups = database:scard(bot_id..'SourceBeccaa:Chek:Groups')  
+local Users = database:scard(bot_id..'SourceBeccaa:UsersBot')  
 send(msg.chat_id_, msg.id_,'܁༯┆احصائيات البوت \n\n܁༯┆عدد المجموعات *~ '..Groups..'\n܁༯┆عدد المشتركين ~ '..Users..'*')
 end
-if text == 'جلب نسخه احتياطيه' and DevSource-Becca(msg) then
-local list = database:smembers(bot_id..'Source-Becca:Chek:Groups')  
+if text == 'جلب نسخه احتياطيه' and DevSourceBeccaa(msg) then
+local list = database:smembers(bot_id..'SourceBeccaa:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
-NAME = 'Source-Becca Chat'
-ASAS = database:smembers(bot_id.."Source-Becca:Basic:Constructor"..v)
-MNSH = database:smembers(bot_id.."Source-Becca:Constructor"..v)
-MDER = database:smembers(bot_id.."Source-Becca:Manager"..v)
-MOD = database:smembers(bot_id.."Source-Becca:Mod:User"..v)
-link = database:get(bot_id.."Source-Becca:Link_Group"..v) or ''
+NAME = 'SourceBeccaa Chat'
+ASAS = database:smembers(bot_id.."SourceBeccaa:Basic:Constructor"..v)
+MNSH = database:smembers(bot_id.."SourceBeccaa:Constructor"..v)
+MDER = database:smembers(bot_id.."SourceBeccaa:Manager"..v)
+MOD = database:smembers(bot_id.."SourceBeccaa:Mod:User"..v)
+link = database:get(bot_id.."SourceBeccaa:Link_Group"..v) or ''
 if k == 1 then
-t = t..'"'..v..'":{"Source-Becca":"'..NAME..'",'
+t = t..'"'..v..'":{"SourceBeccaa":"'..NAME..'",'
 else
-t = t..',"'..v..'":{"Source-Becca":"'..NAME..'",'
+t = t..',"'..v..'":{"SourceBeccaa":"'..NAME..'",'
 end
 if #ASAS ~= 0 then 
 t = t..'"ASAS":['
@@ -7761,7 +7761,7 @@ File:close()
 sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '܁༯┆ عدد مجموعات التي في البوت { '..#list..'}')
 end
 if text == 'المطور' or text == 'مطور' or text == 'المطورين' then
-local Text_Dev = database:get(bot_id..'Source-Becca:Text_Dev')
+local Text_Dev = database:get(bot_id..'SourceBeccaa:Text_Dev')
 if Text_Dev then 
 send(msg.chat_id_, msg.id_,Text_Dev)
 else
@@ -7769,10 +7769,10 @@ local Name = '܁༯┆مطور البوت  : [ '..UserName..' ]'
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end
 end
-if text == 'الملفات' and DevSource-Becca(msg) then
+if text == 'الملفات' and DevSourceBeccaa(msg) then
 t = '܁༯┆جميع الملفات : \n — — — — — — — — — \n'
 i = 0
-for v in io.popen('ls Source-Becca_Files'):lines() do
+for v in io.popen('ls SourceBeccaa_Files'):lines() do
 if v:match(".lua$") then
 i = i + 1
 t = t..i..'*~ '..v..'*\n'
@@ -7781,8 +7781,8 @@ end
 send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
-if DevSource-Becca(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/Source-Becca/files_Source-Becca/master/getfile.json")
+if DevSourceBeccaa(msg) then
+local Get_Files, res = https.request("https://raw.githubusercontent.com/SourceBeccaa/files_SourceBeccaa/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -7791,7 +7791,7 @@ local TextS = "\n܁༯┆اهلا بك في متجر ملفات كوربيكا\n
 local TextE = "\n — — — — — — — — — \n܁༯┆تدل علامة (✔) الملف مفعل\n".."܁༯┆تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
-local Check_File_is_Found = io.open("Source-Becca_Files/"..name,"r")
+local Check_File_is_Found = io.open("SourceBeccaa_Files/"..name,"r")
 if Check_File_is_Found then
 io.close(Check_File_is_Found)
 CeckFile = "(✔)"
@@ -7810,85 +7810,85 @@ return false
 end
 end
 
-if text and text:match("^(تعطيل ملف) (.*)(.lua)$") and DevSource-Becca(msg) then
+if text and text:match("^(تعطيل ملف) (.*)(.lua)$") and DevSourceBeccaa(msg) then
 local name_t = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local file = name_t[2]..'.lua'
-local file_bot = io.open("Source-Becca_Files/"..file,"r")
+local file_bot = io.open("SourceBeccaa_Files/"..file,"r")
 if file_bot then
 io.close(file_bot)
 t = "*܁༯┆ الملف » {"..file.."}\n܁༯┆ تم تعطيله وحذفه بنجاح \n✓*"
 else
 t = "*܁༯┆ بالتاكيد تم تعطيل وحذف ملف » {"..file.."} \n✓*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Source-Becca/files_Source-Becca/master/files_Source-Becca/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/SourceBeccaa/files_SourceBeccaa/master/files_SourceBeccaa/"..file)
 if res == 200 then
-os.execute("rm -fr Source-Becca_Files/"..file)
+os.execute("rm -fr SourceBeccaa_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
-dofile('Source-Becca.lua')  
+dofile('SourceBeccaa.lua')  
 else
 send(msg.chat_id_, msg.id_,"*܁༯┆ عذرا لا يوجد هاكذا ملف في المتجر *\n") 
 end
 return false
 end
-if text and text:match("^(تفعيل ملف) (.*)(.lua)$") and DevSource-Becca(msg) then
+if text and text:match("^(تفعيل ملف) (.*)(.lua)$") and DevSourceBeccaa(msg) then
 local name_t = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local file = name_t[2]..'.lua'
-local file_bot = io.open("Source-Becca_Files/"..file,"r")
+local file_bot = io.open("SourceBeccaa_Files/"..file,"r")
 if file_bot then
 io.close(file_bot)
 t = "*܁༯┆ بالتاكيد تم تنزيل وتفعيل ملف » {"..file.."} \n✓*"
 else
 t = "*܁༯┆ الملف » {"..file.."}\n܁༯┆ تم تنزيله وتفعيله بنجاح \n*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Source-Becca/files_Source-Becca/master/files_Source-Becca/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/SourceBeccaa/files_SourceBeccaa/master/files_SourceBeccaa/"..file)
 if res == 200 then
-local chek = io.open("Source-Becca_Files/"..file,'w+')
+local chek = io.open("SourceBeccaa_Files/"..file,'w+')
 chek:write(json_file)
 chek:close()
 send(msg.chat_id_, msg.id_,t) 
-dofile('Source-Becca.lua')  
+dofile('SourceBeccaa.lua')  
 else
 send(msg.chat_id_, msg.id_,"*܁༯┆ عذرا لا يوجد هاكذا ملف في المتجر *\n") 
 end
 return false
 end
-if text == "مسح جميع الملفات" and DevSource-Becca(msg) then
-os.execute("rm -fr Source-Becca_Files/*")
+if text == "مسح جميع الملفات" and DevSourceBeccaa(msg) then
+os.execute("rm -fr SourceBeccaa_Files/*")
 send(msg.chat_id_,msg.id_,"܁༯┆تم حذف جميع الملفات")
 return false
 end
-if text == 'نقل الاحصائيات' and DevSource-Becca(msg) then
-local Users = database:smembers('Source-Becca:'..bot_id.."userss")
-local Groups = database:smembers('Source-Becca:'..bot_id..'groups') 
+if text == 'نقل الاحصائيات' and DevSourceBeccaa(msg) then
+local Users = database:smembers('SourceBeccaa:'..bot_id.."userss")
+local Groups = database:smembers('SourceBeccaa:'..bot_id..'groups') 
 for i = 1, #Groups do
-database:sadd(bot_id..'Source-Becca:Chek:Groups',Groups[i])  
+database:sadd(bot_id..'SourceBeccaa:Chek:Groups',Groups[i])  
 end
 for i = 1, #Users do
-database:sadd(bot_id..'Source-Becca:UsersBot',Users[i])  
+database:sadd(bot_id..'SourceBeccaa:UsersBot',Users[i])  
 end
 send(msg.chat_id_, msg.id_,'܁༯┆تم نقل : '..#Groups..' كروب\n܁༯┆تم نقل : '..#Users..' مشترك \n܁༯┆من التحديث القديم الى التحديث الجديد')
 end
-if text == 'حذف كليشه المطور' and DevSource-Becca(msg) then
-database:del(bot_id..'Source-Becca:Text_Dev')
+if text == 'حذف كليشه المطور' and DevSourceBeccaa(msg) then
+database:del(bot_id..'SourceBeccaa:Text_Dev')
 send(msg.chat_id_, msg.id_,'܁༯┆ تم حذف كليشه المطور')
 end
-if text == 'وضع كليشه المطور' and DevSource-Becca(msg) then
-database:set(bot_id..'Source-Becca:Set:Text_Dev'..msg.chat_id_,true)
+if text == 'وضع كليشه المطور' and DevSourceBeccaa(msg) then
+database:set(bot_id..'SourceBeccaa:Set:Text_Dev'..msg.chat_id_,true)
 send(msg.chat_id_,msg.id_,'܁༯┆ ارسل الكليشه الان')
 return false
 end
-if text and database:get(bot_id..'Source-Becca:Set:Text_Dev'..msg.chat_id_) then
+if text and database:get(bot_id..'SourceBeccaa:Set:Text_Dev'..msg.chat_id_) then
 if text == 'الغاء' then 
-database:del(bot_id..'Source-Becca:Set:Text_Dev'..msg.chat_id_)
+database:del(bot_id..'SourceBeccaa:Set:Text_Dev'..msg.chat_id_)
 send(msg.chat_id_,msg.id_,'܁༯┆تم الغاء حفظ كليشة المطور')
 return false
 end
-database:set(bot_id..'Source-Becca:Text_Dev',text)
-database:del(bot_id..'Source-Becca:Set:Text_Dev'..msg.chat_id_)
+database:set(bot_id..'SourceBeccaa:Text_Dev',text)
+database:del(bot_id..'SourceBeccaa:Set:Text_Dev'..msg.chat_id_)
 send(msg.chat_id_,msg.id_,'܁༯┆تم حفظ كليشة المطور')
 return false
 end
-if text == 'رفع النسخه الاحتياطيه' and DevSource-Becca(msg) then   
+if text == 'رفع النسخه الاحتياطيه' and DevSourceBeccaa(msg) then   
 if tonumber(msg.reply_to_message_id_) > 0 then
 function by_reply(extra, result, success)   
 if result.content_.document_ then 
@@ -7900,22 +7900,22 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil)
 end
 end
-if text == "تحديث" and DevSource-Becca(msg) then
-dofile("Source-Becca.lua")  
+if text == "تحديث" and DevSourceBeccaa(msg) then
+dofile("SourceBeccaa.lua")  
 send(msg.chat_id_, msg.id_, "܁༯┆تم التحديث")
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://uussuu.ml/Source-Becca/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://uussuu.ml/SourceBeccaa/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @Source-Becca_TEAM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @SourceBeccaa_TEAM ] .')   
 return false 
 end
 Text = [[
 WeLCoMe TeAM KOrAPiCa ∴
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 𖤂
-༯┆[KOrAPiCa TeAm](http://t.me/Source-Becca) ∴
+༯┆[KOrAPiCa TeAm](http://t.me/SourceBeccaa) ∴
 ༯┆[INfO KOrAPiCa](https://t.me/infokora) ∴
 ༯┆[ChAnEl](https://t.me/H6HHHH) ∴
 ༯┆[DeVeLoPeR](https://t.me/iE1BOT) ∴
@@ -7968,7 +7968,7 @@ Text = [[
 ܁༯┆ م4 » لعرض اوامر المنشئين
 ܁༯┆ م5 » لعرض اوامر المطورين
  — — — — — — — — — 
-[܁༯┆Ch Source](t.me/Source-Becca)
+[܁༯┆Ch Source](t.me/SourceBeccaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8015,7 +8015,7 @@ Text = [[
 ܁༯┆الكلايش
 ܁༯┆السيلفي
  — — — — — — — — — 
-[܁༯┆Ch Source](t.me/Source-Becca)
+[܁༯┆Ch Source](t.me/SourceBeccaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8087,7 +8087,7 @@ Text = [[
 ܁༯┆مسح الصلاحيات
 ܁༯┆مسح الرابط
  — — — — — — — — — 
-[܁༯┆Ch Source](t.me/Source-Becca)
+[܁༯┆Ch Source](t.me/SourceBeccaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8134,7 +8134,7 @@ Text = [[
 ܁༯┆تفعيل/تعطيل اوامر التحشيش
 ܁༯┆تفعيل/تعطيل الرابط/جلب الرابط
  — — — — — — — — — 
-[܁༯┆Ch Source](t.me/Source-Becca)
+[܁༯┆Ch Source](t.me/SourceBeccaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8170,7 +8170,7 @@ Text = [[
 ܁༯┆اضف رسائل + العدد بالرد
 ܁༯┆اضف مجوهرات + العدد بالرد
  — — — — — — — — — 
-[܁༯┆Ch Source](t.me/Source-Becca)
+[܁༯┆Ch Source](t.me/SourceBeccaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8220,7 +8220,7 @@ Text = [[
 ܁༯┆رفع/تنزيل منشئ اساسي
 ܁༯┆مسح المنشئين الاساسين
  — — — — — — — — — 
-[܁༯┆Ch Source](t.me/Source-Becca)
+[܁༯┆Ch Source](t.me/SourceBeccaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8235,17 +8235,17 @@ send(msg.chat_id_, msg.id_,'܁༯┆البوت ليس ادمن يرجى ترقي
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = msg.chat_id_:gsub("-100","")}, function(arg,data)  
-if tonumber(data.member_count_) < tonumber(database:get(bot_id..'Source-Becca:Num:Add:Bot') or 0) and not DevSource-Becca(msg) then
-send(msg.chat_id_, msg.id_,'܁༯┆عدد اعضاء المجموعه اقل من *~ {'..(database:get(bot_id..'Source-Becca:Num:Add:Bot') or 0)..'* عضو')
+if tonumber(data.member_count_) < tonumber(database:get(bot_id..'SourceBeccaa:Num:Add:Bot') or 0) and not DevSourceBeccaa(msg) then
+send(msg.chat_id_, msg.id_,'܁༯┆عدد اعضاء المجموعه اقل من *~ {'..(database:get(bot_id..'SourceBeccaa:Num:Add:Bot') or 0)..'* عضو')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
-if database:sismember(bot_id..'Source-Becca:Chek:Groups',msg.chat_id_) then
+if database:sismember(bot_id..'SourceBeccaa:Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,'܁༯┆المجموعه مفعله سابقا ')
 else
 Reply_Status(msg,result.id_,'reply_Add','܁༯┆تم تفعيل المجموعه ~ '..chat.title_..'')
-database:sadd(bot_id..'Source-Becca:Chek:Groups',msg.chat_id_)
+database:sadd(bot_id..'SourceBeccaa:Chek:Groups',msg.chat_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
 NameChat = NameChat:gsub('"',"") 
@@ -8268,7 +8268,7 @@ Text = '܁༯┆تم تفعيل مجموعه جديده\n'..
 '\n܁༯┆عدد اعضاء المجموعه *~ '..NumMember..'*'..
 '\n܁༯┆اسم المجموعه ~ ['..NameChat..']'..
 '\n܁༯┆الرابط ~ ['..LinkGp..']'
-if not DevSource-Becca(msg) then
+if not DevSourceBeccaa(msg) then
 sendText(Id_Sudo,Text,0,'md')
 end
 end
@@ -8288,11 +8288,11 @@ return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
-if not database:sismember(bot_id..'Source-Becca:Chek:Groups',msg.chat_id_) then
+if not database:sismember(bot_id..'SourceBeccaa:Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,'܁༯┆المجموعه معطله سابقا ')
 else
 Reply_Status(msg,result.id_,'reply_Add','܁༯┆تم تعطيل المجموعه ~ '..chat.title_..'')
-database:srem(bot_id..'Source-Becca:Chek:Groups',msg.chat_id_)  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',msg.chat_id_)  
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
 NameChat = NameChat:gsub('"',"") 
@@ -8314,14 +8314,14 @@ Text = '܁༯┆تم تعطيل مجموعه جديده\n'..
 '\n܁༯┆ايدي المجموعه ~ `'..IdChat..'`'..
 '\n܁༯┆اسم المجموعه ~ ['..NameChat..']'..
 '\n܁༯┆الرابط ~ ['..LinkGp..']'
-if not DevSource-Becca(msg) then
+if not DevSourceBeccaa(msg) then
 sendText(Id_Sudo,Text,0,'md')
 end
 end
 end,nil) 
 end,nil) 
 end
-if text == 'تفعيل' and not DevBot(msg) and not database:get(bot_id..'Source-Becca:Free:Add:Bots') then  
+if text == 'تفعيل' and not DevBot(msg) and not database:get(bot_id..'SourceBeccaa:Free:Add:Bots') then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8348,16 +8348,16 @@ var = 'الادمن'
 else 
 var= 'عضو'
 end
-if database:sismember(bot_id..'Source-Becca:Chek:Groups',msg.chat_id_) then
+if database:sismember(bot_id..'SourceBeccaa:Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,'܁༯┆المجموعه مفعله سابقا ')
 else
-if tonumber(data.member_count_) < tonumber(database:get(bot_id..'Source-Becca:Num:Add:Bot') or 0) and not DevSource-Becca(msg) then
-send(msg.chat_id_, msg.id_,'܁༯┆عدد اعضاء المجموعه اقل من *~ {'..(database:get(bot_id..'Source-Becca:Num:Add:Bot') or 0)..'* عضو')
+if tonumber(data.member_count_) < tonumber(database:get(bot_id..'SourceBeccaa:Num:Add:Bot') or 0) and not DevSourceBeccaa(msg) then
+send(msg.chat_id_, msg.id_,'܁༯┆عدد اعضاء المجموعه اقل من *~ {'..(database:get(bot_id..'SourceBeccaa:Num:Add:Bot') or 0)..'* عضو')
 return false
 end
 Reply_Status(msg,result.id_,'reply_Add','܁༯┆تم تفعيل المجموعه ~ '..chat.title_..'')
-database:sadd(bot_id..'Source-Becca:Chek:Groups',msg.chat_id_)  
-database:sadd(bot_id..'Source-Becca:Basic:Constructor'..msg.chat_id_, msg.sender_user_id_)
+database:sadd(bot_id..'SourceBeccaa:Chek:Groups',msg.chat_id_)  
+database:sadd(bot_id..'SourceBeccaa:Basic:Constructor'..msg.chat_id_, msg.sender_user_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NumMember = data.member_count_
 local NameChat = chat.title_
@@ -8382,7 +8382,7 @@ Text = '܁༯┆تم تفعيل مجموعه جديده\n'..
 '\n܁༯┆عدد اعضاء المجموعه *~ '..NumMember..'*'..
 '\n܁༯┆اسم المجموعه ~ ['..NameChat..']'..
 '\n܁༯┆الرابط ~ ['..LinkGp..']'
-if not DevSource-Becca(msg) then
+if not DevSourceBeccaa(msg) then
 sendText(Id_Sudo,Text,0,'md')
 end
 end
@@ -8405,7 +8405,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـا
 end
 return false
 end  
-if DevSource-Becca(msg) then
+if DevSourceBeccaa(msg) then
 local Text = '܁༯┆مرحبا بك في اوامر المطور الجاهزه'
 local keyboard = {
 {'الاحصائيات ⌔','قناة التحديثات ⌔'},
@@ -8430,7 +8430,7 @@ local keyboard = {
 }
 send_inline_key(msg.chat_id_,Text,keyboard)
 else
-if not database:get(bot_id..'Source-Becca:Start:Time'..msg.sender_user_id_) then
+if not database:get(bot_id..'SourceBeccaa:Start:Time'..msg.sender_user_id_) then
 local start = database:get(bot_id.."Start:Bot")  
 if start then 
 Test = start
@@ -8440,10 +8440,10 @@ end
 send(msg.chat_id_, msg.id_, Test) 
 end
 end
-database:setex(bot_id..'Source-Becca:Start:Time'..msg.sender_user_id_,60,true)
+database:setex(bot_id..'SourceBeccaa:Start:Time'..msg.sender_user_id_,60,true)
 return false
 end
-if not DevSource-Becca(msg) and not database:sismember(bot_id..'BaN:In:User',msg.sender_user_id_) and not database:get(bot_id..'Texting:In:Bv') then
+if not DevSourceBeccaa(msg) and not database:sismember(bot_id..'BaN:In:User',msg.sender_user_id_) and not database:get(bot_id..'Texting:In:Bv') then
 send(msg.sender_user_id_,msg.id_,'܁༯┆تمت ارسال رسالتك الى ~ ['..UserName..']')    
 tdcli_function({ID ="GetChat",chat_id_=Id_Sudo},function(arg,chat)  
 tdcli_function({ID ="GetChat",chat_id_=msg.sender_user_id_},function(arg,chat)  
@@ -8454,7 +8454,7 @@ if data and data.messages_ and data.messages_[0].content_.sticker_ then
 sendText(Id_Sudo,'܁༯┆تم ارسال الملصق من ~ ['..string.sub(ta.first_name_,0, 40)..'](tg://user?id='..ta.id_..')',0,'md') 
 return false
 end;end;end,nil);end,nil);end,nil);end,nil);end
-if DevSource-Becca(msg) and msg.reply_to_message_id_ ~= 0  then    
+if DevSourceBeccaa(msg) and msg.reply_to_message_id_ ~= 0  then    
 tdcli_function({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)},function(extra, result, success) 
 if result.forward_info_.sender_user_id_ then     
 id_user = result.forward_info_.sender_user_id_    
@@ -8494,7 +8494,7 @@ Text = '܁༯┆تمت ارسال البصمه اليه .. '
 end     
 sendText(Id_Sudo,Text..'\n'..'܁༯┆ ~ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')',0,'md') 
 end,nil);end,nil);end,nil);end,nil);end 
-if DevSource-Becca(msg) then
+if DevSourceBeccaa(msg) then
 if text == 'تفعيل التواصل ⌔' then  
 database:del(bot_id..'Texting:In:Bv') 
 send(msg.chat_id_, msg.id_,'܁༯┆ تم تفعيل التواصل ') 
@@ -8507,12 +8507,12 @@ if text =='قناة التحديثات ⌔' then
 send(msg.chat_id_, msg.id_,'܁༯┆قناة تحديثات سورس البوت \n\n @infokora')
 end
 if text =='الاحصائيات ⌔' then
-local Groups = database:scard(bot_id..'Source-Becca:Chek:Groups')  
-local Users = database:scard(bot_id..'Source-Becca:UsersBot')  
+local Groups = database:scard(bot_id..'SourceBeccaa:Chek:Groups')  
+local Users = database:scard(bot_id..'SourceBeccaa:UsersBot')  
 send(msg.chat_id_, msg.id_,'܁༯┆احصائيات البوت \n\n܁༯┆عدد المجموعات *~ '..Groups..'\n܁༯┆عدد المشتركين ~ '..Users..'*')
 end
 if text == "تنظيف المشتركين ⌔" then
-local pv = database:smembers(bot_id..'Source-Becca:UsersBot')  
+local pv = database:smembers(bot_id..'SourceBeccaa:UsersBot')  
 local sendok = 0
 for i = 1, #pv do
 tdcli_function({ID='GetChat',chat_id_ = pv[i]},function(arg,dataq)
@@ -8521,7 +8521,7 @@ if data.ID and data.ID == "Ok"  then
 print('\27[30;33m»» THE USER IS SAVE ME ↓\n»» '..pv[i]..'\n\27[1;37m')
 else
 print('\27[30;31m»» THE USER IS BLOCK ME ↓\n»» '..pv[i]..'\n\27[1;37m')
-database:srem(bot_id..'Source-Becca:UsersBot',pv[i])  
+database:srem(bot_id..'SourceBeccaa:UsersBot',pv[i])  
 sendok = sendok + 1
 end
 if #pv == i then 
@@ -8538,7 +8538,7 @@ end
 return false
 end
 if text == "تنظيف الكروبات ⌔" then
-local group = database:smembers(bot_id..'Source-Becca:Chek:Groups')  
+local group = database:smembers(bot_id..'SourceBeccaa:Chek:Groups')  
 local w = 0
 local q = 0
 for i = 1, #group do
@@ -8546,21 +8546,21 @@ tdcli_function({ID='GetChat',chat_id_ = group[i]
 },function(arg,data)
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
 print('\27[30;34m»» THE BOT IS NOT ADMIN ↓\n»» '..group[i]..'\n\27[1;37m')
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 w = w + 1
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 q = q + 1
 print('\27[30;35m»» THE BOT IS LEFT GROUP ↓\n»» '..group[i]..'\n\27[1;37m')
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 q = q + 1
 print('\27[30;36m»» THE BOT IS KICKED GROUP ↓\n»» '..group[i]..'\n\27[1;37m')
 end
 if data and data.code_ and data.code_ == 400 then
-database:srem(bot_id..'Source-Becca:Chek:Groups',group[i])  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',group[i])  
 w = w + 1
 end
 if #group == i then 
@@ -8587,66 +8587,66 @@ end
 return false
 end
 if text == 'تفعيل البوت الخدمي ⌔' then
-database:del(bot_id..'Source-Becca:Free:Add:Bots') 
+database:del(bot_id..'SourceBeccaa:Free:Add:Bots') 
 send(msg.chat_id_, msg.id_,'\n܁༯┆تم تفعيل البوت الخدمي ') 
 end
 if text == 'تعطيل البوت الخدمي ⌔' then
-database:set(bot_id..'Source-Becca:Free:Add:Bots',true) 
+database:set(bot_id..'SourceBeccaa:Free:Add:Bots',true) 
 send(msg.chat_id_, msg.id_,'\n܁༯┆تم تعطيل البوت الخدمي') 
 end
 if text=="اذاعه خاص ⌔" and msg.reply_to_message_id_ == 0 then
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n܁༯┆للخروج ارسل الغاء ") 
 return false
 end 
 if text=="اذاعه ⌔" and msg.reply_to_message_id_ == 0 then
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n܁༯┆للخروج ارسل الغاء ") 
 return false
 end  
 if text=="اذاعه بالتوجيه ⌔" and msg.reply_to_message_id_ == 0  then
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي التوجيه الان") 
 return false
 end 
 if text=="اذاعه بالتوجيه خاص ⌔" and msg.reply_to_message_id_ == 0  then
-if database:get(bot_id.."Source-Becca:Status:Bc") and not DevSource-Becca(msg) then 
+if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,"܁༯┆الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
-database:setex(bot_id.."Source-Becca:Source-Becca:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
+database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"܁༯┆ارسل لي التوجيه الان") 
 return false
 end 
 if text == "تفعيل الاذاعه ⌔" then
-database:del(bot_id.."Source-Becca:Status:Bc") 
+database:del(bot_id.."SourceBeccaa:Status:Bc") 
 send(msg.chat_id_, msg.id_,"\n܁༯┆تم تفعيل الاذاعه " ) 
 return false
 end 
 if text == "تعطيل الاذاعه ⌔" then
-database:set(bot_id.."Source-Becca:Status:Bc",true) 
+database:set(bot_id.."SourceBeccaa:Status:Bc",true) 
 send(msg.chat_id_, msg.id_,"\n܁༯┆تم تعطيل الاذاعه") 
 return false
 end 
 if text == "تفعيل المغادره ⌔" then
-database:del(bot_id.."Source-Becca:Left:Bot"..msg.chat_id_)  
+database:del(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,"܁༯┆تم تفعيل مغادرة البوت") 
 return false 
 end
 if text == "تعطيل المغادره ⌔" then
-database:set(bot_id.."Source-Becca:Left:Bot"..msg.chat_id_,true)   
+database:set(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_,true)   
 send(msg.chat_id_, msg.id_, "܁༯┆تم تعطيل مغادرة البوت") 
 return false 
 end
@@ -8670,27 +8670,27 @@ if text == 'حذف كليشه ستارت ⌔' then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,'܁༯┆تم حذف كليشه ستارت') 
 end
-if text and text:match("^- تغير الاشتراك ⌔ .$") and DevSource-Becca(msg) then  
+if text and text:match("^- تغير الاشتراك ⌔ .$") and DevSourceBeccaa(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, '܁༯┆حسنآ ارسل لي معرف القناة')
 return false  
 end
-if text and text:match("^- تغير رساله الاشتراك ⌔ .$") and DevSource-Becca(msg) then  
+if text and text:match("^- تغير رساله الاشتراك ⌔ .$") and DevSourceBeccaa(msg) then  
 database:setex(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, '܁༯┆حسنآ ارسل لي النص الذي تريده')
 return false  
 end
-if text == "حذف رساله الاشتراك ⌔ ." and DevSource-Becca(msg) then  
+if text == "حذف رساله الاشتراك ⌔ ." and DevSourceBeccaa(msg) then  
 database:del(bot_id..'text:ch:user')
 send(msg.chat_id_, msg.id_, "܁༯┆تم مسح رساله الاشتراك ")
 return false  
 end
-if text and text:match("^- تعين قناة الاشتراك ⌔ .$") and DevSource-Becca(msg) then  
+if text and text:match("^- تعين قناة الاشتراك ⌔ .$") and DevSourceBeccaa(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, '܁༯┆حسنآ ارسل لي معرف القناة')
 return false  
 end
-if text == "- تفعيل الاشتراك الاجباري ⌔ ." and DevSource-Becca(msg) then  
+if text == "- تفعيل الاشتراك الاجباري ⌔ ." and DevSourceBeccaa(msg) then  
 if database:get(bot_id..'add:ch:id') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_,"܁༯┆الاشتراك الاجباري مفعل \n܁༯┆على القناة » ["..addchusername.."]")
@@ -8700,13 +8700,13 @@ send(msg.chat_id_, msg.id_,"܁༯┆اهلا عزيزي المطور \n܁༯┆�
 end
 return false  
 end
-if text == "- تعطيل الاشتراك الاجباري ⌔ ." and DevSource-Becca(msg) then  
+if text == "- تعطيل الاشتراك الاجباري ⌔ ." and DevSourceBeccaa(msg) then  
 database:del(bot_id..'add:ch:id')
 database:del(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, "܁༯┆تم تعطيل الاشتراك الاجباري ")
 return false  
 end
-if text == "- الاشتراك الاجباري ⌔ ." and DevSource-Becca(msg) then  
+if text == "- الاشتراك الاجباري ⌔ ." and DevSourceBeccaa(msg) then  
 if database:get(bot_id..'add:ch:username') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, "܁༯┆تم تفعيل الاشتراك الاجباري \n܁༯┆على القناة » ["..addchusername.."]")
@@ -8757,20 +8757,20 @@ local texxt = string.match(text, "(.*)")
 database:set(bot_id..'text:ch:user',texxt)
 send(msg.chat_id_, msg.id_,'܁༯┆تم تغيير رسالة الاشتراك ')
 end
-if text == ("مسح قائمه العام ⌔") and DevSource-Becca(msg) then
-database:del(bot_id.."Source-Becca:GBan:User")
+if text == ("مسح قائمه العام ⌔") and DevSourceBeccaa(msg) then
+database:del(bot_id.."SourceBeccaa:GBan:User")
 send(msg.chat_id_, msg.id_, "\n܁༯┆تم مسح قائمه العام")
 return false
 end
-if text == ("مسح المطورين ⌔") and DevSource-Becca(msg) then
-database:del(bot_id.."Source-Becca:Sudo:User")
+if text == ("مسح المطورين ⌔") and DevSourceBeccaa(msg) then
+database:del(bot_id.."SourceBeccaa:Sudo:User")
 send(msg.chat_id_, msg.id_, "\n܁༯┆ تم مسح قائمة المطورين  ")
 end
-if text == ("قائمه العام ⌔") and DevSource-Becca(msg) then
-local list = database:smembers(bot_id.."Source-Becca:GBan:User")
+if text == ("قائمه العام ⌔") and DevSourceBeccaa(msg) then
+local list = database:smembers(bot_id.."SourceBeccaa:GBan:User")
 t = "\n܁༯┆قائمة المحظورين عام \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -8783,11 +8783,11 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("المطورين ⌔") and DevSource-Becca(msg) then
-local list = database:smembers(bot_id.."Source-Becca:Sudo:User")
+if text == ("المطورين ⌔") and DevSourceBeccaa(msg) then
+local list = database:smembers(bot_id.."SourceBeccaa:Sudo:User")
 t = "\n܁༯┆قائمة مطورين البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -8800,19 +8800,19 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == 'جلب نسخه احتياطيه ⌔' then
-local list = database:smembers(bot_id..'Source-Becca:Chek:Groups')  
+local list = database:smembers(bot_id..'SourceBeccaa:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
-NAME = 'Source-Becca Chat'
-ASAS = database:smembers(bot_id.."Source-Becca:Basic:Constructor"..v)
-MNSH = database:smembers(bot_id.."Source-Becca:Constructor"..v)
-MDER = database:smembers(bot_id.."Source-Becca:Manager"..v)
-MOD = database:smembers(bot_id.."Source-Becca:Mod:User"..v)
-link = database:get(bot_id.."Source-Becca:Link_Group"..v) or ''
+NAME = 'SourceBeccaa Chat'
+ASAS = database:smembers(bot_id.."SourceBeccaa:Basic:Constructor"..v)
+MNSH = database:smembers(bot_id.."SourceBeccaa:Constructor"..v)
+MDER = database:smembers(bot_id.."SourceBeccaa:Manager"..v)
+MOD = database:smembers(bot_id.."SourceBeccaa:Mod:User"..v)
+link = database:get(bot_id.."SourceBeccaa:Link_Group"..v) or ''
 if k == 1 then
-t = t..'"'..v..'":{"Source-Becca":"'..NAME..'",'
+t = t..'"'..v..'":{"SourceBeccaa":"'..NAME..'",'
 else
-t = t..',"'..v..'":{"Source-Becca":"'..NAME..'",'
+t = t..',"'..v..'":{"SourceBeccaa":"'..NAME..'",'
 end
 if #ASAS ~= 0 then 
 t = t..'"ASAS":['
@@ -8868,15 +8868,15 @@ sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '܁༯┆ ع
 end
 if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'܁༯┆تم التحديث')
-os.execute('rm -rf Source-Becca.lua')
+os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/start.lua')
-dofile('Source-Becca.lua')  
+os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/SourceBeccaa.lua')
+os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/start.lua')
+dofile('SourceBeccaa.lua')  
 return false
 end
 if text == "تحديث الملفات ⌔" then
-dofile("Source-Becca.lua")  
+dofile("SourceBeccaa.lua")  
 send(msg.chat_id_, msg.id_, "܁༯┆تم التحديث")
 end
 end
@@ -8886,7 +8886,7 @@ end
 function tdcli_update_callback(data)
 if data.ID == "UpdateChannel" then 
 if data.channel_.status_.ID == "ChatMemberStatusKicked" then 
-database:srem(bot_id..'Source-Becca:Chek:Groups','-100'..data.channel_.id_)  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups','-100'..data.channel_.id_)  
 end
 end
 if (data.ID == "UpdateNewMessage") then
@@ -8927,24 +8927,24 @@ end
 end
 ------------------------------------------------------------------------
 if msg.content_.ID == "MessageChatDeletePhoto" or msg.content_.ID == "MessageChatChangePhoto" or msg.content_.ID == "MessagePinMessage" or msg.content_.ID == "MessageChatJoinByLink" or msg.content_.ID == "MessageChatAddMembers" or msg.content_.ID == "MessageChatChangeTitle" or msg.content_.ID == "MessageChatDeleteMember" then   
-if database:get(bot_id.."Source-Becca:Lock:tagservr"..msg.chat_id_) then  
+if database:get(bot_id.."SourceBeccaa:Lock:tagservr"..msg.chat_id_) then  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
 return false
 end    
 end   
-if text and not database:sismember(bot_id..'Source-Becca:Spam:Group'..msg.sender_user_id_,text) then
-database:del(bot_id..'Source-Becca:Spam:Group'..msg.sender_user_id_) 
+if text and not database:sismember(bot_id..'SourceBeccaa:Spam:Group'..msg.sender_user_id_,text) then
+database:del(bot_id..'SourceBeccaa:Spam:Group'..msg.sender_user_id_) 
 end
 ------------------------------------------------------------------------
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ ~= false then
-database:set(bot_id..'Source-Becca:User:Name'..msg.sender_user_id_,data.username_)
+database:set(bot_id..'SourceBeccaa:User:Name'..msg.sender_user_id_,data.username_)
 end;end,nil)   
 ------------------------------------------------------------------------
 if msg.content_.ID == "MessageChatAddMembers" then  
-database:set(bot_id.."Source-Becca:Who:Added:Me"..msg.chat_id_..":"..msg.content_.members_[0].id_,msg.sender_user_id_)
+database:set(bot_id.."SourceBeccaa:Who:Added:Me"..msg.chat_id_..":"..msg.content_.members_[0].id_,msg.sender_user_id_)
 local mem_id = msg.content_.members_  
-local Bots = database:get(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_) 
+local Bots = database:get(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_) 
 for i=0,#mem_id do  
 if msg.content_.members_[i].type_.ID == "UserTypeBot" and not Addictive(msg) and Bots == "kick" then   
 https.request("https://api.telegram.org/bot"..token.."/kickChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
@@ -8966,7 +8966,7 @@ end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == "MessageChatAddMembers" then  
 local mem_id = msg.content_.members_  
-local Bots = database:get(bot_id.."Source-Becca:Lock:Bot:kick"..msg.chat_id_) 
+local Bots = database:get(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_) 
 for i=0,#mem_id do  
 if msg.content_.members_[i].type_.ID == "UserTypeBot" and not Addictive(msg) and Bots == "del" then   
 Get_Info = https.request("https://api.telegram.org/bot"..token.."/kickChatMember?chat_id="..msg.chat_id_.."&user_id="..mem_id[i].id_)
@@ -8985,28 +8985,28 @@ end
 end
 end
 ------------------------------------------------------------------------
-if text and database:get(bot_id.."Source-Becca:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-local NewCmmd = database:get(bot_id.."Source-Becca:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
+if text and database:get(bot_id.."SourceBeccaa:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
+local NewCmmd = database:get(bot_id.."SourceBeccaa:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
 if NewCmmd then
-database:del(bot_id.."Source-Becca:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
-database:del(bot_id.."Source-Becca:Set:Cmd:Group:New"..msg.chat_id_)
-database:srem(bot_id.."Source-Becca:List:Cmd:Group:New"..msg.chat_id_,text)
+database:del(bot_id.."SourceBeccaa:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
+database:del(bot_id.."SourceBeccaa:Set:Cmd:Group:New"..msg.chat_id_)
+database:srem(bot_id.."SourceBeccaa:List:Cmd:Group:New"..msg.chat_id_,text)
 send(msg.chat_id_, msg.id_,"܁༯┆تم ازالة الامر من المجموعه")  
 else
 send(msg.chat_id_, msg.id_,"܁༯┆لا يوجد امر بهاذا الاسم تاكد من الامر واعد المحاوله")  
 end
-database:del(bot_id.."Source-Becca:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
+database:del(bot_id.."SourceBeccaa:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
 ------------------------------------------------------------------------
 if data.message_.content_.text_ then
-local NewCmmd = database:get(bot_id.."Source-Becca:Set:Cmd:Group:New1"..msg.chat_id_..":"..data.message_.content_.text_)
+local NewCmmd = database:get(bot_id.."SourceBeccaa:Set:Cmd:Group:New1"..msg.chat_id_..":"..data.message_.content_.text_)
 if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Source-Becca:Name:Bot") or "كوربيكا")
-if not database:get(bot_id.."Source-Becca:Fun_Bots"..msg.chat_id_) then
+local Name_Bot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا")
+if not database:get(bot_id.."SourceBeccaa:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
 local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 🙄','يلعب ع البنات 🙄', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير الحب مال اني ❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
@@ -9028,18 +9028,18 @@ if text and text:match('^'..Name_Bot..' ') then
 data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..Name_Bot..' ','')
 end
 ------------------------------------------------------------------------
-Source-Becca_Started_Bot(msg,data)
-Source-Becca_Files(msg)
+SourceBeccaa_Started_Bot(msg,data)
+SourceBeccaa_Files(msg)
 elseif (data.ID == "UpdateMessageEdited") then
 local msg = data
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.message_id_)},function(extra, result, success)
-database:incr(bot_id..'Source-Becca:message_edit'..result.chat_id_..result.sender_user_id_)
+database:incr(bot_id..'SourceBeccaa:message_edit'..result.chat_id_..result.sender_user_id_)
 local Text = result.content_.text_
-if database:get(bot_id.."Source-Becca:Lock:edit"..msg.chat_id_) and not Text and not BasicConstructor(result) then
-local list = database:smembers(bot_id.."Source-Becca:Basic:Constructor"..msg.chat_id_)
+if database:get(bot_id.."SourceBeccaa:Lock:edit"..msg.chat_id_) and not Text and not BasicConstructor(result) then
+local list = database:smembers(bot_id.."SourceBeccaa:Basic:Constructor"..msg.chat_id_)
 t = "\n܁༯┆ المنشئين الاساسين تعالو مخرب \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Source-Becca:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
@@ -9056,85 +9056,85 @@ local text = result.content_.text_
 if not Addictive(result) then
 ------------------------------------------------------------------------
 if text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end 
 end
 ------------------------------------------------------------------------
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end 
 end
 ------------------------------------------------------------------------
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end
 ------------------------------------------------------------------------
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
 ------------------------------------------------------------------------
 if text and text:match("[hH][tT][tT][pP][sT]") or text and text:match("[tT][eE][lL][eE][gG][rR][aA].[Pp][Hh]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa].[Pp][Hh]") then
-if database:get(bot_id.."Source-Becca:Lock:Link"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Link"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
 ------------------------------------------------------------------------
 if text and text:match("(.*)(@)(.*)") then
-if database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end
 ------------------------------------------------------------------------
 if text and text:match("@") then
-if database:get(bot_id.."Source-Becca:Lock:User:Name"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
 ------------------------------------------------------------------------
 if text and text:match("(.*)(#)(.*)") then
-if database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
 ------------------------------------------------------------------------
 if text and text:match("#") then
-if database:get(bot_id.."Source-Becca:Lock:hashtak"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:hashtak"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
 ------------------------------------------------------------------------
 if text and text:match("/") then
-if database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end 
 end 
 if text and text:match("(.*)(/)(.*)") then
-if database:get(bot_id.."Source-Becca:Lock:Cmd"..msg.chat_id_) then
+if database:get(bot_id.."SourceBeccaa:Lock:Cmd"..msg.chat_id_) then
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 return false
 end 
 end
 ------------------------------------------------------------------------
 if text then
-local Source-Becca_Msg = database:get(bot_id.."Source-Becca:Add:Filter:Rp2"..text..result.chat_id_)   
-if Source-Becca_Msg then    
-Reply_Status(result,result.sender_user_id_,"reply","܁༯┆"..Source-Becca_Msg)  
+local SourceBeccaa_Msg = database:get(bot_id.."SourceBeccaa:Add:Filter:Rp2"..text..result.chat_id_)   
+if SourceBeccaa_Msg then    
+Reply_Status(result,result.sender_user_id_,"reply","܁༯┆"..SourceBeccaa_Msg)  
 DeleteMessage(result.chat_id_, {[0] = data.message_id_})     
 return false
 end
@@ -9145,18 +9145,18 @@ end,nil)
 elseif (data.ID == "UpdateMessageSendSucceeded") then
 local msg = data.message_
 local text = msg.content_.text_
-local Get_Msg_Pin = database:get(bot_id..'Source-Becca:Msg:Pin:Chat'..msg.chat_id_)
+local Get_Msg_Pin = database:get(bot_id..'SourceBeccaa:Msg:Pin:Chat'..msg.chat_id_)
 if Get_Msg_Pin ~= nil then
 if text == Get_Msg_Pin then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) if d.ID == 'Ok' then;database:del(bot_id..'Source-Becca:Msg:Pin:Chat'..msg.chat_id_);end;end,nil)   
+tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) if d.ID == 'Ok' then;database:del(bot_id..'SourceBeccaa:Msg:Pin:Chat'..msg.chat_id_);end;end,nil)   
 elseif (msg.content_.sticker_) then 
 if Get_Msg_Pin == msg.content_.sticker_.sticker_.persistent_id_ then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'Source-Becca:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
+tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'SourceBeccaa:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
 end
 end
 if (msg.content_.animation_) then 
 if msg.content_.animation_.animation_.persistent_id_ == Get_Msg_Pin then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'Source-Becca:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
+tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'SourceBeccaa:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
 end
 end
 if (msg.content_.photo_) then
@@ -9173,34 +9173,34 @@ if msg.content_.photo_.sizes_[3] then
 id_photo = msg.content_.photo_.sizes_[3].photo_.persistent_id_
 end
 if id_photo == Get_Msg_Pin then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'Source-Becca:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
+tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'SourceBeccaa:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
 end
 end
 end
 end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
 print('\27[30;32m»» يرجى الاننتضار لحين تنظيف المجموعات الوهميه ««\n\27[1;37m')
-local list = database:smembers(bot_id..'Source-Becca:UsersBot')  
+local list = database:smembers(bot_id..'SourceBeccaa:UsersBot')  
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
 end 
-local list = database:smembers(bot_id..'Source-Becca:Chek:Groups') 
+local list = database:smembers(bot_id..'SourceBeccaa:Chek:Groups') 
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data)
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=v,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
-database:srem(bot_id..'Source-Becca:Chek:Groups',v)  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',v)  
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
-database:srem(bot_id..'Source-Becca:Chek:Groups',v)  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',v)  
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
-database:srem(bot_id..'Source-Becca:Chek:Groups',v)  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',v)  
 end
 if data and data.code_ and data.code_ == 400 then
-database:srem(bot_id..'Source-Becca:Chek:Groups',v)  
+database:srem(bot_id..'SourceBeccaa:Chek:Groups',v)  
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusEditor" then
-database:sadd(bot_id..'Source-Becca:Chek:Groups',v)  
+database:sadd(bot_id..'SourceBeccaa:Chek:Groups',v)  
 end end,nil)
 end;CleangGroups();end;end
