@@ -7188,7 +7188,7 @@ name = string.gsub(name,"🧝‍♂","🧝‍♀🧝‍♀🧝‍♀🧝‍♀�
 name = string.gsub(name,"🙍‍♂️","🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️🙎‍♂️🙎‍♂️")
 name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♂️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️")
 name = string.gsub(name,"👬","👭👭👭👭👭👬👭👭👭")
-name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
+name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍??‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
 name = string.gsub(name,"🕒","🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒")
 name = string.gsub(name,"🕤","🕥🕥🕥🕥🕥🕤🕥🕥🕥")
 name = string.gsub(name,"⌛️","⏳⏳⏳⏳⏳⏳⌛️⏳⏳")
@@ -7555,8 +7555,8 @@ if text == ("تحديث السورس") and DevSource-Becca(msg) then
 send(msg.chat_id_,msg.id_,'܁༯┆تم التحديث')
 os.execute('rm -rf Source-Becca.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/Source-Becca/master/Source-Becca.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/Source-Becca/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/start.lua')
 dofile('Source-Becca.lua')  
 return false
 end
@@ -8870,8 +8870,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'܁༯┆تم التحديث')
 os.execute('rm -rf Source-Becca.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/Source-Becca/master/Source-Becca.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/Source-Becca/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/start.lua')
 dofile('Source-Becca.lua')  
 return false
 end
