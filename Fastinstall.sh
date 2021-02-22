@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/Source-Becca
+cd $HOME/SourceBeccaa
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Source-Becca
+chmod +x SourceBeccaa
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr Source-Becca.lua
+rm -fr SourceBeccaa.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua"
+wget "https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/SourceBeccaa.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Source-Becca
+cd SourceBeccaa
 rm -rf luarocks*
 lua start.lua
 
