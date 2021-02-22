@@ -71,7 +71,7 @@ RunSource-Becca:write([[
 cd $HOME/Source-Becca
 token="]]..database:get(Server_Source-Becca.."Token_Source-Becca")..[["
 rm -fr Source-Becca.lua
-wget "https://raw.githubusercontent.com/korapica-Team/Source-Becca/master/Source-Becca.lua"
+wget "https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./Source-Becca.lua -p PROFILE --bot=$token
