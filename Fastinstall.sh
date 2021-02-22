@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/korpica
+cd $HOME/Source-Becca
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x korpica
+chmod +x Source-Becca
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr korpica.lua
+rm -fr Source-Becca.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/korapica-Team/korpica/master/korpica.lua"
+wget "https://raw.githubusercontent.com/SourceBecca/Source-Becca/master/Source-Becca.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd korpica
+cd Source-Becca
 rm -rf luarocks*
 lua start.lua
 
