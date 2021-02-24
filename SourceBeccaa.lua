@@ -361,7 +361,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس كوربيكا الرسمي",
+performer_ = "سورس بيكا الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -6098,7 +6098,7 @@ database:set(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, ": ℘ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا") then
+if text == (database:get(bot_id.."SourceBeccaa:Name:Bot") or "بيكا") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6108,7 +6108,7 @@ send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
-Namebot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا")
+Namebot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "بيكا")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -6127,7 +6127,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا")
+Namebot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "بيكا")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
@@ -7783,7 +7783,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n: ℘ اهلا بك في متجر ملفات كوربيكا\n: ℘ يوجد في المتجر ملف الردود\n: ℘ يتم ادراج الملفات في التحديثات القادمه \n — — — — — — — — — \n"
+local TextS = "\n: ℘ اهلا بك في متجر ملفات بيكا\n: ℘ يوجد في المتجر ملف الردود\n: ℘ يتم ادراج الملفات في التحديثات القادمه \n — — — — — — — — — \n"
 local TextE = "\n — — — — — — — — — \n: ℘ تدل علامة (✔) الملف مفعل\n"..": ℘ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -9004,7 +9004,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "كوربيكا")
+local Name_Bot = (database:get(bot_id.."SourceBeccaa:Name:Bot") or "بيكا")
 if not database:get(bot_id.."SourceBeccaa:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
