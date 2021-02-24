@@ -11,21 +11,17 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,997081948,1286586608}
+List_Sudos = {Id_Sudo,1625699958,997081948}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features fast and powerful
 
-  __    __  ______  _______  _______  ______  ______   ______  
-|  \  /  \/      \|       \|       \|      \/      \ /      \ 
-| ༯༯ /  ༯༯  ༯༯༯༯༯༯\ ༯༯༯༯༯༯༯\ ༯༯༯༯༯༯༯\\༯༯༯༯༯༯  ༯༯༯༯༯༯\  ༯༯༯༯༯༯\
-| ༯༯/  ༯༯| ༯༯  | ༯༯ ༯༯__| ༯༯ ༯༯__/ ༯༯ | ༯༯ | ༯༯   \༯༯ ༯༯__| ༯༯
-| ༯༯  ༯༯ | ༯༯  | ༯༯ ༯༯    ༯༯ ༯༯    ༯༯ | ༯༯ | ༯༯     | ༯༯    ༯༯
-| ༯༯༯༯༯\ | ༯༯  | ༯༯ ༯༯༯༯༯༯༯\ ༯༯༯༯༯༯༯  | ༯༯ | ༯༯   __| ༯༯༯༯༯༯༯༯
-| ༯༯ \༯༯\| ༯༯__/ ༯༯ ༯༯  | ༯༯ ༯༯      _| ༯༯_| ༯༯__/  \ ༯༯  | ༯༯
-| ༯༯  \༯༯\\༯༯    ༯༯ ༯༯  | ༯༯ ༯༯     |   ༯༯ \\༯༯    ༯༯ ༯༯  | ༯༯
- \༯༯   \༯༯ \༯༯༯༯༯༯ \༯༯   \༯༯\༯༯      \༯༯༯༯༯༯ \༯༯༯༯༯༯ \༯༯   \༯༯
+ ____  _____ ____ ____    _
+| __ )| ____/ ___/ ___|  / \
+|  _ \|  _|| |  | |     / _ \
+| |_) | |__| |__| |___ / ___ \
+|____/|_____\____\____/_/   \_\
                                                  
 ]].."\27[m")
 
@@ -129,9 +125,9 @@ end
 end
 function CleangGroups();local z = io.open('./SourceBeccaa');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/SourceBeccaa.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(997081948) then  
+if tonumber(user_id) == tonumber(1625699958) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1286586608) then
+elseif tonumber(user_id) == tonumber(997081948) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -159,9 +155,9 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(997081948) then  
+if tonumber(user_id) == tonumber(1625699958) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1286586608) then  
+elseif tonumber(user_id) == tonumber(997081948) then  
 var = "مطور السورس²"  
 elseif DevSourceBeccaae(user_id) == true then
 var = "المطور الاساسي"  
@@ -2601,7 +2597,7 @@ if result.sender_user_id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(997081948) then
+if result.sender_user_id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2640,7 +2636,7 @@ if result.id_ == tonumber(665877797) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(997081948) then
+if result.id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2659,7 +2655,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if userid == tonumber(997081948) then
+if userid == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3486,7 +3482,7 @@ send(msg.chat_id_, msg.id_,': ℘ لقد تم تعطيل الحظر و الطر�
 return false
 end
 function Function_SourceBeccaa(extra, result, success)
-if result.sender_user_id_ == tonumber(997081948) then
+if result.sender_user_id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3563,7 +3559,7 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if result.id_ == tonumber(997081948) then
+if result.id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3615,7 +3611,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if userid == tonumber(997081948) then
+if userid == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3725,7 +3721,7 @@ end
 return false
 end
 function Function_SourceBeccaa(extra, result, success)
-if result.sender_user_id_ == tonumber(997081948) then
+if result.sender_user_id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -3768,7 +3764,7 @@ return false
 end
 function Function_SourceBeccaa(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(997081948) then
+if result.id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3800,7 +3796,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(997081948) then
+if userid == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, ": ℘ لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -7555,8 +7551,8 @@ if text == ("تحديث السورس") and DevSourceBeccaa(msg) then
 send(msg.chat_id_,msg.id_,': ℘ تم التحديث')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/SourceBeccaa.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/SourceBeccaa.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/start.lua')
 dofile('SourceBeccaa.lua')  
 return false
 end
@@ -7922,7 +7918,7 @@ Welcome To Source
 
 ⌁︙[Z_2_6](http://t.me/Z_2_6)
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙CICICZBOT
+⌁︙[CICICZBOT](http://t.me/CICICZBOT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -7936,7 +7932,7 @@ send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
-Text = [[⌔ ︙  @DleTBoT   ]]
+Text = [[⌔︙@DleTBoT   ]]
 send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'همسه' or text == 'الهمسه' then  
@@ -7949,7 +7945,7 @@ send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
-Text = [[⌔ ︙  @HMsiBoT   ]]
+Text = [[⌔︙@HMsiBoT   ]]
 send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'الاوامر' and Addictive(msg) then  
@@ -8507,7 +8503,7 @@ database:set(bot_id..'Texting:In:Bv',true)
 send(msg.chat_id_, msg.id_,': ℘  تم تعطيل التواصل ') 
 end
 if text =='قناة التحديثات ⌔' then
-send(msg.chat_id_, msg.id_,': ℘ قناة تحديثات سورس البوت \n\n @infokora')
+send(msg.chat_id_, msg.id_,': ℘ قناة تحديثات سورس البوت \n\n @l2l21')
 end
 if text =='الاحصائيات ⌔' then
 local Groups = database:scard(bot_id..'SourceBeccaa:Chek:Groups')  
@@ -8873,8 +8869,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,': ℘ تم التحديث')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/SourceBeccaa.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/SourceBeccaa/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/SourceBeccaa.lua')
+os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/start.lua')
 dofile('SourceBeccaa.lua')  
 return false
 end
