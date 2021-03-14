@@ -7912,13 +7912,13 @@ Text = [[
 - Hello By Source
 ⌁︙BECCA TEAM
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[__𝘚𝘰𝘜𝘙𝘤𝘌𝘤 𝘉𝘦𝘊𝘤𝘈 .__](https://t.me/TETEETTT)
+⌁︙[𝘚𝘰𝘜𝘙𝘤𝘌𝘤 𝘉𝘦𝘊𝘤𝘈 .](https://t.me/TETEETTT)
 
-⌁︙[__inFo 𝘉𝘦𝘊𝘤𝘈 .__](http://t.me/l2l21)
+⌁︙[inFo 𝘉𝘦𝘊𝘤𝘈 .](http://t.me/l2l21)
 
-⌁︙[ ](http://t.me/Z_2_6)[__By DeV .__](http://t.me/Z_2_6)
+⌁︙[ By DeV .](http://t.me/Z_2_6)
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[__TwS__](http://t.me/CICICZBOT)
+⌁︙[TwS](http://t.me/CICICZBOT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
