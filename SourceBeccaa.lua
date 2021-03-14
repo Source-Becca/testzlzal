@@ -1448,7 +1448,7 @@ if text == "فتح البوتات " and msg.reply_to_message_id_ == 0 and Addict
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:del(bot_id.."SourceBeccaa:Lock:Bot:kick"..msg.chat_id_)  
@@ -1507,7 +1507,7 @@ if text == "فتح الكل" and msg.reply_to_message_id_ == 0 and Addictive(msg
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:del(bot_id.."SourceBeccaa:Lock:tagservrbot"..msg.chat_id_)   
@@ -1566,7 +1566,7 @@ if text == "قفل المعرفات" and Addictive(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:set(bot_id.."SourceBeccaa:Lock:User:Name"..msg.chat_id_,"del")  
@@ -1724,7 +1724,7 @@ if text == "قفل المتحركه" and Addictive(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:set(bot_id.."SourceBeccaa:Lock:Animation"..msg.chat_id_,"del")  
@@ -2177,7 +2177,7 @@ if text == "قفل التكرار" and Addictive(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:hset(bot_id.."SourceBeccaa:flooding:settings:"..msg.chat_id_ ,"flood","del")  
@@ -2837,7 +2837,7 @@ if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg)
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 local username = text:match("^تنزيل منشئ اساسي @(.*)$")
@@ -3018,7 +3018,7 @@ if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 local userid = text:match("^رفع مدير (%d+)$") 
@@ -3106,7 +3106,7 @@ if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 local username = text:match("^رفع ادمن @(.*)$")
@@ -3152,7 +3152,7 @@ if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 function Function_SourceBeccaa(extra, result, success)
@@ -3188,7 +3188,7 @@ if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 local userid = text:match("^تنزيل ادمن (%d+)$")
@@ -3201,7 +3201,7 @@ if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and A
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
@@ -6569,7 +6569,7 @@ if text == 'تفعيل الايدي' and Owner(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:del(bot_id..'SourceBeccaa:Lock:ID:Bot'..msg.chat_id_) 
@@ -6592,7 +6592,7 @@ if text == 'تفعيل الايدي بالصوره' and Owner(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:del(bot_id..'SourceBeccaa:Lock:ID:Bot:Photo'..msg.chat_id_) 
@@ -6615,7 +6615,7 @@ if text == 'تعين الايدي' and Owner(msg) then
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 database:setex(bot_id.."SourceBeccaa:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
@@ -7905,20 +7905,20 @@ if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or tex
 local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BLOOTO ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @TeTeeTTT ] .')   
 return false
 end
 Text = [[
-Welcome To Source
+- Hello By Source
 ⌁︙BECCA TEAM
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[BLOOTO](http://t.me/BLOOTO)
+⌁︙[__𝘚𝘰𝘜𝘙𝘤𝘌𝘤 𝘉𝘦𝘊𝘤𝘈 .__](https://t.me/TETEETTT)
 
-⌁︙[l2l21](http://t.me/l2l21)
+⌁︙[__inFo 𝘉𝘦𝘊𝘤𝘈 .__](http://t.me/l2l21)
 
-⌁︙[Z_2_6](http://t.me/Z_2_6)
+⌁︙[ ](http://t.me/Z_2_6)[__By DeV .__](http://t.me/Z_2_6)
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[CICICZBOT](http://t.me/CICICZBOT)
+⌁︙[__TwS__](http://t.me/CICICZBOT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -7967,7 +7967,7 @@ Text = [[
 : ℘  م4 » لعرض اوامر المنشئين
 : ℘  م5 » لعرض اوامر المطورين
  — — — — — — — — — 
-[: ℘ Ch Source](t.me/BLOOTO)
+[: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8014,7 +8014,7 @@ Text = [[
 : ℘ الكلايش
 : ℘ السيلفي
  — — — — — — — — — 
-[: ℘ Ch Source](t.me/BLOOTO)
+[: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8086,7 +8086,7 @@ Text = [[
 : ℘ مسح الصلاحيات
 : ℘ مسح الرابط
  — — — — — — — — — 
-[: ℘ Ch Source](t.me/BLOOTO)
+[: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8133,7 +8133,7 @@ Text = [[
 : ℘ تفعيل/تعطيل اوامر التحشيش
 : ℘ تفعيل/تعطيل الرابط/جلب الرابط
  — — — — — — — — — 
-[: ℘ Ch Source](t.me/BLOOTO)
+[: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8169,7 +8169,7 @@ Text = [[
 : ℘ اضف رسائل + العدد بالرد
 : ℘ اضف مجوهرات + العدد بالرد
  — — — — — — — — — 
-[: ℘ Ch Source](t.me/BLOOTO)
+[: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8219,7 +8219,7 @@ Text = [[
 : ℘ رفع/تنزيل منشئ اساسي
 : ℘ مسح المنشئين الاساسين
  — — — — — — — — — 
-[: ℘ Ch Source](t.me/BLOOTO)
+[: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
