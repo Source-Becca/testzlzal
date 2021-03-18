@@ -8415,9 +8415,7 @@ local keyboard = {
 {'⌯  اذاعه بل توحيه ♰','⌯ اذاعه بل توجيه خاص ♰ '},
 {'⌯  تفعيل الاذاعه ♰','⌯ تعطيل الاذاعه ♰'},
 {'⌯  تفعيل المغادره ♰','⌯  تعطيل المغادره ♰'},
-{' ⌯ مسح قائمه العام ♰},
-{'-⌯ مسح الثانويين ♰},
-{' ⌯ الثانويين ♰},
+{'⌯ مسح قائمه العام ♰','⌯ مسح المطورين ♰'},
 {'⌯ حذف كليشه ستارت ♰','⌯ ضع كليشه ستارت ♰'},
 {'- ⌯ تعطيل الاشتراك الاجباري ♰ .'},
 {'- ⌯ تغير الاشتراك ♰ .','⌯ حذف رساله الاشتراك ♰ .'},
@@ -8804,11 +8802,11 @@ t = ": ℘ لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("⌯ الثانويين ♰") and Devkorpica(msg) then
+if text == ("⌯ الثانويين ♰") and DevSourceBeccaa(msg) then
 local list = database:smembers(bot_id.."DEV:Sudo:T")
 t = "\n: ℘ قائمة مطورين الثانويين للبوت \n- — — — — — — — — \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."korpica:User:Name" .. v)
+local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
