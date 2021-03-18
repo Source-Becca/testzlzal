@@ -8407,25 +8407,27 @@ end
 if DevSourceBeccaa(msg) then
 local Text = ': ℘ مرحبا بك في اوامر المطور الجاهزه'
 local keyboard = {
-{'الاحصائيات ⌔','قناة التحديثات ⌔'},
-{'تفعيل التواصل ⌔','تعطيل التواصل ⌔'},
-{'تنظيف الكروبات ⌔','تنظيف المشتركين ⌔'},
-{'تفعيل البوت الخدمي ⌔','تعطيل البوت الخدمي ⌔'},
-{'اذاعه خاص ⌔','المطورين ⌔','اذاعه ⌔'},
-{'اذاعه بالتوجيه ⌔','اذاعه بالتوجيه خاص ⌔'},
-{'تفعيل الاذاعه ⌔','تعطيل الاذاعه ⌔'},
-{'تفعيل المغادره ⌔','تعطيل المغادره ⌔'},
-{'مسح قائمه العام ⌔','مسح المطورين ⌔'},
-{'حذف كليشه ستارت ⌔','ضع كليشه ستارت ⌔'},
-{'- تعطيل الاشتراك الاجباري ⌔ .'},
-{'- تغير الاشتراك ⌔ .','حذف رساله الاشتراك ⌔ .'},
-{'- تفعيل الاشتراك الاجباري ⌔ .'},
-{'- الاشتراك الاجباري ⌔ .'},
-{'- تعين قناة الاشتراك ⌔ .','- تغير رساله الاشتراك ⌔ .'},
-{'تحديث السورس ⌔','تحديث الملفات ⌔'},
-{'قائمه العام ⌔'},
-{'جلب نسخه احتياطيه ⌔'},
-{'الغاء ⌔'}
+{'⌯ الأحصائيات ♰','⌯ قناة التحديثات ♰'},
+{'⌯ تفعيل التواصل ♰','⌯ تعطيل التواصل ♰'},
+{'⌯  تنظيف الكروبات ♰',⌯  تنظيف المشتركين ♰'},
+{'⌯ تفعيل البوت الخدمي ♰','⌯ تعطيل البوت الخدمي ♰'},
+{'⌯ اذاعه خاص ♰','','⌯ المطورين ♰'},
+{'⌯  اذاعه بل توحيه ♰','⌯ اذاعه بل توجيه خاص ♰ '},
+{'⌯  تفعيل الاذاعه ♰','⌯ تعطيل الاذاعه ♰'},
+{'⌯  تفعيل المغادره ♰','⌯  تعطيل المغادره ♰'},
+{' ⌯ مسح قائمه العام ♰},
+{'-⌯ مسح الثانويين ♰},
+{' ⌯ الثانويين ♰},
+{'⌯ حذف كليشه ستارت ♰','⌯ ضع كليشه ستارت ♰'},
+{'- ⌯ تعطيل الاشتراك الاجباري ♰ .'},
+{'- ⌯ تغير الاشتراك ♰ .','⌯ حذف رساله الاشتراك ♰ .'},
+{'- ⌯ تفعيل الاشتراك الاجباري ♰ .'},
+{'- ⌯ الاشتراك الاجباري ♰ .'},
+{'- ⌯ تعين قناة الاشتراك ♰ .','- تغير رساله الاشتراك ♰ .'},
+{' ⌯ تحديث السورس ♰','⌯ تحديث الملفات ♰'},
+{' ⌯ قائمه العام ♰'},
+{' ⌯ جلب نسخه احتياطيه ♰'},
+{' ⌯ الغاء ♰'}
 }
 send_inline_key(msg.chat_id_,Text,keyboard)
 else
@@ -8494,23 +8496,23 @@ end
 sendText(Id_Sudo,Text..'\n'..': ℘  ~ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')',0,'md') 
 end,nil);end,nil);end,nil);end,nil);end 
 if DevSourceBeccaa(msg) then
-if text == 'تفعيل التواصل ⌔' then  
+if text == '⌯  تفعيل التواصل ♰' then  
 database:del(bot_id..'Texting:In:Bv') 
 send(msg.chat_id_, msg.id_,': ℘  تم تفعيل التواصل ') 
 end
-if text == 'تعطيل التواصل ⌔' then  
+if text == '⌯  تعطيل التواصل  ♰' then  
 database:set(bot_id..'Texting:In:Bv',true) 
 send(msg.chat_id_, msg.id_,': ℘  تم تعطيل التواصل ') 
 end
-if text =='قناة التحديثات ⌔' then
+if text =='⌯  قناة التحديثات ♰' then
 send(msg.chat_id_, msg.id_,': ℘ قناة تحديثات سورس البوت \n\n @l2l21')
 end
-if text =='الاحصائيات ⌔' then
+if text =='⌯  الأحصائيات ♰' then
 local Groups = database:scard(bot_id..'SourceBeccaa:Chek:Groups')  
 local Users = database:scard(bot_id..'SourceBeccaa:UsersBot')  
 send(msg.chat_id_, msg.id_,': ℘ احصائيات البوت \n\n: ℘ عدد المجموعات *~ '..Groups..'\n: ℘ عدد المشتركين ~ '..Users..'*')
 end
-if text == "تنظيف المشتركين ⌔" then
+if text == "⌯  تنظيف المشتركين ♰" then
 local pv = database:smembers(bot_id..'SourceBeccaa:UsersBot')  
 local sendok = 0
 for i = 1, #pv do
@@ -8536,7 +8538,7 @@ end,nil)
 end
 return false
 end
-if text == "تنظيف الكروبات ⌔" then
+if text == "⌯  تنظيف الكروبات ♰" then
 local group = database:smembers(bot_id..'SourceBeccaa:Chek:Groups')  
 local w = 0
 local q = 0
@@ -8585,15 +8587,15 @@ end,nil)
 end
 return false
 end
-if text == 'تفعيل البوت الخدمي ⌔' then
+if text == '⌯ تفعيل البوت الخدمي ♰' then
 database:del(bot_id..'SourceBeccaa:Free:Add:Bots') 
 send(msg.chat_id_, msg.id_,'\n: ℘ تم تفعيل البوت الخدمي ') 
 end
-if text == 'تعطيل البوت الخدمي ⌔' then
+if text == '⌯ تعطيل البوت الخدمي ♰' then
 database:set(bot_id..'SourceBeccaa:Free:Add:Bots',true) 
 send(msg.chat_id_, msg.id_,'\n: ℘ تم تعطيل البوت الخدمي') 
 end
-if text=="اذاعه خاص ⌔" and msg.reply_to_message_id_ == 0 then
+if text=="⌯ اذاعه خاص ♰" and msg.reply_to_message_id_ == 0 then
 if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,": ℘ الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8602,7 +8604,7 @@ database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Pv" .. msg.chat_id_ .. ":" 
 send(msg.chat_id_, msg.id_,": ℘ ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n: ℘ للخروج ارسل الغاء ") 
 return false
 end 
-if text=="اذاعه ⌔" and msg.reply_to_message_id_ == 0 then
+if text=="⌯ اذاعه ♰" and msg.reply_to_message_id_ == 0 then
 if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,": ℘ الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8611,7 +8613,7 @@ database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Bc:Grops" .. msg.chat_id_ .. "
 send(msg.chat_id_, msg.id_,": ℘ ارسل لي سواء ~ { ملصق, متحركه, صوره, رساله }\n: ℘ للخروج ارسل الغاء ") 
 return false
 end  
-if text=="اذاعه بالتوجيه ⌔" and msg.reply_to_message_id_ == 0  then
+if text=="⌯ اذاعه بالتوجيه ♰" and msg.reply_to_message_id_ == 0  then
 if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,": ℘ الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8620,7 +8622,7 @@ database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Grops" .. msg.chat_id_ .. 
 send(msg.chat_id_, msg.id_,": ℘ ارسل لي التوجيه الان") 
 return false
 end 
-if text=="اذاعه بالتوجيه خاص ⌔" and msg.reply_to_message_id_ == 0  then
+if text=="⌯ اذاعه بالتوجيه خاص ♰" and msg.reply_to_message_id_ == 0  then
 if database:get(bot_id.."SourceBeccaa:Status:Bc") and not DevSourceBeccaa(msg) then 
 send(msg.chat_id_, msg.id_,": ℘ الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -8629,28 +8631,28 @@ database:setex(bot_id.."SourceBeccaa:SourceBeccaa:Fwd:Pv" .. msg.chat_id_ .. ":"
 send(msg.chat_id_, msg.id_,": ℘ ارسل لي التوجيه الان") 
 return false
 end 
-if text == "تفعيل الاذاعه ⌔" then
+if text == "⌯  تفعيل الاذاعه ♰" then
 database:del(bot_id.."SourceBeccaa:Status:Bc") 
 send(msg.chat_id_, msg.id_,"\n: ℘ تم تفعيل الاذاعه " ) 
 return false
 end 
-if text == "تعطيل الاذاعه ⌔" then
+if text == "⌯  تعطيل الاذاعه ♰" then
 database:set(bot_id.."SourceBeccaa:Status:Bc",true) 
 send(msg.chat_id_, msg.id_,"\n: ℘ تم تعطيل الاذاعه") 
 return false
 end 
-if text == "تفعيل المغادره ⌔" then
+if text == "⌯  تفعيل المغادره ♰" then
 database:del(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,": ℘ تم تفعيل مغادرة البوت") 
 return false 
 end
-if text == "تعطيل المغادره ⌔" then
+if text == "⌯  تعطيل المغادره ♰" then
 database:set(bot_id.."SourceBeccaa:Left:Bot"..msg.chat_id_,true)   
 send(msg.chat_id_, msg.id_, ": ℘ تم تعطيل مغادرة البوت") 
 return false 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء ⌔' then   
+if text == '⌯ الغاء ♰' then   
 send(msg.chat_id_, msg.id_,": ℘ تم الغاء حفظ كليشه ستارت") 
 database:del(bot_id..'Start:Bots') 
 return false
@@ -8660,36 +8662,36 @@ send(msg.chat_id_, msg.id_,': ℘ تم حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
 end
-if text == 'ضع كليشه ستارت ⌔' then
+if text == '⌯ ضع كليشه ستارت ♰' then
 database:set(bot_id..'Start:Bots',true) 
 send(msg.chat_id_, msg.id_,': ℘ ارسل لي الكليشه الان') 
 return false
 end
-if text == 'حذف كليشه ستارت ⌔' then
+if text == '⌯  حذف كليشه ستارت ♰' then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,': ℘ تم حذف كليشه ستارت') 
 end
-if text and text:match("^- تغير الاشتراك ⌔ .$") and DevSourceBeccaa(msg) then  
+if text and text:match("^⌯  تغير الاشتراك ♰$") and DevSourceBeccaa(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, ': ℘ حسنآ ارسل لي معرف القناة')
 return false  
 end
-if text and text:match("^- تغير رساله الاشتراك ⌔ .$") and DevSourceBeccaa(msg) then  
+if text and text:match("^⌯ تغير رساله الاشتراك ♰$") and DevSourceBeccaa(msg) then  
 database:setex(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, ': ℘ حسنآ ارسل لي النص الذي تريده')
 return false  
 end
-if text == "حذف رساله الاشتراك ⌔ ." and DevSourceBeccaa(msg) then  
+if text == "⌯ حذف رساله الاشتراك ♰" and DevSourceBeccaa(msg) then  
 database:del(bot_id..'text:ch:user')
 send(msg.chat_id_, msg.id_, ": ℘ تم مسح رساله الاشتراك ")
 return false  
 end
-if text and text:match("^- تعين قناة الاشتراك ⌔ .$") and DevSourceBeccaa(msg) then  
+if text and text:match("^⌯ تعين قناة الاشتراك ♰$") and DevSourceBeccaa(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, ': ℘ حسنآ ارسل لي معرف القناة')
 return false  
 end
-if text == "- تفعيل الاشتراك الاجباري ⌔ ." and DevSourceBeccaa(msg) then  
+if text == "⌯ تفعيل الاشتراك الاجباري ♰" and DevSourceBeccaa(msg) then  
 if database:get(bot_id..'add:ch:id') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_,": ℘ الاشتراك الاجباري مفعل \n: ℘ على القناة » ["..addchusername.."]")
@@ -8699,13 +8701,13 @@ send(msg.chat_id_, msg.id_,": ℘ اهلا عزيزي المطور \n: ℘ ار�
 end
 return false  
 end
-if text == "- تعطيل الاشتراك الاجباري ⌔ ." and DevSourceBeccaa(msg) then  
+if text == "⌯ تعطيل الاشتراك الاجباري ♰" and DevSourceBeccaa(msg) then  
 database:del(bot_id..'add:ch:id')
 database:del(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, ": ℘ تم تعطيل الاشتراك الاجباري ")
 return false  
 end
-if text == "- الاشتراك الاجباري ⌔ ." and DevSourceBeccaa(msg) then  
+if text == "⌯ الاشتراك الاجباري ♰" and DevSourceBeccaa(msg) then  
 if database:get(bot_id..'add:ch:username') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, ": ℘ تم تفعيل الاشتراك الاجباري \n: ℘ على القناة » ["..addchusername.."]")
@@ -8756,16 +8758,20 @@ local texxt = string.match(text, "(.*)")
 database:set(bot_id..'text:ch:user',texxt)
 send(msg.chat_id_, msg.id_,': ℘ تم تغيير رسالة الاشتراك ')
 end
-if text == ("مسح قائمه العام ⌔") and DevSourceBeccaa(msg) then
+if text == ("⌯ مسح قائمه العام ♰") and DevSourceBeccaa(msg) then
 database:del(bot_id.."SourceBeccaa:GBan:User")
 send(msg.chat_id_, msg.id_, "\n: ℘ تم مسح قائمه العام")
 return false
 end
-if text == ("مسح المطورين ⌔") and DevSourceBeccaa(msg) then
+if text == ("⌯ مسح المطورين ♰") and DevSourceBeccaa(msg) then
 database:del(bot_id.."SourceBeccaa:Sudo:User")
 send(msg.chat_id_, msg.id_, "\n: ℘  تم مسح قائمة المطورين  ")
 end
-if text == ("قائمه العام ⌔") and DevSourceBeccaa(msg) then
+if text == ("⌯ مسح الثانويين ♰") and VIP_DeV(msg) then
+database:del(bot_id.."DEV:Sudo:T")
+send(msg.chat_id_, msg.id_, "\n: ℘ تم مسح قائمة المطورين الثانويين  ")
+end
+if text == ("⌯ قائمه العام ♰") and DevSourceBeccaa(msg) then
 local list = database:smembers(bot_id.."SourceBeccaa:GBan:User")
 t = "\n: ℘ قائمة المحظورين عام \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
@@ -8782,7 +8788,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("المطورين ⌔") and DevSourceBeccaa(msg) then
+if text == ("⌯ المطورين ♰") and DevSourceBeccaa(msg) then
 local list = database:smembers(bot_id.."SourceBeccaa:Sudo:User")
 t = "\n: ℘ قائمة مطورين البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
@@ -8798,7 +8804,23 @@ t = ": ℘ لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == 'جلب نسخه احتياطيه ⌔' then
+if text == ("⌯ الثانويين ♰") and Devkorpica(msg) then
+local list = database:smembers(bot_id.."DEV:Sudo:T")
+t = "\n: ℘ قائمة مطورين الثانويين للبوت \n- — — — — — — — — \n"
+for k,v in pairs(list) do
+local username = database:get(bot_id.."korpica:User:Name" .. v)
+if username then
+t = t..""..k.."- ([@"..username.."])\n"
+else
+t = t..""..k.."- (`"..v.."`)\n"
+end
+end
+if #list == 0 then
+t = ": ℘ لا يوجد مطورين ثانويين"
+end
+send(msg.chat_id_, msg.id_, t)
+end
+if text == '⌯ جلب نسخه احتياطيه ♰' then
 local list = database:smembers(bot_id..'SourceBeccaa:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
@@ -8865,7 +8887,7 @@ File:write(t)
 File:close()
 sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', ': ℘  عدد مجموعات التي في البوت { '..#list..'}')
 end
-if text == "تحديث السورس ⌔" then
+if text == "⌯ تحديث السورس ♰" then
 send(msg.chat_id_,msg.id_,': ℘ تم التحديث')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
@@ -8874,7 +8896,7 @@ os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/mast
 dofile('SourceBeccaa.lua')  
 return false
 end
-if text == "تحديث الملفات ⌔" then
+if text == "⌯ تحديث الملفات ♰" then
 dofile("SourceBeccaa.lua")  
 send(msg.chat_id_, msg.id_, ": ℘ تم التحديث")
 end
