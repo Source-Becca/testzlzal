@@ -8765,10 +8765,6 @@ if text == ("⌯ مسح المطورين ♰") and DevSourceBeccaa(msg) then
 database:del(bot_id.."SourceBeccaa:Sudo:User")
 send(msg.chat_id_, msg.id_, "\n: ℘  تم مسح قائمة المطورين  ")
 end
-if text == ("⌯ مسح الثانويين ♰") and VIP_DeV(msg) then
-database:del(bot_id.."DEV:Sudo:T")
-send(msg.chat_id_, msg.id_, "\n: ℘ تم مسح قائمة المطورين الثانويين  ")
-end
 if text == ("⌯ قائمه العام ♰") and DevSourceBeccaa(msg) then
 local list = database:smembers(bot_id.."SourceBeccaa:GBan:User")
 t = "\n: ℘ قائمة المحظورين عام \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
@@ -8799,22 +8795,6 @@ end
 end
 if #list == 0 then
 t = ": ℘ لا يوجد مطورين"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("⌯ الثانويين ♰") and DevSourceBeccaa(msg) then
-local list = database:smembers(bot_id.."DEV:Sudo:T")
-t = "\n: ℘ قائمة مطورين الثانويين للبوت \n- — — — — — — — — \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."SourceBeccaa:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = ": ℘ لا يوجد مطورين ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
