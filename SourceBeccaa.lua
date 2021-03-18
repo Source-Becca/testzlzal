@@ -16,13 +16,16 @@ print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features fast and powerful
-
+|  --------------------------------------------  |
  ____  _____ ____ ____    _
 | __ )| ____/ ___/ ___|  / \
 |  _ \|  _|| |  | |     / _ \
 | |_) | |__| |__| |___ / ___ \
 |____/|_____\____\____/_/   \_\
-                                                 
+
+This Source Was Developer By (jafar) @Z_2_6.|
+|               - Becca -                 |
+---------------------------------------------
 ]].."\27[m")
 
 io.popen("mkdir SourceBeccaa_Files")
@@ -8506,7 +8509,7 @@ database:set(bot_id..'Texting:In:Bv',true)
 send(msg.chat_id_, msg.id_,'܁༯┆ تم تعطيل التواصل ') 
 end
 if text == '◞قناه تحديثات السورس◜' then 
-send(msg.chat_id_, msg.id_,' ܁༯┆[تحديثات ﭑݪسورس](http://t.me/@infokora) \n ܁༯┆[قناه ﭑݪسورس](http://t.me/@SourceBeccaa_TeaM)')
+send(msg.chat_id_, msg.id_,' ܁༯┆[تحديثات ﭑݪسورس](https://t.me/l2l21) \n ܁༯┆[قناه ﭑݪسورس](https://t.me/TeTeeTTT)')
 end
 if text == '◞المطور◜' or text == 'مطور' or text == 'المطورين' then
 local Text_Dev = database:get(bot_id..'SourceBeccaa:Text_Dev')
