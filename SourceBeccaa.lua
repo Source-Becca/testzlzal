@@ -7951,12 +7951,6 @@ end
 Text = [[⌔︙@JNMSAlBOT   ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'عين' or text == 'شهم' then  
-return false
-end
-Text = [[⌔︙@cccbcc   ]]
-send(msg.chat_id_, msg.id_,Text)
-end
 if text == 'الاوامر' and Addictive(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
