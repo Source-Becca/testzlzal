@@ -7931,11 +7931,11 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n : ℘ قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n ܁༯┆قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
-Text = [[⌔︙@JNHSSlBOT   ]]
+Text = [[⌔︙@DleTBoT   ]]
 send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'همسه' or text == 'الهمسه' then  
@@ -7944,11 +7944,11 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n : ℘ قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'܁༯┆عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n ܁༯┆قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
-Text = [[⌔︙@JNMSAlBOT   ]]
+Text = [[⌔︙@HMsiBoT   ]]
 send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'الاوامر' and Addictive(msg) then  
