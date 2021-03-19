@@ -16,7 +16,7 @@ print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features fast and powerful
-|  --------------------------------------------  |
+|   ------------------------------------------ |
  ____  _____ ____ ____    _
 | __ )| ____/ ___/ ___|  / \
 |  _ \|  _|| |  | |     / _ \
@@ -25,7 +25,7 @@ print("\27[34m"..[[
 
 This Source Was Developer By (jafar) @Z_2_6.|
 |               - Becca -                 |
----------------------------------------------
+|   -----------------------------------------  |
 ]].."\27[m")
 
 io.popen("mkdir SourceBeccaa_Files")
@@ -7964,12 +7964,37 @@ end
 Text = [[
 : ℘  هناك {5} اوامر لعرضها
  — — — — — — — — —
+: ℘  م0 » لعرض اوامر المنظفين
 : ℘  م1 » لعرض اوامر الحمايه
 : ℘  م2 » لعرض اوامر الادمنيه
 : ℘  م3 » لعرض اوامر المدراء
 : ℘  م4 » لعرض اوامر المنشئين
 : ℘  م5 » لعرض اوامر المطورين
  — — — — — — — — — 
+[: ℘ Ch Source](t.me/TeTeeTTT)
+]]
+send(msg.chat_id_, msg.id_,Text)
+return false
+end
+if text == 'م0' and Addictive(msg) then  
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n : ℘ قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
+end
+Text = [[
+⤾꒐ اوامر البوت للمنظفين :-
+- الميديا - لعرض عدد الميديا المرسله
+- امسح - لمسح الميديا المرسله
+
+⤾꒐ اوامر البوت للمالك ،
+- رفع منظف - تنزيل منظف
+- المنظفين - مسح المنظفين
+⎯ ⎯ ⎯ ⎯
 [: ℘ Ch Source](t.me/TeTeeTTT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
