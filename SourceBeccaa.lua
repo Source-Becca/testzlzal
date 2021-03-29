@@ -159,8 +159,8 @@ return var
 end 
 function Get_Rank(user_id,chat_id)
 if tonumber(user_id) == tonumber(1625699958) then  
-var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(997081948) then  
+var = 'مبرمج السورس'
+elseif tonumber(user_id) == tonumber(1397955418) then  
 var = "مطور السورس²"  
 elseif DevSourceBeccaae(user_id) == true then
 var = "المطور الاساسي"  
@@ -4222,7 +4222,64 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
+if text == ("حذف القب") and msg.reply_to_message_id_ ~= 0 then
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,': ℘ عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n : ℘ قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
+end
+if not Constructor(msg) then
+send(msg.chat_id_,msg.id_,'اهلا عزيزي \n عذرا الامر يخص - منشئ - منشئ اساسي فقط')
+return false
+end
+function start_function(extra, result, success)
+if msg.can_be_deleted_ == false then 
+send(msg.chat_id_, msg.id_,' البوت ليس مشرف يرجى ترقيتي ') 
+return false  
+end
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n : ℘ العضو ⇠ ['..data.first_name_..'](t.me/'..(data.username_ or 'cccbcc')..') '
+status  = '\n : ℘تم تنزيله مشرف'
+send(msg.chat_id_, msg.id_, usertext..status)
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text and text:match("^حذف القب @(.*)$") then
 
+if not Constructor(msg) then
+send(msg.chat_id_,msg.id_,'اهلا عزيزي \n عذرا الامر يخص - منشئ - منشئ اساسي فقط')
+return false
+end
+local username = text:match("^حذف القب @(.*)$")
+if msg.can_be_deleted_ == false then 
+send(msg.chat_id_, msg.id_,' البوت ليس مشرف يرجى ترقيتي ') 
+return false  
+end
+function start_function(extra, result, success)
+if result.id_ then
+if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
+send(msg.chat_id_,msg.id_," : ℘ عذرا عزيزي المستخدم هذا معرف قناة يرجى استخدام الامر بصوره صحيحه ")   
+return false 
+end      
+usertext = '\n• العضو ⇠ ['..result.title_..'](t.me/'..(username or 'cccbcc')..')'
+status  = '\n تم حذف لقبه وتم تنزيله مشرف من القروب'
+texts = usertext..status
+send(msg.chat_id_, msg.id_, texts)
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
+else
+send(msg.chat_id_, msg.id_, '• لا يوجد حساب بهذا المعرف')
+end
+end
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
+return false
+end
 if text == 'لقبي' and tonumber(msg.reply_to_message_id_) == 0 then
 Ge = https.request("https://api.telegram.org/bot"..token.."/getChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..msg.sender_user_id_)
 GeId = JSON.decode(Ge)
@@ -4231,6 +4288,34 @@ send(msg.chat_id_, msg.id_,': ℘ وينكو لقب ')
 else
 send(msg.chat_id_, msg.id_,': ℘ لقبك هو : '..GeId.result.custom_title) 
 end
+end
+if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
+if tonumber(msg.reply_to_message_id_) ~= 0 then 
+function prom_reply(extra, result, success) 
+Get_Info(msg,msg.chat_id_,result.sender_user_id_)
+end  
+tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},prom_reply, nil)
+end
+end
+------------------------------------------------------------------------
+if text == "صلاحياتي" then 
+if tonumber(msg.reply_to_message_id_) == 0 then 
+Get_Info(msg,msg.chat_id_,msg.sender_user_id_)
+end  
+end
+------------------------------------------------------------------------
+if text and text:match('^صلاحياته @(.*)') then   
+local username = text:match('صلاحياته @(.*)')   
+if tonumber(msg.reply_to_message_id_) == 0 then 
+function prom_username(extra, result, success) 
+if (result and result.code_ == 400 or result and result.message_ == "USERNAME_NOT_OCCUPIED") then
+SendText(msg.chat_id_,msg.id_,"- المعرف غير صحيح \n*")   
+return false  end   
+
+Get_Info(msg,msg.chat_id_,result.id_)
+end  
+tdcli_function ({ID = "SearchPublicChat",username_ = username},prom_username,nil) 
+end 
 end
 if text == "فحص البوت" and Owner(msg) then
 local chek = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='..msg.chat_id_..'&user_id='..bot_id)
