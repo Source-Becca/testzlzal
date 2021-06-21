@@ -23,7 +23,7 @@ print("\27[34m"..[[
 | |_) | |__| |__| |___ / ___ \
 |____/|_____\____\____/_/   \_\
 
-This Source Was Developer By (jafar) @Z_2_6.|
+This Source Was Developer By (shahum) @Z_2_6.|
 |               - Becca -                 |
 |   -----------------------------------------  |
 ]].."\27[m")
@@ -7639,8 +7639,8 @@ if text == ("تحديث السورس") and DevSourceBeccaa(msg) then
 send(msg.chat_id_,msg.id_,': ℘ تم التحديث')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/SourceBeccaa.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua')
+os.execute('wget https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/start.lua')
 dofile('SourceBeccaa.lua')  
 return false
 end
@@ -9037,8 +9037,8 @@ if text == "◞تحديث السورس◜" then
 send(msg.chat_id_,msg.id_,'܁༯┆تم التحديث')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/SourceBeccaa.lua')
-os.execute('wget https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua')
+os.execute('wget https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/start.lua')
 dofile('SourceBeccaa.lua')  
 return false
 end
