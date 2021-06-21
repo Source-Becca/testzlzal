@@ -10,7 +10,7 @@ chmod +x ts
 get() {
 rm -fr SourceBeccaa.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/SourceBecca/SourceBeccaa/master/SourceBeccaa.lua"
+wget "https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua"
 lua start.lua
 }
 installall(){
