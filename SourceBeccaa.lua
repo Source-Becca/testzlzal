@@ -7318,7 +7318,7 @@ local Text= [[
 - `#id` > ايدي المستخدم
 - `#auto` > تفاعل المستخدم
 - `#stast` > موقع المستخدم 
-- `#edit` > عدد السحكات 
+- `#edit` > عدد السحكات
 - `#game` > المجوهرات
 - `#AddMem` > عدد الجهات
 - `#Description` > تعليق الصوره
@@ -8778,8 +8778,7 @@ end
 return false
 end
 if text == ("تحديث السورس") and DevSourceBeccaa(msg) then  
-send(msg.chat_id_,msg.id_,'℘ : تم تحديث السورس بنجاح .
-𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄')
+send(msg.chat_id_,msg.id_,'℘ : تم تحديث السورس بنجاح .')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
 os.execute('wget https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua')
@@ -10271,8 +10270,7 @@ File:close()
 sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '܁༯┆ عدد مجموعات التي في البوت { '..#list..'}')
 end
 if text == "◞تحديث السورس◜" then
-send(msg.chat_id_,msg.id_,'℘ : تم تحديث السورس بنجاح .
-𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄')
+send(msg.chat_id_,msg.id_,'⤦: تم التحديث')
 os.execute('rm -rf SourceBeccaa.lua')
 os.execute('rm -rf start.lua')
 os.execute('wget https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua')
