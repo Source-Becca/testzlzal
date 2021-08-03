@@ -8039,8 +8039,8 @@ if text == ("تحديث السورس") and Devzlzal(msg) then
 send(msg.chat_id_,msg.id_,'⤦: تم التحديث')
 os.execute('rm -rf zlzal.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/zlzal/master/zlzal.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/zlzal/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/zLzaLTeaM/zlzal/master/zlzal.lua')
+os.execute('wget https://raw.githubusercontent.com/zLzaLTeaM/zlzal/master/start.lua')
 dofile('zlzal.lua')  
 return false
 end
@@ -9614,8 +9614,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'⤦: تم التحديث')
 os.execute('rm -rf zlzal.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/zlzal/master/zlzal.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/zlzal/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/zLzaLTeaM/zlzal/master/zlzal.lua')
+os.execute('wget https://raw.githubusercontent.com/zLzaLTeaM/zlzal/master/start.lua')
 dofile('zlzal.lua')  
 return false
 end
