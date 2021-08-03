@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/SourceBeccaa
+cd $HOME/GeSoN
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x SourceBeccaa
+chmod +x GeSoN
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr SourceBeccaa.lua
+rm -fr GeSoN.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua"
+wget "https://raw.githubusercontent.com/Source-Becca/GeSoN/master/GeSoN.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd SourceBeccaa
+cd GeSoN
 rm -rf luarocks*
 lua start.lua
 
