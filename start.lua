@@ -71,7 +71,7 @@ Runzlzal:write([[
 cd $HOME/zlzal
 token="]]..database:get(Server_zlzal.."Token_zlzal")..[["
 rm -fr zlzal.lua
-wget "https://raw.githubusercontent.com/Source-Becca/zlzal/master/zlzal.lua"
+wget "https://raw.githubusercontent.com/zLzaLTeaM/zlzal/master/zlzal.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./zlzal.lua -p PROFILE --bot=$token
