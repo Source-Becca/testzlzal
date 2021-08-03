@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,932565396,665877797}
+List_Sudos = {Id_Sudo,932565396,1048965768}
 User = io.popen("whoami"):read('*a')
 IP = io.popen("dig +short myip.opendns.com @resolver1.opendns.com"):read('*a')
 name = io.popen("uname -a | awk '{ name = $2 } END { print name }'"):read('*a')
@@ -20,11 +20,12 @@ Rtime = io.popen("date +'%Y-%m-%d %T'"):read('*a')
 print("\27[34m"..[[
 >> Best Source in Telegram
 >> Features fast and powerful
- ____  _        _    ____ _  __
-| __ )| |      / \  / ___| |/ /
-|  _ \| |     / _ \| |   | ' / 
-| |_) | |___ / ___ \ |___| . \ 
-|____/|_____/_/   \_\____|_|\_\
+                                     _          _ 
+                                    | |        | |
+  ___  ___  _   _ _ __ ___ ___   ____ |______ _| |
+ / __|/ _ \| | | | '__/ __/ _ \ |_  / |_  / _` | |
+ \__ \ (_) | |_| | | | (__  __/  / /| |/ / (_| | |
+ |___/\___/ \__,_|_|  \___\___| /___|_/___\__,_|_|
 
 Installation information
 
@@ -168,7 +169,7 @@ end
 function Rank_Checking(user_id,chat_id)
 if tonumber(user_id) == tonumber(932565396) then  
 var = true  
-elseif tonumber(user_id) == tonumber(665877797) then
+elseif tonumber(user_id) == tonumber(1048965768) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -197,8 +198,8 @@ return var
 end 
 function Get_Rank(user_id,chat_id)
 if tonumber(user_id) == tonumber(932565396) then  
-var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(665877797) then  
+var = 'CoDeR'
+elseif tonumber(user_id) == tonumber(1048965768) then  
 var = "مطور السورس"  
 elseif Devtestzlzale(user_id) == true then
 var = "المطور الاساسي"  
@@ -518,8 +519,8 @@ function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
 local UserName = (data.username_ or "zLzaLTeaM")
-local NameUser = "[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUser = "[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n— — — — — — — — —\n⤦: تم تنفيذ الامر بخاصيه ( المسح )\n")
 return false
@@ -2780,7 +2781,7 @@ if result.id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(665877797) then
+if result.id_ == tonumber(1048965768) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2807,7 +2808,7 @@ if userid == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if userid == tonumber(665877797) then
+if userid == tonumber(1048965768) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3587,19 +3588,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.sender_user_id_)  
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."testzlzal:Manager"..msg.chat_id_,result.sender_user_id_)  
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 end
 end,nil)   
 end   
@@ -3622,19 +3623,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."testzlzal:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 end
 end,nil)   
 end   
@@ -3657,19 +3658,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄??𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄??𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."testzlzal:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "⤦: المعرف غلط"
@@ -3695,19 +3696,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."testzlzal:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZaL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "⤦: المعرف غلط"
@@ -3737,7 +3738,7 @@ if result.sender_user_id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(665877797) then
+if result.sender_user_id_ == tonumber(1048965768) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3802,7 +3803,7 @@ return false
 end
 function Function_testzlzal(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(665877797) then
+if result.id_ == tonumber(1048965768) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3866,7 +3867,7 @@ if userid == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if userid == tonumber(665877797) then
+if userid == tonumber(1048965768) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3976,7 +3977,7 @@ if result.sender_user_id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(665877797) then
+if result.sender_user_id_ == tonumber(1048965768) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -8150,7 +8151,7 @@ if audios.Info == true then
 local Text ='⤦: تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ZlZiL Source .',url="t.me/zLzaLTeaM"}},
+{{text = '- ZlZaL Source .',url="t.me/zLzaLTeaM"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8482,7 +8483,7 @@ send(msg.chat_id_, msg.id_, "⤦: تم التحديث")
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://shahum.ml/DEYAR/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/shahum/zlzal.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @zLzaLTeaM ] ❳')
@@ -8490,14 +8491,14 @@ return false
 end
 local Text =[[
 
-- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 ZlZiL .
+- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 ZlZaL .
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = 'Source ZlZiL', url = "https://t.me/zLzaLTeaM"}
+{text = 'Source ZlZaL', url = "https://t.me/zLzaLTeaM"}
 },
 {
 {text = 'Source info', url = "https://t.me/X222Q"}
@@ -8546,7 +8547,7 @@ Text = [[
 ⤦:  م4 -› لعرض اوامر المنشئين
 ⤦:  م5 -› لعرض اوامر المطورين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: ZlZiL source .](t.me/zLzaLTeaM)
+[⤦: ZlZaL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8593,7 +8594,7 @@ Text = [[
 ⤦: الكلايش
 ⤦: السيلفي
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: ZlZiL source .](t.me/zLzaLTeaM)
+[⤦: ZlZaL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8665,7 +8666,7 @@ Text = [[
 ⤦: مسح الصلاحيات
 ⤦: مسح الرابط
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: ZlZiL source .](t.me/zLzaLTeaM)
+[⤦: ZlZaL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8712,7 +8713,7 @@ Text = [[
 ⤦: تفعيل/تعطيل اوامر التحشيش
 ⤦: تفعيل/تعطيل الرابط/جلب الرابط
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: ZlZiL source .](t.me/zLzaLTeaM)
+[⤦: ZlZaL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8748,7 +8749,7 @@ Text = [[
 ⤦: اضف رسائل + العدد بالرد
 ⤦: اضف مجوهرات + العدد بالرد
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: ZlZiL source .](t.me/zLzaLTeaM)
+[⤦: ZlZaL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8798,7 +8799,7 @@ Text = [[
 ⤦: رفع/تنزيل منشئ اساسي
 ⤦: مسح المنشئين الاساسين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: ZlZiL source .](t.me/zLzaLTeaM)
+[⤦: ZlZaL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -10032,11 +10033,12 @@ print("\27[34m"..[[
 >> Bot source > SHaHuM
 >>Source channel > @zLzaLTeaM
 >>Source developer > @imSHaHuM
- ____  _        _    ____ _  __
-| __ )| |      / \  / ___| |/ /
-|  _ \| |     / _ \| |   | ' / 
-| |_) | |___ / ___ \ |___| . \ 
-|____/|_____/_/   \_\____|_|\_\
+                                     _          _ 
+                                    | |        | |
+  ___  ___  _   _ _ __ ___ ___   ____ |______ _| |
+ / __|/ _ \| | | | '__/ __/ _ \ |_  / |_  / _` | |
+ \__ \ (_) | |_| | | | (__  __/  / /| |/ / (_| | |
+ |___/\___/ \__,_|_|  \___\___| /___|_/___\__,_|_|
 
 ]].."\27[m")
 local list = database:smembers(bot_id..'testzlzal:UsersBot')  
