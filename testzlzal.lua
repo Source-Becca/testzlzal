@@ -442,7 +442,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس شهم الرسمي",
+performer_ = "سورس زلزال الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -517,9 +517,9 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "SouRceSHaHuM")
-local NameUser = "[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "zLzaLTeaM")
+local NameUser = "[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n— — — — — — — — —\n⤦: تم تنفيذ الامر بخاصيه ( المسح )\n")
 return false
@@ -3587,19 +3587,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.sender_user_id_)  
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."testzlzal:Manager"..msg.chat_id_,result.sender_user_id_)  
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 end
 end,nil)   
 end   
@@ -3622,19 +3622,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."testzlzal:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "SouRceSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "zLzaLTeaM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 end
 end,nil)   
 end   
@@ -3657,19 +3657,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄??𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄??𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."testzlzal:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "⤦: المعرف غلط"
@@ -3695,19 +3695,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local testzlzalrt = database:get(bot_id.."testzlzal:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if testzlzalrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."testzlzal:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif testzlzalrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."testzlzal:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif testzlzalrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."testzlzal:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."testzlzal:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif testzlzalrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/SouRceSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "SouRceSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- ZlZiL Source .](https://t.me/zLzaLTeaM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "zLzaLTeaM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "⤦: المعرف غلط"
@@ -6523,7 +6523,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⤦:  حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "SouRceSHaHuM")
+local UserName = (b.username_ or "zLzaLTeaM")
 send(msg.chat_id_, msg.id_,"⤦: منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6543,7 +6543,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⤦: حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "SouRceSHaHuM")
+local UserName = (b.username_ or "zLzaLTeaM")
 send(msg.chat_id_, msg.id_,"⤦: تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."creator"..msg.chat_id_,b.id_)
 end,nil)   
@@ -6578,7 +6578,7 @@ database:set(bot_id.."testzlzal:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "⤦: تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."testzlzal:Name:Bot") or "شهم") then
+if text == (database:get(bot_id.."testzlzal:Name:Bot") or "زلزال") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6588,7 +6588,7 @@ send(msg.chat_id_, msg.id_,'⤦: عـليك الاشـتࢪاك في قنـاة 
 end
 return false
 end
-Namebot = (database:get(bot_id.."testzlzal:Name:Bot") or "شهم")
+Namebot = (database:get(bot_id.."testzlzal:Name:Bot") or "زلزال")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -6607,7 +6607,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."testzlzal:Name:Bot") or "شهم")
+Namebot = (database:get(bot_id.."testzlzal:Name:Bot") or "زلزال")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
@@ -8150,7 +8150,7 @@ if audios.Info == true then
 local Text ='⤦: تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- SHaHuM Source .',url="t.me/SouRceSHaHuM"}},
+{{text = '- ZlZiL Source .',url="t.me/zLzaLTeaM"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8363,7 +8363,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n⤦: اهلا بك في متجر ملفات شهم\n⤦: يوجد في المتجر ملف الردود\n⤦: يتم ادراج الملفات في التحديثات القادمه \n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n"
+local TextS = "\n⤦: اهلا بك في متجر ملفات زلزال\n⤦: يوجد في المتجر ملف الردود\n⤦: يتم ادراج الملفات في التحديثات القادمه \n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n"
 local TextE = "\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: تدل علامة (✔) الملف مفعل\n".."⤦: تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -8481,57 +8481,39 @@ dofile("testzlzal.lua")
 send(msg.chat_id_, msg.id_, "⤦: تم التحديث")
 end
 
-if text == 'source' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 local url,res = https.request('https://shahum.ml/DEYAR/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @zLzaLTeaM ] ❳')
+return false
+end
 local Text =[[
-⤦: عذراً عزيزي .
-⤦: يجب عليك الاشتراك في قناة السورس من الأسفل .
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+
+- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 ZlZiL .
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+
 {
-{text = '❲ Source SHaHuM ❳', url = "https://t.me/SouRceSHaHuM"}
+{text = 'Source ZlZiL', url = "https://t.me/zLzaLTeaM"}
 },
 {
-{text = '❲ Source info ❳', url = "https://t.me/iNFoSHaHuM"}
+{text = 'Source info', url = "https://t.me/X222Q"}
+},
+{
+{text = 'Coder', url = "https://t.me/GGFFG"}
+},
+{
+{text = 'TwS', url = "https://t.me/zLzaLBoT"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false 
 end
-local Text =[[
 
-- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 𝗌𝗁𝖺𝗁𝗎𝗆 .
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-
-{
-{text = '❲ Source SHaHuM ❳', url = "https://t.me/SouRceSHaHuM"}
-},
-{
-{text = '❲ Source info ❳', url = "https://t.me/iNFoSHaHuM"}
-},
-{
-{text = '❲ Coder ❳', url = "https://t.me/imshahum"}
-},
-{
-{text = '❲ TwS ❳', url = "https://t.me/Uv0BoT"}
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NNAON/448&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-if text == 'حاله الاشتراك' or text == 'حاله اشتراك البوت' then  
-Text = [[⤦: حاله اشتراك البوت ( عادي ) .]]
-send(msg.chat_id_, msg.id_,Text)
-end
 if text == 'رابط الحذف' or text == 'بوت الحذف' then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -8564,7 +8546,7 @@ Text = [[
 ⤦:  م4 -› لعرض اوامر المنشئين
 ⤦:  م5 -› لعرض اوامر المطورين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/SouRceSHaHuM)
+[⤦: ZlZiL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8611,7 +8593,7 @@ Text = [[
 ⤦: الكلايش
 ⤦: السيلفي
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/SouRceSHaHuM)
+[⤦: ZlZiL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8683,7 +8665,7 @@ Text = [[
 ⤦: مسح الصلاحيات
 ⤦: مسح الرابط
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/SouRceSHaHuM)
+[⤦: ZlZiL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8730,7 +8712,7 @@ Text = [[
 ⤦: تفعيل/تعطيل اوامر التحشيش
 ⤦: تفعيل/تعطيل الرابط/جلب الرابط
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/SouRceSHaHuM)
+[⤦: ZlZiL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8766,7 +8748,7 @@ Text = [[
 ⤦: اضف رسائل + العدد بالرد
 ⤦: اضف مجوهرات + العدد بالرد
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/SouRceSHaHuM)
+[⤦: ZlZiL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8816,7 +8798,7 @@ Text = [[
 ⤦: رفع/تنزيل منشئ اساسي
 ⤦: مسح المنشئين الاساسين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/SouRceSHaHuM)
+[⤦: ZlZiL source .](t.me/zLzaLTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9662,7 +9644,7 @@ local idchci = "-100"..idch
 local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="⤦: تم اللغاء منعها بنجاح"
 inline = {
-{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/SouRceSHaHuM'}},
+{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/zLzaLTeaM'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9673,7 +9655,7 @@ local idchci = database:get(bot_id.."testzlzal:Filter:msg")
 local photo = DAata:match("^pito(.*)$")
 local Text ="⤦: تم اللغاء منعها بنجاح"
 inline = {
-{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/SouRceSHaHuM'}},
+{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/zLzaLTeaM'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9685,7 +9667,7 @@ local idchci = "-100"..idch
 local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="⤦: تم اللغاء منعه بنجاح"
 inline = {
-{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/SouRceSHaHuM'}},
+{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/zLzaLTeaM'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9695,7 +9677,7 @@ if DAata and DAata:match("^delallSticker(.*)$") and Addictive(data) then
 local delallSticker = DAata:match("^delallSticker(.*)$")
 local Text ="⤦: تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼??  .',url='http://t.me/SouRceSHaHuM'}},
+{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼??  .',url='http://t.me/zLzaLTeaM'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9708,7 +9690,7 @@ if DAata and DAata:match("^delallanimation(.*)$") and Addictive(data) then
 local delallmation = DAata:match("^delallanimation(.*)$")
 local Text ="⤦: تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/SouRceSHaHuM'}},
+{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/zLzaLTeaM'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9721,7 +9703,7 @@ if DAata and DAata:match("^delallph(.*)$") and Addictive(data) then
 local delallph = DAata:match("^delallph(.*)$")
 local Text ="⤦: تم اللغاء منع كل الصور"
 inline = {
-{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/SouRceSHaHuM'}},
+{{text = '⤦:  BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/zLzaLTeaM'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9847,7 +9829,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."testzlzal:Name:Bot") or "شهم")
+local Name_Bot = (database:get(bot_id.."testzlzal:Name:Bot") or "زلزال")
 if not database:get(bot_id.."testzlzal:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
@@ -10047,9 +10029,9 @@ end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
 print("\27[34m"..[[
 >> The Bot is Running
->> Bot source > Black
->>Source channel > @SouRceSHaHuM
->>Source developer > @BGBBB
+>> Bot source > SHaHuM
+>>Source channel > @zLzaLTeaM
+>>Source developer > @imSHaHuM
  ____  _        _    ____ _  __
 | __ )| |      / \  / ___| |/ /
 |  _ \| |     / _ \| |   | ' / 
