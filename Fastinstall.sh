@@ -10,7 +10,7 @@ chmod +x ts
 get() {
 rm -fr zlzal.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Source-Becca/zlzal/master/zlzal.lua"
+wget "https://raw.githubusercontent.com/zLzaLTeaM/zlzal/master/zlzal.lua"
 lua start.lua
 }
 installall(){
