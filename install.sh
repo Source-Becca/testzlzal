@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/testzlzal
+cd $HOME/zlzal
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x testzlzal
+chmod +x zlzal
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr testzlzal.lua
+rm -fr zlzal.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Source-Becca/testzlzal/master/testzlzal.lua"
+wget "https://raw.githubusercontent.com/Source-Becca/zlzal/master/zlzal.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd testzlzal
+cd zlzal
 rm -rf luarocks*
 lua start.lua
 
