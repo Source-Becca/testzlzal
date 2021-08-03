@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/GeSoN
+cd $HOME/testzlzal
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x GeSoN
+chmod +x testzlzal
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr GeSoN.lua
+rm -fr testzlzal.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Source-Becca/GeSoN/master/GeSoN.lua"
+wget "https://raw.githubusercontent.com/Source-Becca/testzlzal/master/testzlzal.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd GeSoN
+cd testzlzal
 rm -rf luarocks*
 lua start.lua
 
