@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,1625699958,932565396}
+List_Sudos = {Id_Sudo,1903083823,932565396}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -157,7 +157,7 @@ end
 end
 function CleangGroups();local z = io.open('./GeSoN');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/GeSoN.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(1625699958) then  
+if tonumber(user_id) == tonumber(1903083823) then  
 var = true  
 elseif tonumber(user_id) == tonumber(932565396) then
 var = true  
@@ -191,7 +191,7 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1625699958) then  
+if tonumber(user_id) == tonumber(1903083823) then  
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(932565396) then  
 var = "Coder"  
@@ -512,13 +512,13 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "BeCcaTeaM")
+local UserName = (data.username_ or "YV9YV")
 for GeSoN in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = GeSoN
 end
-local UserName = (data.username_ or "BeCcaTeaM")
-local NameUser = "[- sᴏᴜʀᴄᴇ ʙᴇᴄᴄᴀ .](https://t.me/BeCcaTeaM)\n 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n℘ : بواسطه ← ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- sᴏᴜʀᴄᴇ ʙᴇᴄᴄᴀ .](https://t.me/BeCcaTeaM)\n 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n℘ : اسم المستخدم ← ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "YV9YV")
+local NameUser = "[- SouRce GeSoN .](https://t.me/YV9YV)\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n℘ : بواسطه ← ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- SouRce GeSoN .](https://t.me/YV9YV)\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n℘ : اسم المستخدم ← ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n℘ : خاصية » المسح\n")
 return false
@@ -1519,10 +1519,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فـتح البوتا�
 return false
 end 
 if text == "فتح البوتات " and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:del(bot_id.."GeSoN:Lock:Bot:kick"..msg.chat_id_)  
@@ -1578,10 +1578,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فـتح تعديل")
 return false
 end 
 if text == "فتح الكل" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:del(bot_id.."GeSoN:Lock:tagservrbot"..msg.chat_id_)   
@@ -1637,10 +1637,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فتح الروابط"
 return false
 end 
 if text == "قفل المعرفات" and Addictive(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:set(bot_id.."GeSoN:Lock:User:Name"..msg.chat_id_,"del")  
@@ -1795,10 +1795,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فتح الفيديو"
 return false
 end 
 if text == "قفل المتحركه" and Addictive(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:set(bot_id.."GeSoN:Lock:Animation"..msg.chat_id_,"del")  
@@ -2248,10 +2248,10 @@ Reply_Status(msg,msg.sender_user_id_,"lockkick","℘ : تم قفل التكرا�
 return false
 end 
 if text == "قفل التكرار" and Addictive(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:hset(bot_id.."GeSoN:flooding:settings:"..msg.chat_id_ ,"flood","del")  
@@ -2671,7 +2671,7 @@ if result.sender_user_id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1625699958) then
+if result.sender_user_id_ == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2710,7 +2710,7 @@ if result.id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} Coder \n")
 return false 
 end
-if result.id_ == tonumber(1625699958) then
+if result.id_ == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2729,7 +2729,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if userid == tonumber(1625699958) then
+if userid == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2992,10 +2992,10 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 local username = text:match("^تنزيل منشئ اساسي @(.*)$")
@@ -3173,10 +3173,10 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 local userid = text:match("^رفع مدير (%d+)$") 
@@ -3261,10 +3261,10 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 local username = text:match("^رفع ادمن @(.*)$")
@@ -3307,10 +3307,10 @@ Reply_Status(msg,userid,"reply","℘ : تم ترقيته ادمن للمجموع
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 function Function_GeSoN(extra, result, success)
@@ -3343,10 +3343,10 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_GeSoN, 
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 local userid = text:match("^تنزيل ادمن (%d+)$")
@@ -3356,10 +3356,10 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
@@ -3640,7 +3640,7 @@ send(msg.chat_id_, msg.id_,'℘ : لقد تم تعطيل الحظر و الطر�
 return false
 end
 function Function_GeSoN(extra, result, success)
-if result.sender_user_id_ == tonumber(1625699958) then
+if result.sender_user_id_ == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3717,7 +3717,7 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if result.id_ == tonumber(1625699958) then
+if result.id_ == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3769,7 +3769,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if userid == tonumber(1625699958) then
+if userid == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3879,7 +3879,7 @@ end
 return false
 end
 function Function_GeSoN(extra, result, success)
-if result.sender_user_id_ == tonumber(1625699958) then
+if result.sender_user_id_ == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -3922,7 +3922,7 @@ return false
 end
 function Function_GeSoN(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(1625699958) then
+if result.id_ == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3958,7 +3958,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(1625699958) then
+if userid == tonumber(1903083823) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -7170,10 +7170,10 @@ database:del(bot_id.."GeSoN:Fun_Bots"..msg.chat_id_)
 end
 
 if text == 'تفعيل الايدي' and Owner(msg) then 
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:del(bot_id..'GeSoN:Lock:ID:Bot'..msg.chat_id_) 
@@ -7193,10 +7193,10 @@ database:set(bot_id..'GeSoN:Lock:ID:Bot'..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_,'℘ : تم تعطيل الايدي') 
 end
 if text == 'تفعيل الايدي بالصوره' and Owner(msg) then   
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 database:del(bot_id..'GeSoN:Lock:ID:Bot:Photo'..msg.chat_id_) 
@@ -7293,10 +7293,10 @@ if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' *℘ : ايديك »* '..msg.sender_user_id_)
 end
 if text == 'تعين الايدي' and Owner(msg) then
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
@@ -8909,7 +8909,7 @@ if audios.Info == true then
 local Text ='℘ : تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/BeCcaTeaM"}},
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8924,7 +8924,7 @@ if audios.Info == true then
 local Text ='℘ : تم اختيار الشعر لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/BeCcaTeaM"}},
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8939,7 +8939,7 @@ if audios.Info == true then
 local Text ='℘ : تم اختيار الشعر لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/BeCcaTeaM"}},
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9180,42 +9180,43 @@ dofile("GeSoN.lua")
 send(msg.chat_id_, msg.id_, "℘ : تم تحديث ملفات البوت بنجاح .\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @BeCcaTeaM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @YV9YV ] ❳')
 return false
 end
 local Text =[[
 
-├ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʙᴇᴄᴄᴀ ┤
+├ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ SouRce GeSoN ┤
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '- cʜᴀɴɴᴇʟ ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .', url = "https://t.me/BeCcaTeaM"}
+{text = '- cʜᴀɴɴᴇʟ SouRce GeSoN .', url = "https://t.me/YV9YV"}
 },
 {
-{text = '- ᴄʜᴀɴɴᴇʟ ɪɴғᴏ ᴛᴇᴀᴍ .', url = "https://t.me/BeCA_TeAM"}
+{text = '- ᴄʜᴀɴɴᴇʟ ɪɴғᴏ ᴛᴇᴀᴍ .', url = "https://t.me/Q1N_A"}
 },
 {
-{text = '- dᴇᴠᴇʟᴏᴘᴇʀ ᴏғ sᴏᴜʀᴄᴇ .', url = "https://t.me/Z_2_6"}
+{text = '- dᴇᴠᴇʟᴏᴘᴇʀ ᴏғ sᴏᴜʀᴄᴇ .', url = "https://t.me/C7777J"}
 },
 {
-{text = '- ᴘʀᴏɢʀᴀᴍᴍᴇʀ .', url = "https://t.me/UlQBOT"}
+{text = '- ᴘʀᴏɢʀᴀᴍᴍᴇʀ .', url = "https://t.me/BNJLCBOT"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/cililr/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false 
 end
 
 if text == 'همسه' or text == 'الهمسه' then
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 local Text =[[
@@ -9234,10 +9235,10 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/lllbbtr/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'حذف' or text == 'رابط الحذف' or text == 'بوت الحذف' then
-local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://shahum.ml/Z_2_6/GeSoN.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
 return false
 end
 local Text =[[
@@ -9275,7 +9276,7 @@ Text = [[
 ℘ :  م4 » لعرض اوامر المنشئين
 ℘ :  م5 » لعرض اوامر المطورين
  𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄 
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9300,7 +9301,7 @@ Text = [[
 ℘ : رفع منظف - تنزيل منظف
 ℘ :  المنظفين - مسح المنظفين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9361,7 +9362,7 @@ Text = [[
 ℘ : البوتات بالطرد
 ℘ : البوتات بالتقيد
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9429,7 +9430,7 @@ Text = [[
 ℘ : تقييد يوم + عدد الايام
 ℘ : الغاء تقييد ↫ لالغاء التقييد بالوقت
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9483,7 +9484,7 @@ Text = [[
 ℘ : ردود المدير • ردود المطور
 ℘ : ضافني • حساب العمر • الزخرفه
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9533,7 +9534,7 @@ Text = [[
 ℘ : المنشئين الاساسيين 
 ℘ : حذف جميع الرتب
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9583,7 +9584,7 @@ Text = [[
 ℘ : رفع/تنزيل منشئ اساسي
 ℘ : مسح المنشئين الاساسين
  𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄 
-[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
+[℘ : SouRce GeSoN .](t.me/YV9YV)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9802,7 +9803,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 Test = start
 else
-Test = '╭ Welcome To Your Bot .\n│Here iS Your Admin Power .\n│Chose One Of this Order .\n╰ Owner Of Source : @BeCcaTeaM '
+Test = '╭ Welcome To Your Bot .\n│Here iS Your Admin Power .\n│Chose One Of this Order .\n╰ Owner Of Source : @YV9YV '
 end
 send(msg.chat_id_, msg.id_, Test) 
 end
@@ -9878,7 +9879,7 @@ end
 return false
 end
 if text == '◞قناه تحديثات السورس◜' then 
-send(msg.chat_id_, msg.id_,' ܁༯┆[تحديثات ﭑݪسورس](https://t.me/l2l21) \n ܁༯┆[قناه ﭑݪسورس](https://t.me/BeCcaTeaM)')
+send(msg.chat_id_, msg.id_,' ܁༯┆[تحديثات ﭑݪسورس](https://t.me/l2l21) \n ܁༯┆[قناه ﭑݪسورس](https://t.me/YV9YV)')
 end
 if text == '◞المطور◜' or text == 'مطور' or text == 'المطورين' then
 local Text_Dev = database:get(bot_id..'GeSoN:Text_Dev')
