@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,1903083823,932565396}
+List_Sudos = {Id_Sudo,1625699958,932565396}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -157,7 +157,7 @@ end
 end
 function CleangGroups();local z = io.open('./testzlzal');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/testzlzal.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(1903083823) then  
+if tonumber(user_id) == tonumber(1625699958) then  
 var = true  
 elseif tonumber(user_id) == tonumber(932565396) then
 var = true  
@@ -191,7 +191,7 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1903083823) then  
+if tonumber(user_id) == tonumber(1625699958) then  
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(932565396) then  
 var = "Coder"  
@@ -512,13 +512,13 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "YV9YV")
+local UserName = (data.username_ or "BeCcaTeaM")
 for testzlzal in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = testzlzal
 end
-local UserName = (data.username_ or "YV9YV")
-local NameUser = "[- SouRce testzlzal .](https://t.me/YV9YV)\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n℘ : بواسطه ← ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- SouRce testzlzal .](https://t.me/YV9YV)\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n℘ : اسم المستخدم ← ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "BeCcaTeaM")
+local NameUser = "[- sᴏᴜʀᴄᴇ ʙᴇᴄᴄᴀ .](https://t.me/BeCcaTeaM)\n 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n℘ : بواسطه ← ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- sᴏᴜʀᴄᴇ ʙᴇᴄᴄᴀ .](https://t.me/BeCcaTeaM)\n 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n℘ : اسم المستخدم ← ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n℘ : خاصية » المسح\n")
 return false
@@ -1519,10 +1519,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فـتح البوتا�
 return false
 end 
 if text == "فتح البوتات " and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:del(bot_id.."testzlzal:Lock:Bot:kick"..msg.chat_id_)  
@@ -1578,10 +1578,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فـتح تعديل")
 return false
 end 
 if text == "فتح الكل" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:del(bot_id.."testzlzal:Lock:tagservrbot"..msg.chat_id_)   
@@ -1637,10 +1637,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فتح الروابط"
 return false
 end 
 if text == "قفل المعرفات" and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:set(bot_id.."testzlzal:Lock:User:Name"..msg.chat_id_,"del")  
@@ -1795,10 +1795,10 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","℘ : تم فتح الفيديو"
 return false
 end 
 if text == "قفل المتحركه" and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:set(bot_id.."testzlzal:Lock:Animation"..msg.chat_id_,"del")  
@@ -2248,10 +2248,10 @@ Reply_Status(msg,msg.sender_user_id_,"lockkick","℘ : تم قفل التكرا�
 return false
 end 
 if text == "قفل التكرار" and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:hset(bot_id.."testzlzal:flooding:settings:"..msg.chat_id_ ,"flood","del")  
@@ -2671,7 +2671,7 @@ if result.sender_user_id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1903083823) then
+if result.sender_user_id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2710,7 +2710,7 @@ if result.id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} Coder \n")
 return false 
 end
-if result.id_ == tonumber(1903083823) then
+if result.id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2729,7 +2729,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if userid == tonumber(1903083823) then
+if userid == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2992,10 +2992,10 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 local username = text:match("^تنزيل منشئ اساسي @(.*)$")
@@ -3173,10 +3173,10 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 local userid = text:match("^رفع مدير (%d+)$") 
@@ -3261,10 +3261,10 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 local username = text:match("^رفع ادمن @(.*)$")
@@ -3307,10 +3307,10 @@ Reply_Status(msg,userid,"reply","℘ : تم ترقيته ادمن للمجموع
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 function Function_testzlzal(extra, result, success)
@@ -3343,10 +3343,10 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_testzlz
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 local userid = text:match("^تنزيل ادمن (%d+)$")
@@ -3356,10 +3356,10 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
@@ -3640,7 +3640,7 @@ send(msg.chat_id_, msg.id_,'℘ : لقد تم تعطيل الحظر و الطر�
 return false
 end
 function Function_testzlzal(extra, result, success)
-if result.sender_user_id_ == tonumber(1903083823) then
+if result.sender_user_id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3675,15 +3675,14 @@ if msg.can_be_deleted_ == false then
 send(msg.chat_id_, msg.id_,' البوت ليس مشرف يرجى ترقيتي !') 
 return false  
 end
-heen = {
-"- حبيبي علاج الجاهل التجاهل ."
-,"- مالي خلك زبايل التلي . "
-,"- كرامتك صارت بزبل פَــبي ."
-,"- مو صوجك صوج الكواد الزمك جهاز ."
-,"- لفارغ استجن . "
-,"- ڪِݪك واحد لوكي كس ."
-,"- ملطلط دي ."
-};
+data,res = https.request('https://shahum.ml/audioss/audios.php')
+if res == 200 then
+audios = json:decode(data)
+if audios.Info == true then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
+}
 sendheen = heen[math.random(#heen)]
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 send(msg.chat_id_, msg.reply_to_message_id_,sendheen)
@@ -3717,7 +3716,7 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if result.id_ == tonumber(1903083823) then
+if result.id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3769,7 +3768,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if userid == tonumber(1903083823) then
+if userid == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3879,7 +3878,7 @@ end
 return false
 end
 function Function_testzlzal(extra, result, success)
-if result.sender_user_id_ == tonumber(1903083823) then
+if result.sender_user_id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -3922,7 +3921,7 @@ return false
 end
 function Function_testzlzal(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(1903083823) then
+if result.id_ == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3958,7 +3957,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(1903083823) then
+if userid == tonumber(1625699958) then
 send(msg.chat_id_, msg.id_, "℘ : لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -7170,10 +7169,10 @@ database:del(bot_id.."testzlzal:Fun_Bots"..msg.chat_id_)
 end
 
 if text == 'تفعيل الايدي' and Owner(msg) then 
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:del(bot_id..'testzlzal:Lock:ID:Bot'..msg.chat_id_) 
@@ -7193,10 +7192,10 @@ database:set(bot_id..'testzlzal:Lock:ID:Bot'..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_,'℘ : تم تعطيل الايدي') 
 end
 if text == 'تفعيل الايدي بالصوره' and Owner(msg) then   
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 database:del(bot_id..'testzlzal:Lock:ID:Bot:Photo'..msg.chat_id_) 
@@ -7293,10 +7292,10 @@ if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' *℘ : ايديك »* '..msg.sender_user_id_)
 end
 if text == 'تعين الايدي' and Owner(msg) then
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
@@ -8906,33 +8905,15 @@ data,res = https.request('https://shahum.ml/audioss/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
+local Text ='℘ : تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/BeCcaTeaM"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 end
-end
-if text == "هينة" or text == "هينها" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
-function start_function(extra, result, success)
-if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' البوت ليس مشرف يرجى ترقيتي !') 
-return false  
-end
-data,res = https.request('https://shahum.ml/audioss/audios.php')
-if res == 200 then
-audios = json:decode(data)
-if audios.Info == true then
-local Text ='℘ : تم اختيار المقطع الصوتي لك'
-sendheen = heen[math.random(#heen)]
-tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.reply_to_message_id_,sendheen)
-end,nil)
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
-return false
 end
 if text == "شعر" then
 data,res = https.request('https://shahum.ml/audioss/shaer.php')
@@ -8942,7 +8923,7 @@ if audios.Info == true then
 local Text ='℘ : تم اختيار الشعر لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/BeCcaTeaM"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8957,7 +8938,7 @@ if audios.Info == true then
 local Text ='℘ : تم اختيار الشعر لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/YV9YV"}},
+{{text = '- ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .',url="t.me/BeCcaTeaM"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9198,43 +9179,42 @@ dofile("testzlzal.lua")
 send(msg.chat_id_, msg.id_, "℘ : تم تحديث ملفات البوت بنجاح .\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @YV9YV ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @BeCcaTeaM ] ❳')
 return false
 end
 local Text =[[
 
-├ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ SouRce testzlzal ┤
+├ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʙᴇᴄᴄᴀ ┤
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '- cʜᴀɴɴᴇʟ SouRce testzlzal .', url = "https://t.me/YV9YV"}
+{text = '- cʜᴀɴɴᴇʟ ʙᴇᴄᴄᴀ ᴛᴇᴀᴍ .', url = "https://t.me/BeCcaTeaM"}
 },
 {
-{text = '- ᴄʜᴀɴɴᴇʟ ɪɴғᴏ ᴛᴇᴀᴍ .', url = "https://t.me/Q1N_A"}
+{text = '- ᴄʜᴀɴɴᴇʟ ɪɴғᴏ ᴛᴇᴀᴍ .', url = "https://t.me/BeCA_TeAM"}
 },
 {
-{text = '- dᴇᴠᴇʟᴏᴘᴇʀ ᴏғ sᴏᴜʀᴄᴇ .', url = "https://t.me/C7777J"}
+{text = '- dᴇᴠᴇʟᴏᴘᴇʀ ᴏғ sᴏᴜʀᴄᴇ .', url = "https://t.me/Z_2_6"}
 },
 {
-{text = '- ᴘʀᴏɢʀᴀᴍᴍᴇʀ .', url = "https://t.me/BNJLCBOT"}
+{text = '- ᴘʀᴏɢʀᴀᴍᴍᴇʀ .', url = "https://t.me/UlQBOT"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/cililr/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'همسه' or text == 'الهمسه' then
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 local Text =[[
@@ -9253,10 +9233,10 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/lllbbtr/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'حذف' or text == 'رابط الحذف' or text == 'بوت الحذف' then
-local url,res = https.request('https://shahum.ml/Z_2_6/testzlzal.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://uussuu.ml/Z_2_6/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @YV9YV ] .')   
+send(msg.chat_id_,msg.id_,'- شترك في قناة البوت اولآ [ @BeCcaTeaM ] .')   
 return false
 end
 local Text =[[
@@ -9294,7 +9274,7 @@ Text = [[
 ℘ :  م4 » لعرض اوامر المنشئين
 ℘ :  م5 » لعرض اوامر المطورين
  𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄 
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9319,7 +9299,7 @@ Text = [[
 ℘ : رفع منظف - تنزيل منظف
 ℘ :  المنظفين - مسح المنظفين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9369,7 +9349,7 @@ Text = [[
 ℘ : قفل • فتح ↫ الانكليزيه
 ℘ : قفل • فتح ↫ الفارسيه
 ℘ : قفل • فتح ↫ التفليش
-𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄??𓐄𓐄𓐄𓐄
+𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
 ℘ : اوامر حمايه اخرى ↫ ⤈
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
 ℘ : قفل • فتح + الامر ↫ ⤈
@@ -9380,7 +9360,7 @@ Text = [[
 ℘ : البوتات بالطرد
 ℘ : البوتات بالتقيد
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9448,7 +9428,7 @@ Text = [[
 ℘ : تقييد يوم + عدد الايام
 ℘ : الغاء تقييد ↫ لالغاء التقييد بالوقت
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9502,7 +9482,7 @@ Text = [[
 ℘ : ردود المدير • ردود المطور
 ℘ : ضافني • حساب العمر • الزخرفه
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9552,7 +9532,7 @@ Text = [[
 ℘ : المنشئين الاساسيين 
 ℘ : حذف جميع الرتب
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9602,7 +9582,7 @@ Text = [[
 ℘ : رفع/تنزيل منشئ اساسي
 ℘ : مسح المنشئين الاساسين
  𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄 
-[℘ : SouRce testzlzal .](t.me/YV9YV)
+[℘ : BeCcA TEAM](t.me/BeCcaTeaM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9821,7 +9801,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 Test = start
 else
-Test = '╭ Welcome To Your Bot .\n│Here iS Your Admin Power .\n│Chose One Of this Order .\n╰ Owner Of Source : @YV9YV '
+Test = '╭ Welcome To Your Bot .\n│Here iS Your Admin Power .\n│Chose One Of this Order .\n╰ Owner Of Source : @BeCcaTeaM '
 end
 send(msg.chat_id_, msg.id_, Test) 
 end
@@ -9897,7 +9877,7 @@ end
 return false
 end
 if text == '◞قناه تحديثات السورس◜' then 
-send(msg.chat_id_, msg.id_,' ܁༯┆[تحديثات ﭑݪسورس](https://t.me/l2l21) \n ܁༯┆[قناه ﭑݪسورس](https://t.me/YV9YV)')
+send(msg.chat_id_, msg.id_,' ܁༯┆[تحديثات ﭑݪسورس](https://t.me/l2l21) \n ܁༯┆[قناه ﭑݪسورس](https://t.me/BeCcaTeaM)')
 end
 if text == '◞المطور◜' or text == 'مطور' or text == 'المطورين' then
 local Text_Dev = database:get(bot_id..'testzlzal:Text_Dev')
@@ -10431,7 +10411,7 @@ local Name_Bot = (database:get(bot_id.."testzlzal:Name:Bot") or "بيكا")
 if not database:get(bot_id.."testzlzal:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
-local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 🙄','يلعب ع البنات 🙄', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير الحب مال اني ❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
+local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 🙄','يلعب ع البنات 🙄', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂??🏼‍♀️','اموت عليه 🌝','هوه غير الحب مال اني ❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
 send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
 end   
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
