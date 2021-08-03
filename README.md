@@ -8,7 +8,7 @@ Installation
 
 install :
 
-```git clone https://github.com/zlzal/zlzal.git && cd zlzal && chmod +x install.sh && ./install.sh```
+```git clone https://github.com/zLzaLTeaM/zlzal.git && cd zlzal && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
